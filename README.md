@@ -1,14 +1,18 @@
 # G1ANT.Manual
 
 1. [Introduction](Introduction.md)
-     * [Overview](Overview.md)
+        * [Overview](Overview.md)
         * [Features](Features.md)
-     * [System And Hardware Requirements](SystemAndHardwareRequirements.md)
-     * [Hosting](Hosting.md)
-     * [Security](Security.md)
-     * [Dictionary](Dictionary.md)
+        * [System And Hardware Requirements](SystemAndHardwareRequirements.md)
+        * [HostiZng](Hosting.md)
+        * [Security](Security.md)
+        * [Dictionary](Dictionary.md)
 
 2. [Getting Started](GettingStarted.md)
+
+        * [Installation](Introduction.md)
+        * [G1ANT.Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials)
+        * [Technical Support](TechnicalSupport.md)
 
 3. [User Interface](UserInterface.md)
 
