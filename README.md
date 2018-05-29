@@ -33,7 +33,7 @@
 
 * [Control Flow Commands](ControlFlowaCommands.md)
 
-      * [Jump](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Script%20Writing/Control%20Flow%20Commands/Jump.md)
+            * [Jump](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Script%20Writing/Control%20Flow%20Commands/Jump.md)
 
 * [Common Arguments](CommonArguments.md)
 * [Variables](Variables.md)
