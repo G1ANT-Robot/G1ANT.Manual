@@ -4,16 +4,16 @@
 
 * [Overview](Overview.md)
 * [Features](Features.md)
-* [System And Hardware Requirements](SystemAndHardwareRequirements.md)
+* [System And Hardware Requirements](System-And-Hardware-Requirements.md)
 * [Hosting](Hosting.md)
 * [Security](Security.md)
 * [Dictionary](Dictionary.md)
 
-## 2. [Getting Started](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Getting%20Started)
+## 2. [Getting Started](Getting-Started)
 
-* [Installation](Introduction.md)
+* [Installation](Getting-Started/Installation.md)
 * [G1ANT.Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials)
-* [Technical Support](TechnicalSupport.md)
+* [Technical Support](Technical-Support.md)
 
 ## 3. [User Interface](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/User%20Interface)
       
