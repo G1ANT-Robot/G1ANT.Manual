@@ -32,6 +32,8 @@
 * [Commands](Commands.md)
 * [Control Flow Commands](ControlFlowaCommands.md)
     * [Jump](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Script%20Writing/Control%20Flow%20Commands/Jump.md)
+    * [Loop](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Script%20Writing/Control%20Flow%20Commands/Loop.md)
+    * [Procedure](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Script%20Writing/Control%20Flow%20Commands/Procedure.md)
 * [Common Arguments](CommonArguments.md)
 * [Variables](Variables.md)
 * [Special Characters](SpecialCharacters.md)
