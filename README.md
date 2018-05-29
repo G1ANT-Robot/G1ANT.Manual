@@ -19,10 +19,10 @@
       
 * [Menu Bar](MenuBar.md)
 * [Windows](Windows.md)
-* [DialogBoxes](DialogBoxes.md)
+* [Dialog Boxes](DialogBoxes.md)
 * [System Tray Menu](SystemTrayMenu.md)
-* [CommandLine](CommandLine.md)
-* [TroubleshootingAndHistory](TroubleshootingAndHistory.md)
+* [Command Line](CommandLine.md)
+* [Troubleshooting And History](TroubleshootingAndHistory.md)
 
 ## 4. [Script writing](ScriptWriting.md)
 
