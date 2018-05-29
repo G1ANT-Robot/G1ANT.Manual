@@ -24,7 +24,7 @@
 * [Command Line](CommandLine.md)
 * [Troubleshooting And History](TroubleshootingAndHistory.md)
 
-## 4. [Script writing](ScriptWriting)
+## 4. [Script Writing](Script Writing)
 
 * [Syntax](Syntax.md)
 * [Errors](Errors.md)
