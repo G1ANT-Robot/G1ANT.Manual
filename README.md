@@ -42,10 +42,20 @@
 
 ## 5. [Trigggering](Triggering.md)
 
+* [FileTrigger](FileTrigger.md)
+* [ScheduleTrigger](ScheduleTrigger.md)
+* [MailTrigger](MailTrigger.md)
+
 ## 6. [Configuration](Configuration.md)
+
+* [Sections](Sections.md)
+* [Deployment](Deployment.md)
 
 ## 7. [Intellectual Property](IntellectualProperty.md)
 
 ## 8. [Tools](Tools.md)
+
+* [Logs Data Populator](LogsDataPopulator.md)
+* [Automation Methods](AutomationMethods.md)
 
 ## 9. [Additional Information](AdditionalInformation.md)
