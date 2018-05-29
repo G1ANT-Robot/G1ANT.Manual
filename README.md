@@ -9,13 +9,13 @@
 * [Security](Security.md)
 * [Dictionary](Dictionary.md)
 
-## 2. [Getting Started](GettingStarted.md)
+## 2. [Getting Started](GettingStarted)
 
 * [Installation](Introduction.md)
 * [G1ANT.Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials)
 * [Technical Support](TechnicalSupport.md)
 
-## 3. [User Interface](UserInterface.md)
+## 3. [User Interface](UserInterface)
       
 * [Menu Bar](MenuBar.md)
 * [Windows](Windows.md)
@@ -24,7 +24,7 @@
 * [Command Line](CommandLine.md)
 * [Troubleshooting And History](TroubleshootingAndHistory.md)
 
-## 4. [Script writing](ScriptWriting.md)
+## 4. [Script writing](ScriptWriting)
 
 * [Syntax](Syntax.md)
 * [Errors](Errors.md)
@@ -40,22 +40,22 @@
 * [Tips For Coding And Testing Processes](TipsForCodingAndTestingProcesses.md)
 * [Most Frequent Mistakes](MostFrequentMistakes.md)
 
-## 5. [Trigggering](Triggering.md)
+## 5. [Trigggering](Triggering)
 
 * [FileTrigger](FileTrigger.md)
 * [ScheduleTrigger](ScheduleTrigger.md)
 * [MailTrigger](MailTrigger.md)
 
-## 6. [Configuration](Configuration.md)
+## 6. [Configuration](Configuration)
 
 * [Sections](Sections.md)
 * [Deployment](Deployment.md)
 
-## 7. [Intellectual Property](IntellectualProperty.md)
+## 7. [Intellectual Property](IntellectualProperty)
 
 ## 8. [Tools](Tools.md)
 
 * [Logs Data Populator](LogsDataPopulator.md)
 * [Automation Methods](AutomationMethods.md)
 
-## 9. [Additional Information](AdditionalInformation.md)
+## 9. [Additional Information](AdditionalInformation)
