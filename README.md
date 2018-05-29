@@ -16,6 +16,9 @@
       * [Technical Support](TechnicalSupport.md)
 
 3. [User Interface](UserInterface.md)
+      
+      * [Menu Bar](MenuBar.md)
+      
 
 4. [Script writing](ScriptWriting.md)
 
