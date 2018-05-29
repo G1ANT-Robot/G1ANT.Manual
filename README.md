@@ -2,12 +2,12 @@
 
 1. [Introduction](Introduction.md)
 
-   * [Overview](Overview.md)
-   * [Features](Features.md)
-   * [System And Hardware Requirements](SystemAndHardwareRequirements.md)
-   * [Hosting](Hosting.md)
-   * [Security](Security.md)
-   * [Dictionary](Dictionary.md)
+  * [Overview](Overview.md)
+  * [Features](Features.md)
+  * [System And Hardware Requirements](SystemAndHardwareRequirements.md)
+  * [Hosting](Hosting.md)
+  * [Security](Security.md)
+  * [Dictionary](Dictionary.md)
 
 2. [Getting Started](GettingStarted.md)
 
