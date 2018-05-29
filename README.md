@@ -1,6 +1,6 @@
 # G1ANT.Manual
 
-## 1. [Introduction](Introduction.md)
+## 1. [Introduction](Introduction)
 
 * [Overview](Overview.md)
 * [Features](Features.md)
