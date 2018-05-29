@@ -9,7 +9,7 @@
 * [Security](Security.md)
 * [Dictionary](Dictionary.md)
 
-## 2. [Getting Started](GettingStarted)
+## 2. [Getting Started](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Getting%20Started)
 
 * [Installation](Introduction.md)
 * [G1ANT.Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials)
@@ -24,7 +24,7 @@
 * [Command Line](CommandLine.md)
 * [Troubleshooting And History](TroubleshootingAndHistory.md)
 
-## 4. [Script Writing](Script Writing)
+## 4. [Script Writing](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Script%20Writing)
 
 * [Syntax](Syntax.md)
 * [Errors](Errors.md)
@@ -51,11 +51,11 @@
 * [Sections](Sections.md)
 * [Deployment](Deployment.md)
 
-## 7. [Intellectual Property](IntellectualProperty)
+## 7. [Intellectual Property](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/Intellectual%20Property)
 
 ## 8. [Tools](Tools.md)
 
 * [Logs Data Populator](LogsDataPopulator.md)
 * [Automation Methods](AutomationMethods.md)
 
-## 9. [Additional Information](AdditionalInformation)
+## 9. [Additional Information](AdditionalInformation.md)
