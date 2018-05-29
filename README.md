@@ -42,9 +42,9 @@
 
 ## 5. [Trigggering](Triggering)
 
-* [FileTrigger](FileTrigger.md)
-* [ScheduleTrigger](ScheduleTrigger.md)
-* [MailTrigger](MailTrigger.md)
+* [File Trigger](FileTrigger.md)
+* [Schedule Trigger](ScheduleTrigger.md)
+* [Mail Trigger](MailTrigger.md)
 
 ## 6. [Configuration](Configuration)
 
