@@ -11,9 +11,9 @@
 
 2. [Getting Started](GettingStarted.md)
 
-        * [Installation](Introduction.md)
-        * [G1ANT.Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials)
-        * [Technical Support](TechnicalSupport.md)
+      * [Installation](Introduction.md)
+      * [G1ANT.Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials)
+      * [Technical Support](TechnicalSupport.md)
 
 3. [User Interface](UserInterface.md)
 
