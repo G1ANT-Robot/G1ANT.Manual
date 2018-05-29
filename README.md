@@ -1,19 +1,19 @@
 # G1ANT.Manual
 
-1. Introduction
+1. [Introduction](Introduction.md)
 
-2. Getting Started
+2. [Getting Started](GettingStarted.md)
 
-3. User Interface
+3. [User Interface](UserInterface.md)
 
-4. Script writing 
+4. [Script writing](ScriptWriting.md)
 
-5. Trigggering
+5. [Trigggering](Triggering.md)
 
-6. Configuration
+6. [Configuration](Configuration.md)
 
-7. Intellectual Property
+7. [Intellectual Property](IntellectualProperty.md)
 
-8. Tools
+8. [Tools](Tools.md)
 
-9. Additional Information
+9. [Additional Information](AdditionalInformation.md)
