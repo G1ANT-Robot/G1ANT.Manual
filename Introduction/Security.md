@@ -2,17 +2,17 @@
 
 At G1ANT, we treat IT Security and Data Protection at highest priority. To ensure full security to our clients, G1ANT.Robot implemented the following procedures:
 
-1.	G1ANT.Robot is limited to Standard User Account and Privileges – whatever the user (machine/workstation) is permitted to do, G1ANT is only restricted to those privileges
+*	G1ANT.Robot is limited to Standard User Account and Privileges – whatever the user (machine/workstation) is permitted to do, G1ANT is only restricted to those privileges
 
-2.	The Robot has built in Credentials Container, which stores fully encrypted passwords if Robot is required to access any systems or websites requiring log in details
+*	The Robot has built in Credentials Container, which stores fully encrypted passwords if Robot is required to access any systems or websites requiring log in details
 
-3.	Encrypted communication between Robots and Dashboard
+*	Encrypted communication between Robots and Dashboard
 
-4.	Fully encrypted Robot’s Script Files – to ensure that the process/robots running in production are not disturbed in any way by unauthorised users
+*	Fully encrypted Robot’s Script Files – to ensure that the process/robots running in production are not disturbed in any way by unauthorised users
 
-5.	G1ANT Robot does not require to store or send any data
+*	G1ANT Robot does not require to store or send any data
 
-6.	G1ANT is subject to the Windows Privacy Policy and the Microsoft Firewall
+*	G1ANT is subject to the Windows Privacy Policy and the Microsoft Firewall
 
 In case there is a power failure or any other situation that may disrupt the processes, we provide specially programmed triggers, which ensure, that any unfinished task shall be re-triggered.
 
