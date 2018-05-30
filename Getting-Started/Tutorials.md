@@ -29,13 +29,13 @@ keyboard ⋘alt+o⋙f⋘tab 2⋙20⋘enter⋙
 
 2. Input your text using command `keyboard`.
 
-
+![alt text](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/Getting-Started/Images/notepad2.png)
 
 3. Navigate through the interface to change the font size to 20 using command `keyboard`.
 
-
+![alt text](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/Getting-Started/Images/notepad3.png)
 
 4. Process is complete.
 
-
+![alt text](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/Getting-Started/Images/notepad4.png)
 
