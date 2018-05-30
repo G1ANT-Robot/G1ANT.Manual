@@ -10,4 +10,4 @@ Next information window will require to left click on selected place on your scr
 
 Select mouse position and press OK to confirm.
 
-![alt text](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/User-Interface/Images/mouse3.jpg)
+![alt text](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/User-Interface/Images/mouse3.png)
