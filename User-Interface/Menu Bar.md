@@ -8,27 +8,29 @@ Main robot menu.
 
 | Menu Option | Shortcut | Descritpion |
 | ----------- | -------- | ----------- |
-| New | `Ctrl+N` | Create a new robot file | 
-| Open | `Ctrl+O` | Load a robot file | 
-| Save | `Ctrl+S` | Save a robot file |
-| Save As | `Ctrl+Shift+S` | Save robot file as a new version | 
-| Close | `Ctrl+F4` | Close an active tab | 
-| Stats | `Ctrl+T` | Show process statistics | 
-| Print | `Ctrl+P` | Print a robot process | 
-| Check | `F8` | Validate a robot process | 
-| Run | `F9` | Execute a robot process | 
-| Run Debug | `Ctrl+F9` | Execute a robot process in debug mode and display the process log | 
-| Exit | `Alt+F4` | Exit the program | 
+| New | Ctrl+N | Create a new robot file | 
+| Open | Ctrl+O | Load a robot file | 
+| Save | Ctrl+S | Save a robot file |
+| Save As | Ctrl+Shift+S | Save robot file as a new version | 
+| Close | Ctrl+F4 | Close an active tab | 
+| Stats | Ctrl+T | Show process statistics | 
+| Print | Ctrl+P | Print a robot process | 
+| Check | F8 | Validate a robot process | 
+| Run | F9 | Execute a robot process | 
+| Run Debug | Ctrl+F9 | Execute a robot process in debug mode and display the process log | 
+| Exit | Alt+F4 | Exit the program | 
 
 ### Edit Menu
 
-|_. Undo | Ctrl + Z | Undo edit operation |
-|_. Redo | Ctrl + Shift + Z | Redo edit operation |
-|_. Select All | Ctrl + A | Select all text |
-|_. Cut | Ctrl + X | Cut the selected text to clipboard |
-|_. Copy | Ctrl + C | Copy the selected text to clipboard |
-|_. Paste | Ctrl + V | Paste a clipboard content |
-|_. Find | Ctrl + F | Find text | "See also: Windows - Find":{TOPIC-LINK+find-window} |
+| Menu Option | Shortcut | Descritpion |
+| ----------- | -------- | ----------- |
+| Undo | Ctrl + Z | Undo edit operation |
+| Redo | Ctrl + Shift + Z | Redo edit operation |
+| Select All | Ctrl + A | Select all text |
+| Cut | Ctrl + X | Cut the selected text to clipboard |
+| Copy | Ctrl + C | Copy the selected text to clipboard |
+| Paste | Ctrl + V | Paste a clipboard content |
+| Find | Ctrl + F | Find text | "See also: Windows - Find":{TOPIC-LINK+find-window} |
 
 h3. Insert Menu
 
