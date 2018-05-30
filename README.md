@@ -16,8 +16,7 @@
 * [Technical Support](Getting-Started/Technical-Support.md)
 
 ## 3. [User Interface](User-Interface)
-      
-* [Menu Bar](User-Interface/Menu-Bar.md)
+
 * [System Tray Menu](User-Interface/System-Tray-Menu.md)
 * [Command Line](User-Interface/Command-Line.md)
 * [Troubleshooting And History](User-Interface/Troubleshooting-And-History.md)
@@ -25,7 +24,6 @@
 ## 4. [Script Writing](Script-Writing)
 
 * [Syntax](Script-Writing/Syntax.md)
-* [Errors](Script-Writing/Errors.md)
 * [RobotFiles](Script-Writing/Robot-Files.md)
 * [Addons](https://github.com/G1ANT-Robot)
     * [G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)
