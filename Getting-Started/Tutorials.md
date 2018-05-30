@@ -13,7 +13,7 @@
 7. If you want to return to G1ANT.Robot just double click “G” icon on windows tray.
 
 Below we present a simple process that launches Notepad, enters a sample text and changes font size to 20.
-On its basis you will get used to command program and keyboard.
+On its basis you will get used to command `program` and `keyboard`.
 
 ```G1ANT
 program notepad
