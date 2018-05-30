@@ -6,7 +6,7 @@
 
 1. Run G1ANT.Robot program
 2. Press Ctrl+N to create a new robot (while having cursor inside of G1ANT.Robot window)
-3. Enter your commands, for example: program ‴notepad‴
+3. Enter your commands, for example: `program notepad`
 4. Press F9 to execute the robot and check if everything works properly, then close the Notepad’s window to get back to G1ANT.Robot
 5. Press Ctrl+S to save the robot on your drive and enter file name, for example Start Notepad
 6. Press F7 to hide G1ANT.Robot program (program will be working in the background)
