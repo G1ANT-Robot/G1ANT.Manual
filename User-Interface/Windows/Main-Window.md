@@ -1,6 +1,6 @@
-# Main window
+# Main Window
 
-
+![alt text](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/User-Interface/Images/main-window.jpg)
 
 ### 1. Title bar
 
