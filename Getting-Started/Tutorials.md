@@ -25,7 +25,7 @@ keyboard ⋘alt+o⋙f⋘tab 2⋙20⋘enter⋙
 
 1. Robot opens notepad using command `program`.
 
-
+![alt text](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/Getting-Started/Images/notepad1.png)
 
 2. Input your text using command `keyboard`.
 
