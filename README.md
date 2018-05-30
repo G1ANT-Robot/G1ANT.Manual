@@ -50,9 +50,7 @@
 * Addons
     * [G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)
     * [G1ANT.Addon.IExplorer](https://github.com/G1ANT-Robot/G1ANT.Addon.IExplorer)
-    * [G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)
     * [G1ANT.Addon.Selenium](https://github.com/G1ANT-Robot/G1ANT.Addon.Selenium)
-    * [G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)
     * [G1ANT.Addon.Watson](https://github.com/G1ANT-Robot/G1ANT.Addon.Watson)
     * [G1ANT.Addon.Xlsx](https://github.com/G1ANT-Robot/G1ANT.Addon.Xlsx)
     * [G1ANT.Addon.MSOffice](https://github.com/G1ANT-Robot/G1ANT.Addon.MSOffice)
