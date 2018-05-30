@@ -1,7 +1,5 @@
 # Stats
 
-## Stats Window
-
 ![alt text](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/User-Interface/Images/stats.jpg)
 
 ### Displays process statistics:
