@@ -78,7 +78,7 @@
     * [Search Place](SearchPlace.md)
     * [Text](Text.md)
     * [Variable](Variable.md)
-    * [variable Index](variableIndex.md)
+    * [Variable Index](variableIndex.md)
     * [Key Code](KeyCode.md)
 * [General Windows Shortcuts](GeneralWindowsShortcuts.md)
     * [General Shortucts](GeneralShortcuts.md)
