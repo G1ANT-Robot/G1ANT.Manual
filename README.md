@@ -143,6 +143,6 @@
             * [process](process.md)
             * [checkpoint](checkpoint.md)
             * [processinstance](processinstance.md)
-* [Automation Methods](AutomationMethods.md)
+    * [Automation Methods](AutomationMethods.md)
 
 ## 9. [Additional Information](AdditionalInformation.md)
