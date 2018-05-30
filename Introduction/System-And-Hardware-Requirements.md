@@ -2,7 +2,7 @@
 
 G1ANT.Robot requires as below:
 
-### Software requirements:
+### Software Requirements:
 
 * .NET Framework 4.5.2 or above
 * Supported client OS:
@@ -16,7 +16,7 @@ G1ANT.Robot requires as below:
 * Windows 7 SP1
 * Windows Vista SP2
 
-### Hardware requirements:
+### Hardware Requirements:
 
 Processor 1 GHz
 RAM 512 MB
