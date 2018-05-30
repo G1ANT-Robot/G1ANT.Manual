@@ -6,17 +6,18 @@ Main robot menu.
 
 ### Process Menu
 
-| New | Ctrl + N | Create a new robot file | |
-| Open | Ctrl + O | Load a robot file | |
-| Save | Ctrl + S | Save a robot file | |
-| Save As | Ctrl + Shift + S | Save robot file as a new version | |
-| Close | Ctrl + F4 | Close an active tab | |
-| Stats | Ctrl + T | Show process statistics | "See also: Windows - Stats":{TOPIC-LINK+stats} |
-| Print | Ctrl + P | Print a robot process | |
-| Check | F8 | Validate a robot process | |
-| Run | F9 | Execute a robot process | |
-| Run Debug | Ctrl +F9 | Execute a robot process in debug mode and display the process log | |
-| Exit | Alt + F4 | Exit the program | |
+
+| New | Ctrl + N | Create a new robot file | 
+| Open | Ctrl + O | Load a robot file | 
+| Save | Ctrl + S | Save a robot file |
+| Save As | Ctrl + Shift + S | Save robot file as a new version | 
+| Close | Ctrl + F4 | Close an active tab | 
+| Stats | Ctrl + T | Show process statistics | 
+| Print | Ctrl + P | Print a robot process | 
+| Check | F8 | Validate a robot process | 
+| Run | F9 | Execute a robot process | 
+| Run Debug | Ctrl +F9 | Execute a robot process in debug mode and display the process log | 
+| Exit | Alt + F4 | Exit the program | 
 
 ### Edit Menu
 
