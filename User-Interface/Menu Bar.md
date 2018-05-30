@@ -7,7 +7,7 @@ Main robot menu.
 ### Process Menu
 
 | New | Ctrl + N | Create a new robot file |
-| --- |
+| --- |          |                         |
 |_. Open | Ctrl + O | Load a robot file |
 |_. Save | Ctrl + S | Save a robot file |
 |_. Save As | Ctrl + Shift + S | Save robot file as a new version |
