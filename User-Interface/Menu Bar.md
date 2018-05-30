@@ -6,12 +6,7 @@ Main robot menu.
 
 ### Process Menu
 
-
-
-| Command | Description |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
-
+| --- | --- | --- |
 | New | Ctrl + N | Create a new robot file | 
 | Open | Ctrl + O | Load a robot file | 
 | Save | Ctrl + S | Save a robot file |
