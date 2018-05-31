@@ -15,12 +15,6 @@
 * [Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials)
 * [Technical Support](Getting-Started/Technical-Support.md)
 
-## 3. [User Interface](User-Interface)
-
-* [System Tray Menu](User-Interface/System-Tray-Menu.md)
-* [Command Line](User-Interface/Command-Line.md)
-* [Troubleshooting And History](User-Interface/Troubleshooting-And-History.md)
-
 ## 4. [Script Writing](Script-Writing)
 
 * [Syntax](Script-Writing/Syntax.md)
