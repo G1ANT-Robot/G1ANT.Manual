@@ -17,7 +17,7 @@
 
 ## 3. [G1ANT.Language](G1ANT-Lanugage)
 
-* [Commands](G1ANT-Language/Commands)
+* **[Commands](G1ANT-Language/Commands)**
     * [chrome](G1ANT-Language/Commands/chrome.md)
     * [color](G1ANT-Language/Commands/color.md)
     * [color.expected](G1ANT-Language/Commands/color-expected.md)
@@ -53,13 +53,13 @@
     * [waitfor.file](G1ANT-Language/Commands/waitfor-file.md)
     * [waitfor.window](G1ANT-Language/Commands/waitfor-window.md)
     * [window](G1ANT-Language/Commands/window.md)
-* [Control Flow Commands](G1ANT-Lanugage/Control-Flow-Commands)
+* **[Control Flow Commands](G1ANT-Lanugage/Control-Flow-Commands)**
     * [Jump](G1ANT-Lanugage/Control-Flow-Commands/Jump.md)
     * [Loop](G1ANT-Lanugage/Control-Flow-Commands/Loop.md)
     * [Procedure](G1ANT-Lanugage/Control-Flow-Commands/Procedure.md)
     * [Call](G1ANT-Lanugage/Control-Flow-Commands/Call.md)
-* [Common Arguments](Script-Writing/Common-Arguments.md)
-* [Structures](G1ANT-Lanugage/Structures)
+* **[Common Arguments](Script-Writing/Common-Arguments.md)**
+* **[Structures](G1ANT-Lanugage/Structures)**
     * [bool](G1ANT-Lanugage/Structures/bool.md)
     * [date](G1ANT-Lanugage/Structures/date.md)
     * [datetime](G1ANT-Lanugage/Structures/datetime.md)
@@ -74,10 +74,10 @@
     * [json](G1ANT-Lanugage/Structures/json.md)
     * [html](G1ANT-Lanugage/Structures/html.md)
     * [xml](G1ANT-Lanugage/Structures/xml.md)
-* [Variables](G1ANT-Lanugage/Variables)
+* **[Variables](G1ANT-Lanugage/Variables)**
     * [Special Variables](G1ANT-Language/Variables/Special-Variables.md)
     * [Creating New Variables](Script-Writing/Variables/Creating-New-Variables.md)
-* [Special Characters](Script-Writing/Special-Characters)
+* **[Special Characters](Script-Writing/Special-Characters)**
     * [Comment](Script-Writing/Special-Characters/Comment.md)
     * [Array Separator](Script-Writing/Special-Characters/Array-Separator.md)
     * [Macro](Script-Writing/Special-Characters/Macro.md)
@@ -86,7 +86,7 @@
     * [Variable](Script-Writing/Special-Characters/Variable.md)
     * [Variable Index](Script-Writing/Special-Characters/Variable-Index.md)
     * [Key Code](Script-Writing/Special-Characters/Key-Code.md)
-* [Triggers](G1ANT-Language/Triggers)
+* **[Triggers](G1ANT-Language/Triggers)**
     * [File Trigger](G1ANT-Language/Triggers/File-Trigger.md)
     * [Schedule Trigger](G1ANT-Language/Triggers/Schedule-Trigger.md)
     * [Mail Trigger](G1ANT-Language/Triggers/Mail-Trigger.md)
