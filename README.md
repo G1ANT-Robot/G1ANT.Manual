@@ -22,6 +22,7 @@
     * [Jump](G1ANT-Lanugage/Control-Flow-Commands/Jump.md)
     * [Loop](G1ANT-Lanugage/Control-Flow-Commands/Loop.md)
     * [Procedure](G1ANT-Lanugage/Control-Flow-Commands/Procedure.md)
+    * [Call](G1ANT-Lanugage/Control-Flow-Commands/Call.md)
 * [Common Arguments](Script-Writing/Common-Arguments.md)
 * [Structures](G1ANT-Lanugage/Structures)
     * [bool](G1ANT-Lanugage/Structures/bool.md)
@@ -70,18 +71,3 @@
     * [G1ANT.Addon.Ocr.Google](https://github.com/G1ANT-Robot/G1ANT.Addon.Ocr.Google)
     * [G1ANT.Addon.Ocr.Tesseract](https://github.com/G1ANT-Robot/G1ANT.Addon.Ocr.Tesseract)
     * [G1ANT.Addon.Ocr.AbbyyFineReader](https://github.com/G1ANT-Robot/G1ANT.Addon.Ocr.AbbyyFineReader)
-
-
-* [General Windows Shortcuts](Script-Writing/General-Windows-Shortcuts.md)
-    * [General Shortucts](Script-Writing/General-Windows-Shortcuts/GeneralShortcuts.md)
-    * [Windows Key Shortcuts](Script-Writing/General-Windows-Shortcuts/Windows-Key-Shortcuts.md)
-* [Regular Expressions](Script-Writing/Regular-Expressions)
-    * [What Is Regex](Script-Writing/Regular-Expressions/What-Is-Regex.md)
-    * [Essentials](Script-Writing/Regular-Expressions/Essentials.md)
-    * [Ready Solutions](Script-Writing/Regular-Expressions/Ready-Solutions.md)
-* [Including C# Macros](Script-Writing/Including-C#-Macros)
-    * [About C#](Script-Writing/Including-C#-Macros/About-C#.md)
-    * [Ready Solutions](Script-Writing/Including-C#-Macros/Ready-Solutions.md)
-* [Tips For Coding And Testing Processes](Script-Writing/Tips-For-Coding-And-Testing-Processes.md)
-* [Most Frequent Mistakes](Script-Writing/Most-Frequent-Mistakes.md)
-
