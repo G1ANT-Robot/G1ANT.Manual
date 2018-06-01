@@ -59,7 +59,7 @@
 
 ## 4. [G1ANT Addons](G1ANT-Addons)
 
-* [G1ANT.Addon.Core] - contained in G1ANT.Language
+* [G1ANT.Addon.Core](G1ANT-Lanugage) - contained in G1ANT.Language
 * [G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)
 * [G1ANT.Addon.IExplorer](https://github.com/G1ANT-Robot/G1ANT.Addon.IExplorer)
 * [G1ANT.Addon.Selenium](https://github.com/G1ANT-Robot/G1ANT.Addon.Selenium)
