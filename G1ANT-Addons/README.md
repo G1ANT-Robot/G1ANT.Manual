@@ -1,6 +1,6 @@
 # G1ANT Addons
 
-Here is a list of all G1ANT Addons that are public on Github and not only can you view the code but also descriptions of every command in .md files. Click the link and try it yourself! 
+Here is a list of all G1ANT Addons that are public on Github and not only can you view the code but also descriptions of every command in .md files.
 
 * [G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)
 * [G1ANT.Addon.IExplorer](https://github.com/G1ANT-Robot/G1ANT.Addon.IExplorer)
