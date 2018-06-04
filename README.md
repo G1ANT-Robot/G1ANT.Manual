@@ -94,7 +94,7 @@
 
 ## 4. [G1ANT Addons](G1ANT-Addons)
 
-* **[G1ANT.Addon.Core](G1ANT-Lanugage)** - contained in G1ANT.Language
+* **[G1ANT.Addon.Core](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/G1ANT-Language)** - contained in G1ANT.Language
 * **[G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)**
     * [Commands](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/tree/master/G1ANT.Addon.Net/Commands)
         * [as400.open](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/tree/master/G1ANT.Addon.Net/Commands/As400OpenCommand.md)
