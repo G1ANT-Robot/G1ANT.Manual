@@ -14,7 +14,7 @@
 See also : "Commands - label":{TOPIC-LINK+command-labels}
 See also : "Commands - jump":{TOPIC-LINK+command-jump}
 
-Example:
+**Example 1:**
 
 ```G1ANT
 jump ‴➜start‴
@@ -23,5 +23,3 @@ dialog ‴Jump over this text‴
 dialog ‴Congratulations! You've made a jump to start label!‴ 
 
 ```
-
-!{IMAGE-LINK+label}!
