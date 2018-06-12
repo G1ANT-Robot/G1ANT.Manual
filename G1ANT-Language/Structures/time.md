@@ -1,7 +1,5 @@
 # time
 
-**time (time)**
-
 The time format stores information of the time.
 
 
