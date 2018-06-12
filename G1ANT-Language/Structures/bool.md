@@ -1,6 +1,6 @@
 # bool
 
-This format is used to declare variables to store the Boolean values, true and false.
+This format is used to declare variables to store the bool values, true and false.
 
 **Examples:**
 
