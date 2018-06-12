@@ -1,9 +1,6 @@
 # integer
 
-**integer (integer)**
-
 The integer keyword denotes an integral type that stores values according to range from -2,147,483,648 to 2,147,483,647.
-
 
 
 ```G1ANT
@@ -27,5 +24,3 @@ Accessing a chosen digit:
 dialog ♥i
 
 ```
-
-!{IMAGE-LINK+int-1}!
