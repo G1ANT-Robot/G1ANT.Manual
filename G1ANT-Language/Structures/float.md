@@ -1,7 +1,5 @@
 # float
 
-**float**
-
 The float keyword signifies a simple type that stores 32-bit floating-point values in an approximate range: 
 
 
