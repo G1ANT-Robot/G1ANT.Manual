@@ -1,4 +1,4 @@
-# boolean (bool)
+# bool (bool)
 
 This format is used to declare variables to store the Boolean values, true and false.
 
