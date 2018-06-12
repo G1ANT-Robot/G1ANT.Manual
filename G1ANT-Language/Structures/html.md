@@ -5,18 +5,19 @@
 HTML format stores values of imported html files.
 A html file can be imported into Robot using "text.read":{TOPIC-LINK+command-text-read} command. It is imported as a string by default. It can be then converted to the **html** format, to enable various operations on the data.
 
-**Examples:**
 
-Example 1
+
+**Example 1:**
 
 This example shows how htmls can be declared:
 
 ```G1ANT
 text.read filename ‴C:\html.txt‴ result ‴htmlString‴
 ♥myhtml = (html)♥htmlString
+
 ```
 
-Example 2
+**Example 2:**
 
 Different parts of the html can be accessed as follows:
 
@@ -25,6 +26,7 @@ text.read filename ‴C:\html.txt‴ result ‴htmlString‴
 ♥myhtml = (html)♥htmlString
 dialog ♥myhtml
 dialog ♥myhtml⟦//body/table⟧
+
 ```
 
 !{IMAGE-LINK+html1}!   !{IMAGE-LINK+html2}! 
@@ -37,6 +39,7 @@ Not only can these parts be read, but also written:
 dialog ♥myhtml
  
 !{IMAGE-LINK+html3}! 
+
 ```
 
 Please note, that the root of file has to be addressed with a `/`, so before the html path `//` must be added.

@@ -4,18 +4,19 @@
 
 A string is an object of type String which stores text value.
 
-**Examples:**
 
-Example 1
+
+**Example 1:**
 
 This example shows how string variable can be declared.
 
 ```G1ANT
 ♥text1 = ‴G1ANT‴
 ♥text2 = (string)‴Please call our support.‴
+
 ```
 
-Example 2
+**Example 2:**
 
 This example shows how to place special characters like enter (
 ), tabulator(\t), etc. Before it will be inserted anywhere by `keyboard` command it needs to be stored in some variable (♥test as an example).
@@ -26,6 +27,7 @@ program notepad
 Tabulator\t "tab" 
 Special chars:" \ / {(}{)}‴
 keyboard ♥test
+
 ```
 
 !{IMAGE-LINK+string-enter}! 
@@ -38,6 +40,7 @@ Characters in a string can be addressed using the notation of:
 dialog ♥mytext⟦4⟧
 -addressing characters from 4 to 13 of the string
 dialog ♥mytext⟦4:13⟧
+
 ```
 
 !{IMAGE-LINK+var-ind-1}!   !{IMAGE-LINK+var-ind-2}!
