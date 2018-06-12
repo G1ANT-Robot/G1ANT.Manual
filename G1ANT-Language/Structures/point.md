@@ -1,9 +1,7 @@
 # point
 
-**point (point)**
 
 A point format stores values of position. It is specified in pixels: x,y.
-
 
 
 This example shows how points can be declared:
@@ -24,7 +22,6 @@ dialog ♥pnt⟦y⟧
 
 ```
 
-!{IMAGE-LINK+point-1}!   !{IMAGE-LINK+point-2}! 
 
 ```G1ANT
 ♥pnt = 935⫽580
@@ -32,5 +29,3 @@ dialog ♥pnt⟦y⟧
 dialog ♥pnt
 
 ```
-
-!{IMAGE-LINK+point-3}!
