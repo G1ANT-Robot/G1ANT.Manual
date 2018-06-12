@@ -1,11 +1,7 @@
 # html
 
-**html (html)**
-
 HTML format stores values of imported html files.
 A html file can be imported into Robot using "text.read":{TOPIC-LINK+command-text-read} command. It is imported as a string by default. It can be then converted to the **html** format, to enable various operations on the data.
-
-
 
 **Example 1:**
 
@@ -29,16 +25,13 @@ dialog ♥myhtml⟦//body/table⟧
 
 ```
 
-!{IMAGE-LINK+html1}!   !{IMAGE-LINK+html2}! 
-
 Not only can these parts be read, but also written:
 
 ```G1ANT
 -now let's clear whole body of html:
 ♥myhtml⟦//body⟧ = ‴cleared‴ 
 dialog ♥myhtml
- 
-!{IMAGE-LINK+html3}! 
+
 
 ```
 
