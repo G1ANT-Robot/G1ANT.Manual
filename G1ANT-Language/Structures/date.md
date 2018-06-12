@@ -1,12 +1,10 @@
 # date
 
-h3. date ⟦date⟧
+**date ⟦date⟧**
 
 The date format stores information about the date.
 
-**Examples:**
-
-Example 1
+**Example 1:**
 
 This example shows how dates can be declared. Please note that while declaring a date, you need to force the type by using `⟦date⟧` formula before declaring the content of the variable inside of ‴ ‴.
 As for the format of date, you can either use `/` or `.`
@@ -22,7 +20,7 @@ As for the format of date, you can either use `/` or `.`
 ```
 
 
-Example 2
+**Example 2:**
 
 Elements of date (year, month, day) can be accessed as follows:
 
