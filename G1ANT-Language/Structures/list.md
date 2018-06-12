@@ -1,7 +1,5 @@
 # list
 
-**list**
-
 **Syntax:**
 
 ```G1ANT
@@ -23,7 +21,6 @@ A new element can also be added to the existing table (see **Example 2:** &amp; 
 To count the number of list elements, follow the variable's name with `⟦count⟧` (see **Example 4:**).
 
 
-
 **Example 1:**
 
 ```G1ANT
@@ -32,7 +29,6 @@ dialog ♥arr[0]
 
 ```
 
-!{IMAGE-LINK+2016-11-21}! 
 
 **Example 2:**
 
@@ -41,5 +37,3 @@ dialog ♥arr[0]
 dialog ♥arr⟦count⟧
 
 ```
-
-!{IMAGE-LINK+2016-11-21-3}!
