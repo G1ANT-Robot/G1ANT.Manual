@@ -1,7 +1,5 @@
 # datetime
 
-**datetime ⟦datetime⟧**
-
 A datetime format stores information about date and time. 
 
 **Example 1:**
