@@ -1,6 +1,6 @@
 # rectangle
 
-h3. rectangle (rectangle)
+**rectangle (rectangle)**
 
 A rectangle format is designed to store co-ordinates of two rectangle's corners. It has to be specified as top left and bottom right corners' co-ordinates (in pixels): x1⫽y1⫽x2⫽y2. Where x1⫽y1 are the co-ordinates of top left corner and x2⫽y2 are the coordinates of bottom right corner.
 
@@ -10,7 +10,6 @@ This example shows how rectangles can be declared:
 
 ```G1ANT
 ♥rect = 2⫽4⫽12⫽40 
-
 ```
 
 Rectangles can also be easily inserted from Robot's Menu Insert -&gt; rectangle, or using shortcut `ctrl+r`
@@ -22,7 +21,6 @@ dialog ♥rect⟦width⟧
 dialog ♥rect⟦height⟧
 dialog ♥rect⟦left⟧
 dialog ♥rect⟦top⟧
-
 ```
 
 !{IMAGE-LINK+rect-1}!  !{IMAGE-LINK+rect-2}!  !{IMAGE-LINK+rect-3}!  !{IMAGE-LINK+rect-4}! 

@@ -1,6 +1,6 @@
 # time
 
-h3. time (time)
+**time (time)**
 
 The time format stores information of the time.
 
@@ -13,7 +13,6 @@ Also- please, always insert the time format inside of ‴ ‴.
 
 ```G1ANT
 ♥mytime=⟦time⟧‴10:30‴
-
 ```
 
 ```G1ANT

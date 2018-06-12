@@ -4,7 +4,6 @@
 
 ```G1ANT
 ➜label
-
 ```
 
 **Description:**
@@ -21,7 +20,6 @@ jump ‴➜start‴
 dialog ‴Jump over this text‴
 ➜start 
 dialog ‴Congratulations! You've made a jump to start label!‴ 
-
 ```
 
 !{IMAGE-LINK+label}!

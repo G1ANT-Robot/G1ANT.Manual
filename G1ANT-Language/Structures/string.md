@@ -1,6 +1,6 @@
 # string
 
-h3. string (string)
+**string (string)**
 
 A string is an object of type String which stores text value.
 
@@ -13,7 +13,6 @@ This example shows how string variable can be declared.
 ```G1ANT
 ♥text1 = ‴G1ANT‴
 ♥text2 = (string)‴Please call our support.‴
-
 ```
 
 Example 2
@@ -27,7 +26,6 @@ program notepad
 Tabulator\t "tab" 
 Special chars:" \ / {(}{)}‴
 keyboard ♥test
-
 ```
 
 !{IMAGE-LINK+string-enter}! 
@@ -40,7 +38,6 @@ Characters in a string can be addressed using the notation of:
 dialog ♥mytext⟦4⟧
 -addressing characters from 4 to 13 of the string
 dialog ♥mytext⟦4:13⟧
-
 ```
 
 !{IMAGE-LINK+var-ind-1}!   !{IMAGE-LINK+var-ind-2}!

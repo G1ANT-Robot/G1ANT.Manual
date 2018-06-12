@@ -1,6 +1,6 @@
 # list
 
-h3. list
+**list**
 
 **Syntax:**
 
@@ -8,7 +8,6 @@ h3. list
 ♥list = ‴value1‴❚‴value 2‴❚‴value 3‴
 dialog ♥list 
 dialog ♥list⟦2⟧ 
-
 ```
 
 **Description:**
@@ -29,7 +28,6 @@ Example 1
 ```G1ANT
 ♥arr = ‴apple‴❚‴mango‴❚‴melon‴❚‴kiwi‴
 dialog ♥arr[0]
-
 ```
 
 !{IMAGE-LINK+2016-11-21}! 
@@ -39,7 +37,6 @@ Example 2
 ```G1ANT
 ♥arr = ‴apple‴❚‴mango‴❚‴melon‴❚‴kiwi‴
 dialog ♥arr⟦count⟧
-
 ```
 
 !{IMAGE-LINK+2016-11-21-3}!
