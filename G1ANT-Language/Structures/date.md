@@ -1,7 +1,5 @@
 # date
 
-**date ⟦date⟧**
-
 The date format stores information about the date.
 
 **Example 1:**
