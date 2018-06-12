@@ -1,14 +1,8 @@
 # float
 
-**float**
-
 The float keyword signifies a simple type that stores 32-bit floating-point values in an approximate range:
 
-!{IMAGE-LINK+float}! 
-
-**Examples:**
-
-Example 1
+**Example 1:**
 
 ```G1ANT
 ♥num = ‴(float)1.345‴
