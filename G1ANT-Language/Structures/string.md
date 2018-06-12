@@ -1,7 +1,5 @@
 # string
 
-**string (string)**
-
 A string is an object of type String which stores text value.
 
 
@@ -30,8 +28,6 @@ keyboard ♥test
 
 ```
 
-!{IMAGE-LINK+string-enter}! 
-
 Characters in a string can be addressed using the notation of:
 
 ```G1ANT
@@ -42,5 +38,3 @@ dialog ♥mytext⟦4⟧
 dialog ♥mytext⟦4:13⟧
 
 ```
-
-!{IMAGE-LINK+var-ind-1}!   !{IMAGE-LINK+var-ind-2}!
