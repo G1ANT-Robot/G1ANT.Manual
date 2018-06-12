@@ -1,9 +1,6 @@
 # xml
 
-**xml (xml)**
-
 Xml format stores values of imported xmlfiles. An xml file can be imported into Robot using "text.read":{TOPIC-LINK+command-text-read} command. It is imported as a string by default. It can be then converted to the **xml** format, to enable various operations on the data.
-
 
 
 **Example 1:**
@@ -27,8 +24,6 @@ dialog ♥xmlString
 dialog ♥myxml⟦/CATALOG/PLANT[3]/PRICE⟧
 
 ```
-
-!{IMAGE-LINK+xml1}!   !{IMAGE-LINK+xml2}! 
 
 Not only can these parts be read, but also written:
 
