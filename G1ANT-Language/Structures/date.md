@@ -11,12 +11,10 @@ As for the format of date, you can either use `/` or `.`
 
 ```G1ANT
 ♥mydate = ⟦date⟧‴8/07/2016‴
-
 ```
 
 ```G1ANT
 ♥mydate2 = ⟦date⟧‴2.04.2017‴
-
 ```
 
 
@@ -30,7 +28,5 @@ dialog ♥mydate
 dialog ♥mydate⟦year⟧
 dialog ♥mydate⟦month⟧
 dialog ♥mydate⟦day⟧
-
 ```
 
-!{IMAGE-LINK+date1}!   !{IMAGE-LINK+date2}!   !{IMAGE-LINK+date3}!   !{IMAGE-LINK+date4}!
