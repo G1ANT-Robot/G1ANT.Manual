@@ -4,9 +4,10 @@
 
 ```G1ANT
 text.find  text ‴‴
+ ```
  
 **Description:**
-```
+
 
 Command `text.find` allows to search for text within text or variable and assign result to another variable.
 
