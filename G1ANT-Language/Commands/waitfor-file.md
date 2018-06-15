@@ -4,7 +4,6 @@
 
 ```G1ANT
 waitfor.file  path ‴‴
-
 ```
 
 **Description:**
@@ -29,7 +28,6 @@ This example waits for file specified in 'path' using `waitfor.file` command.
 
 ```G1ANT
 waitfor.file ‴ My Documents\G1ANT.Robot\ ‴
-
 ```
 
 **Example 2:**
@@ -38,5 +36,4 @@ waitfor.file ‴ My Documents\G1ANT.Robot\ ‴
 waitfor.file path ‴C:\Users\♥environment⟦USERNAME⟧\Desktop\test.txt‴ timeout 10000 
 errormessage ‴no file‴
 dialog message ‴file found‴
-
 ```

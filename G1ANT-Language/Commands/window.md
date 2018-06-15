@@ -4,7 +4,6 @@
 
 ```G1ANT
 window  title ‴‴ 
-
 ```
 
 **Description:**
@@ -26,7 +25,7 @@ This command is contained in **G1ANT.Language.dll**.
 
 In order to access the names of all opened windows, you can use  `CTRL+W` shortcut.
 
-!{IMAGE-LINK+2017-11-30-window}! 
+ 
 
 **Example 1:**
 
@@ -36,10 +35,9 @@ In this example we want to activate Notepad window. In order to do this, despite
 window ‴✱Notepad‴
 window  ‴✱Notepad✱‴
 window ‴filename✱pad‴
-
 ```
 
-!{IMAGE-LINK+2016-11-18-17}! 
+ 
 
 **Example 2:**
 
@@ -47,7 +45,6 @@ window ‴filename✱pad‴
 window ‴✱notepad✱‴ style minimize
 window ‴✱notepad✱‴ style restore
 window ‴✱notepad✱‴ style maximize
-
 ```
 
 **Video example 1:**

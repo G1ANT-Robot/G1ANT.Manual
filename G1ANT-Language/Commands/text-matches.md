@@ -4,7 +4,6 @@
 
 ```G1ANT
 text.matches  text ‴‴  regexes ‴‴
-
 ```
 
 **Description:**

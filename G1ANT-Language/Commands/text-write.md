@@ -4,7 +4,6 @@
 
 ```G1ANT
 text.write  text ‴‴  filename ‴‴ 
-
 ```
 
 **Description:**
@@ -31,12 +30,10 @@ This command is contained in **G1ANT.Language.dll**.
 ```G1ANT
 text.write text ‴⊂System.Environment.NewLine⊃Lorem Ipsum‴ filename ‴C:\tests\test.txt‴ 
 writemode ‴Append‴
-
 ```
 
 **Example 2:**
 
 ```G1ANT
 text.write text ‴Lorem Ipsum‴ filename ‴C:\tests\test.txt‴ writemode ‴CreateOnly‴
-
 ```

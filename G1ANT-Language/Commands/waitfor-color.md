@@ -4,7 +4,6 @@
 
 ```G1ANT
 waitfor.color  position ‴‴  color ‴‴
-
 ```
 
 **Description:**
@@ -31,7 +30,6 @@ This command is contained in **G1ANT.Language.dll**.
 ```G1ANT
 waitfor.color position ‴300⫽300‴ color ‴FFFFFF‴ relative true
 dialog ♥result 
-
 ```
 
-!{IMAGE-LINK+waitforcolo}!
+

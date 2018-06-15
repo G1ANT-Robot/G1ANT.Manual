@@ -4,7 +4,6 @@
 
 ```G1ANT
 text.replace  text ‴‴ replace ‴‴
-
 ```
 
 **Description:**
@@ -33,7 +32,6 @@ This command is contained in **G1ANT.Language.dll**.
 ♥source = ‴Name: John Surname: Smith‴
 text.replace ♥source search ‴John‴ replace ‴Tom‴ result ♥name
 dialog ♥name
-
 ```
 
 **Example 2:**
@@ -45,16 +43,15 @@ text.read filename ‴C:\Users\user1\Desktop\tests\textwritetest.txt‴ result �
 dialog ♥read
 text.replace text ♥read search ‴distributing‴ replace ‴flying‴ result ♥newText
 dialog ♥newText
-
 ```
 
 This is some text from our file:
 
-!{IMAGE-LINK+2017-11-28-text-replace}! 
+ 
 
 `text.replace` command replaces word 'distributing' with 'flying'.
 
-!{IMAGE-LINK+2017-11-28-text-replace-1}! 
+ 
 
 **Example 3:**
 
@@ -64,7 +61,6 @@ In this example, G1ANT.Robot searches for a word using regex expression and exch
 ♥loremIpsum = ‴It's a fez. I wear a fez now. Fezes are cool. You hit me with a cricket bat. Saving the world with meals on wheels. I hate yogurt. It's just stuff with bits in.‴
 text.replace text ♥loremIpsum regex ‴\b\w{3}\b‴ replace ‴fox‴ result ♥NN1
 dialog ♥NN1
-
 ```
 
-!{IMAGE-LINK+2017-11-28-text-replace-2}!
+

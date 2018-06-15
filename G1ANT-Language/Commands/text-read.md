@@ -4,7 +4,6 @@
 
 ```G1ANT
 text.read  filename ‴‴
-
 ```
 
 **Description:**
@@ -30,7 +29,6 @@ This command is contained in **G1ANT.Language.dll**.
 ```G1ANT
 text.read filename ‴C:\tests\test.txt‴ result ♥read
 dialog ♥read 
-
 ```
 
-!{IMAGE-LINK+2017-11-28-text-read}!
+

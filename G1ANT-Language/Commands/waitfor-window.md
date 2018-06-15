@@ -4,7 +4,6 @@
 
 ```G1ANT
 waitfor.window  title ‴‴
-
 ```
 
 **Description:**
@@ -31,10 +30,9 @@ This example opens notepad using `program` command, then opens firefox using `se
 program notepad timeout 5000
 selenium.open type ‴firefox‴ url ‴http://google.pl‴
 waitfor.window title ‴Untitled - Notepad‴ timeout 5000 
-
 ```
 
- !{IMAGE-LINK+waitforwindow}! 
+  
 
 **Example 2:**
 
@@ -42,5 +40,4 @@ waitfor.window title ‴Untitled - Notepad‴ timeout 5000
 ie.open url ‴g1ant.com‴
 excel.open
 waitfor.window title ‴G1ANT - Internet Explorer‴ timeout 10000
-
 ```
