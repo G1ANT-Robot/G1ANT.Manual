@@ -4,7 +4,6 @@
 
 ```G1ANT
 color.find  color ‴‴  position ‴‴  direction ‴‴ 
-
 ```
 
 **Description:**
@@ -34,13 +33,12 @@ This example shows how to find the first pixel which has required color (‴FFFF
 ```G1ANT
 color.find color ‴FFFFFF‴ position ‴50⫽500‴ direction ‴down‴ relative false 
 dialog ♥result  
-
 ```
 
 The dialog box will show the result '50//500', because it turns out the first pixel in the position we specified is white.
 
-!{IMAGE-LINK+2017-12-04-color-find-1}! 
+ 
 
 You can see the position of the pixel- it is marked with blue color, but the pixel itself is white.
 
-!{IMAGE-LINK+2017-12-04-color-find}!
+

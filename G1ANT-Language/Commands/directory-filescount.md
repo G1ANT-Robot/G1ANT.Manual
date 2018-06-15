@@ -4,7 +4,6 @@
 
 ```G1ANT
 directory.filescount  path ‴‴ 
-
 ```
 
 **Description:**
@@ -32,9 +31,8 @@ This example shows how to calculate the number of files with '.docx' extension o
 ```G1ANT
 directory.filescount path ‴C:\Users\user1\Desktop‴ pattern ‴**.docx‴ result ♥count
 dialog ♥count  
-
 ```
 
 The dialog window will show '2' result as there are only two .'docx' files
 
-!{IMAGE-LINK+2017-12-04-directory-files-count}!
+

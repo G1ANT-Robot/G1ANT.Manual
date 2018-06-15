@@ -4,7 +4,6 @@
 
 ```G1ANT
 process.kill  name ‴‴
-
 ```
 
 **Description:**
@@ -36,5 +35,4 @@ process.kill name ‴notepad‴
 process.kill name ‴excel‴
 process.kill name ‴iexplorer‴
 process.kill name ‴firefox‴
-
 ```

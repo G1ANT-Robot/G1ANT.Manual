@@ -4,7 +4,6 @@
 
 ```G1ANT
 random.string  length ‴‴ 
-
 ```
 
 **Description:**
@@ -35,17 +34,15 @@ This example generates random string using `random.string` command, generated st
 ```G1ANT
 random.string length 23  casesensitivity true 
 dialog ♥result
-
 ```
 
-!{IMAGE-LINK+randomstring}! 
+ 
 
 **Example 2:**
 
 ```G1ANT
 random.string length 10 useletters true usenumbers true usechars false casesensitivity true result ♥ranStr
 dialog ♥ranStr 
-
 ```
 
-!{IMAGE-LINK+2017-11-30-random-string}!
+

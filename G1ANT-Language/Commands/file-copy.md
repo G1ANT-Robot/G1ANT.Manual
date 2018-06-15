@@ -4,7 +4,6 @@
 
 ```G1ANT
 file.copy  path ‴‴  destinationpath ‴‴ 
-
 ```
 
 **Description:**
@@ -31,30 +30,27 @@ This example copies specified file using `file.copy` command.
 
 ```G1ANT
 file.copy path ‴D:\New folder\test.txt‴ destinationpath ‴D:\New folder\copied_file.txt‴
-
 ```
 
 Same results can be achieved by using:
 
 ```G1ANT
 file.copy path ‴D:\New folder\test.txt‴ destinationpath ‴copied_file.txt‴
-
 ```
 
 or, if the file needs to be copied to "D:\New Folder 1", however leave the file name unchanged:
 
 ```G1ANT
 file.copy path ‴D:\New folder\test.txt‴ destinationpath ‴..\New Folder 1‴
-
 ```
 
 Before using the script:
 
-!{IMAGE-LINK+filecopy}! 
+ 
 
 After using the script:
 
-!{IMAGE-LINK+filecopy2}! 
+ 
 
 **Example 2:**
 
@@ -65,5 +61,4 @@ jump ➜end
 ➜noFile
 dialog message ‴File not found‴
 ➜end
-
 ```

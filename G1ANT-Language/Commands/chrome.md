@@ -4,7 +4,6 @@
 
 ```G1ANT
 chrome  url ‴‴ 
-
 ```
 
 **Description:**
@@ -27,10 +26,9 @@ This command is contained in **G1ANT.Language.dll.**
 
 ```G1ANT
 chrome url ‴https://www.google.co.uk/search?q=g1ant‴
-
 ```
 
-!{IMAGE-LINK+2016-11-11-1}! 
+ 
 
 This example opens a website and waits 5 seconds (thanks to "delay":{TOPIC-LINK+command-delay} command) till it loads, afterwards "keyboard":{TOPIC-LINK+command-keyboard} command emulates TAB key and presses it twice, then presses ENTER. Finally "http://irpaai.com/membership/":http://irpaai.com/membership/ opens. Sometimes the advertising banner displays on this website, so by pressing ESC key, we made sure that despite this ad, the automation will still work.
 
@@ -40,9 +38,8 @@ This example opens a website and waits 5 seconds (thanks to "delay":{TOPIC-LINK+
 chrome url ‴www.irpanetwork.com‴
 delay 5
 keyboard ⋘esc⋙⋘tab 2⋙⋘enter⋙
-
 ```
 
-!{IMAGE-LINK+2016-11-11-2}! 
+ 
 
-!{IMAGE-LINK+2016-11-18}!
+

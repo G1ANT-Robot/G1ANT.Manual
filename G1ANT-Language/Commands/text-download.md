@@ -4,7 +4,6 @@
 
 ```G1ANT
 text.download  url ‴‴
-
 ```
 
 **Description:**
@@ -32,7 +31,6 @@ In this example, G1ANT.Robot downloads text from Google to a variable named **�
 text.download url http://www.google.com result ♥clipboard
 program notepad
 keyboard ⋘ctrl+v⋙ 
-
 ```
 
-!{IMAGE-LINK+2018-01-10-text-download}!
+

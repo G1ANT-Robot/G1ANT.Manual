@@ -4,7 +4,6 @@
 
 ```G1ANT
 random.value 
-
 ```
 
 **Description:**
@@ -33,10 +32,9 @@ random.value min -1000  max 1000
 dialog ♥result
 random.value  min -1000 max 1000 
 dialog ♥result
-
 ```
 
-!{IMAGE-LINK+random1}! 
+ 
 
 
-!{IMAGE-LINK+random2}!
+

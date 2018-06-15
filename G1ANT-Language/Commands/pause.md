@@ -4,7 +4,6 @@
 
 ```G1ANT
 pause 
-
 ```
 
 **Description:**
@@ -27,14 +26,12 @@ This command is contained in **G1ANT.Language.dll**.
 
 ```G1ANT
 pause ⋘enter⋙
-
 ```
 
 **Example 2:**
 
 ```G1ANT
 pause ⋘alt+s⋙
-
 ```
 
 **Example 3:**
@@ -47,5 +44,4 @@ jump ➜end
 jump label robot
 ➜end
 dialog message ‴end‴
-
 ```

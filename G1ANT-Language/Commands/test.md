@@ -4,7 +4,6 @@
 
 ```G1ANT
 test  condition ⊂⊃ 
-
 ```
 
 **Description:**
@@ -31,10 +30,9 @@ In this example, two variables are compared. If they are not equal, **condition*
 ♥text = ‴bananas and kiwi‴
 ♥web = ‴orange‴
 test condition ⊂♥test==♥web⊃ errormessage ‴Text orange not found‴
-
 ```
 
-!{IMAGE-LINK+2016-11-18-10}!
+
 
 **Example 2:**
 
@@ -47,10 +45,9 @@ dialog ‴Yes! Chris likes bananas!‴
 stop silentmode true
 ➜banana
 dialog ‴Sorry, Chris doesn't like bananas!‴
-
 ```
 
-!{IMAGE-LINK+2016-11-18-9}! 
+ 
 
 **Example 3:**
 
@@ -58,7 +55,6 @@ dialog ‴Sorry, Chris doesn't like bananas!‴
 test condition ⊂♥environment⟦HOMEDRIVE⟧=="C:"⊃
 test condition ⊂♥environment⟦OS⟧ != "Windows_xp"⊃
 dialog message ‴System settings ok.‴ 
-
 ```
 
 **Example 4:**
@@ -67,7 +63,6 @@ dialog message ‴System settings ok.‴
 ♥text = ‴bananas and kiwi‴
 ♥web = ‴bananas and kiwi‴
 test condition ⊂♥text==♥web⊃
-
 ```
 
 **Example 5:**
@@ -76,5 +71,4 @@ test condition ⊂♥text==♥web⊃
 ♥text = ‴bananas and kiwi‴
 ♥web = ‴oranges‴
 test condition ⊂♥text==♥web⊃
-
 ```

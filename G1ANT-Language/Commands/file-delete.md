@@ -4,7 +4,6 @@
 
 ```G1ANT
 file.delete  
-
 ```
 
 **Description:**
@@ -39,7 +38,6 @@ jump ➜end
 file.delete C:\G1ANT\test.txt
 dialog ♥result
 ➜end
-
 ```
 
 **Example 2:**
@@ -48,5 +46,4 @@ Please, bear in mind that in order to delete a file, you need to have permission
 
 ```G1ANT
 file.delete filename ‴C:\Tests\TestLogo.png‴
-
 ```

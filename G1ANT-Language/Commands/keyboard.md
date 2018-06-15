@@ -4,7 +4,6 @@
 
 ```G1ANT
 keyboard
-
 ```
 
 **Description:**
@@ -35,10 +34,9 @@ This command is contained in **G1ANT.Language.dll**.
 ```G1ANT
 program notepad
 keyboard Hello!
-
 ```
 
-!{IMAGE-LINK+2016-11-18-7}! 
+ 
 
 **Example 2:**
 
@@ -46,10 +44,9 @@ keyboard Hello!
 program notepad
 keyboard ‴This is random text‴
 keyboard  ⋘ctrl+a⋙⋘ctrl+c⋙⋘right⋙⋘enter⋙⋘ctrl+v⋙
-
 ```
 
-!{IMAGE-LINK+2016-11-18-6}! 
+ 
 
 **Example 3:**
 
@@ -57,10 +54,9 @@ keyboard  ⋘ctrl+a⋙⋘ctrl+c⋙⋘right⋙⋘enter⋙⋘ctrl+v⋙
 program notepad
 keyboard ⋘alt+o⋙⋘f⋙⋘tab 2⋙20⋘enter⋙
 keyboard ‴Welcome to G1ANT Robot‴
-
 ```
 
-!{IMAGE-LINK+2016-11-18-8}! 
+ 
 
 **Example 4:**
 
@@ -78,7 +74,6 @@ window ‴Untitled✱‴
 mouse position ‴0,0‴ button ‴right‴
 delay 1
 keyboard ⋘ctrl+v⋙ window ‴last‴
-
 ```
 
 **Example 5:**
@@ -93,7 +88,6 @@ delay 1
 keyboard ⋘ctrl+a⋙⋘ctrl+c⋙
 delay 1
 keyboard ⋘ctrl+v⋙ window ‴✱Notepad‴
-
 ```
 
 **Example 6:**
@@ -103,10 +97,9 @@ This example shows how to combine character sequence, white characters and key c
 ```G1ANT
 program notepad
 keyboard ‴first line of text⋘shift down⋙⋘left 20⋙⋘shift up⋙⋘ctrl+c⋙⋘end⋙⋘enter⋙pasted line: ⋘ctrl+v⋙‴
-
 ```
 
-!{IMAGE-LINK+keyboard2}! 
+ 
 
 **Video example 1:**
 

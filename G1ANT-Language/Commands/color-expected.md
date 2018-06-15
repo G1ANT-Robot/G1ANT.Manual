@@ -4,7 +4,6 @@
 
 ```G1ANT
 color.expected  position ‴‴  color ‴‴ 
-
 ```
 
 **Description:**
@@ -37,7 +36,6 @@ jump ➜finish
 ➜notfound
 dialog ‴Color not found‴
 ➜finish
-
 ```
 
-!{IMAGE-LINK+colorexpectednotfound}!
+

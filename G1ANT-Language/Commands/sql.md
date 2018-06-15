@@ -4,7 +4,6 @@
 
 ```G1ANT
 sql query ‴‴
-
 ```
 
 **Description:**
@@ -31,5 +30,4 @@ database ‴Server=myServerAddress;Database=myDataBase;User Id=myUsername;
 Password=myPassword;‴
 sql ‴select name, surname from users‴
 dialog ‴Name: ♥name[1], Surname: ♥surname[1]‴
-
 ```

@@ -4,7 +4,6 @@
 
 ```G1ANT
 dialog.ask
-
 ```
 
 **Description:**
@@ -29,7 +28,6 @@ This command is contained in **G1ANT.Language.dll.**
 ```G1ANT
 dialog.ask result ♥name message ‴What is your name?‴
 dialog  ♥name
-
 ```
 
-!{IMAGE-LINK+2016-11-11-9}! !{IMAGE-LINK+2016-11-11-10}!
+ 

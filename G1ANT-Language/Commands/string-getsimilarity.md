@@ -4,7 +4,6 @@
 
 ```G1ANT
 string.getsimilarity  phrase1 ‴‴  phrase2 ‴‴  
-
 ```
 
 **Description:**
@@ -31,11 +30,10 @@ This command is contained in **G1ANT.Language.dll**.
 
 The example below shows comparison between two identical phrases. The result in dialog window will show '100'. 
 
-!{IMAGE-LINK+2017-11-13-string-get-similarity}! 
+ 
 
 ```G1ANT
 string.getsimilarity phrase1 ‴robot‴ phrase2 ‴robot‴ ignorecase false normalize false 
 result ♥myvar                     
 dialog ♥myvar
-
 ```

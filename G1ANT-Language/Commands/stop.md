@@ -4,7 +4,6 @@
 
 ```G1ANT
 stop
-
 ```
 
 **Description:**
@@ -27,7 +26,6 @@ This command is contained in **G1ANT.Language.dll**.
 
 ```G1ANT
 stop
-
 ```
 
 **Example 2:**
@@ -35,10 +33,9 @@ stop
 ```G1ANT
 ♥r = 3
 stop if ⊂♥r ==3⊃
-
 ```
 
-!{IMAGE-LINK+2018-01-11-stop}! 
+ 
 
 **Example 3:**
 
@@ -47,5 +44,4 @@ In this example G1ANT.Robot, thanks to setting **silentmode** argument will sile
 ```G1ANT
 ♥r = 3
 stop if ⊂♥r ==3⊃ silentmode true
-
 ```

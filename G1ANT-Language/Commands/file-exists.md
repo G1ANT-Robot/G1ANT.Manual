@@ -4,7 +4,6 @@
 
 ```G1ANT
 file.exists  filename ‴‴  
-
 ```
 
 **Description:**
@@ -34,20 +33,18 @@ jump ➜finish
 ➜notFound
 dialog ‴File doesn't exist‴
 ➜finish 
-
 ```
 
 When the file exists:
-!{IMAGE-LINK+fileexistsfound}! 
-!{IMAGE-LINK+fileexistsfounddialog}! 
+ 
+ 
 
 When the file doesn't exist and will not appear in given timeout:
-!{IMAGE-LINK+fileexistsnot-found}! 
-!{IMAGE-LINK+fileexistsnot-founddialog}! 
+ 
+ 
 
 **Example 2:**
 
 ```G1ANT
 file.exists filename ‴C:test.txt‴ errormessage ‴Sorry, I could not find file‴
-
 ```

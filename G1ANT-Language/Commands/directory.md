@@ -4,7 +4,6 @@
 
 ```G1ANT
 directory  path ‴‴ 
-
 ```
 
 **Description:**
@@ -32,10 +31,9 @@ This example shows how to easily list what provided directory contains.  In our 
 ```G1ANT
 directory path ‴C:\Users\ania\Documents\G1ANT.Robot\logs‴ pattern ‴2017-12**‴
 dialog ♥result
-
 ```
 
-!{IMAGE-LINK+2017-12-05-directory}! 
+ 
 
 **Example 2:**
 
@@ -45,10 +43,9 @@ The information displayed in dialog windows indicates that there is one file wit
 ```G1ANT
 directory path ‴♥environment⟦HOMEDRIVE⟧♥environment⟦HOMEPATH⟧\Desktop‴  pattern ‴**.txt‴ result ♥res1
 dialog ♥res1
-
 ```
 
-!{IMAGE-LINK+2017-12-05-directory-1}! 
+ 
 
 **Example 3:**
 
@@ -57,5 +54,4 @@ In this case, G1ANT.Robot will calculate the number of specified items in specif
 ```G1ANT
 directory path ‴♥environment⟦HOMEDRIVE⟧♥environment⟦HOMEPATH⟧\Desktop‴  pattern ‴**.txt‴ result ♥res1
 dialog ♥res1⟦count⟧
-
 ```

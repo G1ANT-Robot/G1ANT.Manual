@@ -4,7 +4,6 @@
 
 ```G1ANT
 color  position ‴‴  
-
 ```
 
 **Description:**
@@ -32,7 +31,6 @@ This example checks color for provided pixel (one from this green background) an
 ```G1ANT
 color position ‴610⫽507‴ relative false
 dialog ♥result
-
 ```
 
-!{IMAGE-LINK+color}!
+

@@ -4,7 +4,6 @@
 
 ```G1ANT
 delay
-
 ```
 
 **Description:**
@@ -32,7 +31,6 @@ This example opens notepad program ("program":{TOPIC-LINK+command-program} comma
 program name ‴notepad‴
 delay 4 milliseconds 500
 keyboard text ‴Hello!‴
-
 ```
 
-!{IMAGE-LINK+2016-11-11-6}!
+

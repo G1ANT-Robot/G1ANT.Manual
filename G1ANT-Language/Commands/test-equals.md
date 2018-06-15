@@ -4,7 +4,6 @@
 
 ```G1ANT
 test.equals  current ‴‴  expected ‴‴
-
 ```
 
 **Description:**
@@ -29,7 +28,6 @@ This command is contained in **G1ANT.Language.dll**.
 ♥text = ‴bananas and kiwi‴
 text.find text ♥text search ‴orange‴ result ♥test 
 test.equals current ♥test expected ‴orange‴ message ‴Text orange not found‴
-
 ```
 
 **Example 2:**
@@ -40,5 +38,4 @@ test.equals current text expected ‴Chris likes bananas‴ jump ➜banana
 dialog ‴Yes! Chris likes bananas!‴
 ➜banana
 dialog ‴Sorry, Chris doesn't like bananas!‴
-
 ```

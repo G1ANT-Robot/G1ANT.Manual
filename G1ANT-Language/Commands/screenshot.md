@@ -4,7 +4,6 @@
 
 ```G1ANT
 screenshot
-
 ```
 
 **Description:**
@@ -31,7 +30,6 @@ This example captures a screenshot using `screenshot` command and saves the scre
 ```G1ANT
 screenshot path ‴abc.jpg‴ result ♥path
 dialog ♥path 
-
 ```
 
-!{IMAGE-LINK+screenshotcommand}!
+

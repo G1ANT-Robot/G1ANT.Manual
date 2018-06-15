@@ -4,7 +4,6 @@
 
 ```G1ANT
 dialog  
-
 ```
 
 **Description:**
@@ -29,10 +28,9 @@ This example shows simple dialog with provided text.
 
 ```G1ANT
 dialog message ‴Please select correct address and press SPACE to continue‴
-
 ```
 
-!{IMAGE-LINK+2016-11-11-7}! 
+ 
 
 **Example 2:**
 
@@ -42,7 +40,6 @@ This example shows how simple string values can be concatenated and passed to di
 ♥name = Sara
 ♥hello = ‴Hello ♥name. Nice to meet you.‴
 dialog ♥hello
-
 ```
 
-!{IMAGE-LINK+2016-11-11-8}!
+
