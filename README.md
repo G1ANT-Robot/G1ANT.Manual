@@ -97,6 +97,16 @@
 * **[G1ANT.Addon.Core](https://github.com/G1ANT-Robot/G1ANT.Manual/tree/master/G1ANT-Language)** - contained in G1ANT.Language
 
 * **[G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)**
+<details><summary>    * [Commands](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/tree/master/G1ANT.Addon.Net/Commands)</summary>
+<p>
+        * [as400.open](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/As400OpenCommand.md)
+        * [is.accessible](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/IsAccessibleCommand.md)
+        * [mail.smtp](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/MailSmtpCommand.md)
+        * [ping](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/PingCommand.md)
+        * [rest](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/RestCommand.md)
+        * [vnc.connect](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/VncConnectCommand.md)
+</p>
+</details>
     * [Commands](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/tree/master/G1ANT.Addon.Net/Commands)
         * [as400.open](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/As400OpenCommand.md)
         * [is.accessible](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/IsAccessibleCommand.md)
