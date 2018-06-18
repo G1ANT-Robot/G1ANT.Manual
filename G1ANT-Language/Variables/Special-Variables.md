@@ -76,13 +76,13 @@ All special variables can be found in the menu `View/Special Variables`.
 
 `♥miliseconds = (Int)31`
 
- czy to dalej tak dziala? `♥dateformat = (Str)dd/\MM/\yyyy` - defines a date display format
+`♥dateformat = (Str)dd/\MM/\yyyy` - defines a date display format
 
- czy to dalej tak dziala? `♥date = ‴(Str)21/11/2016‴` - contains current date with format defined with dateformat variable
+`♥date = ‴(Str)21/11/2016‴` - contains current date with format defined with dateformat variable
 
- czy to dalej tak dziala? `♥timeformat = ‴(Str)HH:mm:ss‴` - defines time display format
+`♥timeformat = ‴(Str)HH:mm:ss‴` - defines time display format
 
- czy to dalej tak dziala? `♥time = ‴(Str)11:31:16‴` - contains current time with format defined with timeformat variable
+`♥time = ‴(Str)11:31:16‴` - contains current time with format defined with timeformat variable
 
 `♥debugkey = ‴(Str)space‴` 
 
