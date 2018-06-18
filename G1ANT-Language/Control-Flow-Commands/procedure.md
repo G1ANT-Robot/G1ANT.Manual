@@ -22,7 +22,7 @@ When defining, be sure to:
 
 **Example 1:**
 
-Defining a procedure that we will later refer to. The content of the procedure is `dialog ‴this is a procedure‴`. Even though we define procedure in the beginning of the script, `dialog Hi!` will pop up first, because the procedure is being executed no sooner then we call it using `call ➤test` (**test* is the name of the procedure in our case)
+Defining a procedure that we will later refer to. The content of the procedure is `dialog ‴this is a procedure‴`. Even though we define procedure in the beginning of the script, `dialog Hi!` will pop up first, because the procedure is being executed no sooner then we call it using `call ➤test` (**test** is the name of the procedure in our case)
 
 ```G1ANT
 procedure ➤test
@@ -40,6 +40,7 @@ Let us first create a list and inject values inside of it. The first value is a 
 
 ```G1ANT
 ♥dataList = OrderDate❚Region❚Rep❚Item❚Units❚UnitCost❚Total❚(date)1/6/2016❚East❚Jones❚Pencil❚95❚1.99❚189.05❚1/23/2016❚Central❚Kivell❚Binder❚50❚19.99❚999.50❚2/9/2016❚Central❚Jardine❚Pencil❚36❚4.99❚179.64❚2/26/2016❚Central❚Gill❚Pen❚27❚19.99❚539.73❚3/15/2016❚West❚Sorvino❚Pencil❚56❚2.99❚167.44❚4/1/2016❚East❚Jones❚Binder❚60❚4.99❚299.40❚4/18/2016❚Central❚Andrews❚Pencil❚75❚1.99❚149.25❚5/5/2016❚Central❚Jardine❚Pencil❚90❚4.99❚449.10❚5/22/2016❚West❚Thompson❚Pencil❚32❚1.99❚63.68❚6/8/2016❚East❚Jones❚Binder❚60❚8.99❚539.40❚6/25/2016❚Central❚Morgan❚Pencil❚90❚4.99❚449.10❚7/12/2016❚East❚Howard❚Binder❚29❚1.99❚57.71
+```
 
 Defining procedures: while writing the script for the procedure, we are creating variables with values assigned to them in the beginning, it is a good practice to assign values inside of variables, because they are reusable. 
 
@@ -55,7 +56,7 @@ The part of the script below is where the magic happens, we are defining a **loo
 
 The following script will insert values from the list **♥dataList⟦♥i⟧** starting from the value with index=1 (in our case it is 'OrderDate') into columns, we specified it in variables above. The execution of the script will only fill 7 columns, because of the condition we specified: 
 `if ⊂♥columIndex <= 7⊃`
-The line @jump ➜columns if ⊂♥columIndex <= 7⊃@ means that G1ANT.Robot will move to the top of the script where we started defining the loop if the *♥columIndex* is 1,2,3,4,5,6 or 7, when it is 8, G1ANT.Robot will go further. 
+The line `jump ➜columns if ⊂♥columIndex <= 7⊃` means that G1ANT.Robot will move to the top of the script where we started defining the loop if the **♥columIndex** is 1,2,3,4,5,6 or 7, when it is 8, G1ANT.Robot will go further. 
 The 'key' of the loop is a number that gets incremented every time G1ANT.Robot reads the script inside of the loop. 
 `♥i=♥i+1` - it increments the index of the values from our list. 
 `♥columIndex = ♥columIndex + 1` - it increments the columns number.
@@ -68,7 +69,7 @@ The 'key' of the loop is a number that gets incremented every time G1ANT.Robot r
     jump ➜columnsandrows if ⊂♥columIndex <= 7⊃
 ```
 
-This part of the script is responsible for inserting values inside of rows as long as the number of rows does not exceed 91 (it can equal 91). It is important to set  @♥columIndex  = 1@ again, because we were incrementing it before and it was 7.   
+This part of the script is responsible for inserting values inside of rows as long as the number of rows does not exceed 91 (it can equal 91). It is important to set  `♥columIndex  = 1` again, because we were incrementing it before and it was 7.   
     
 ```G1ANT
     ♥columIndex  = 1
