@@ -1,0 +1,50 @@
+**Syntax:**
+
+```G1ANT
+jump  label ‴‴
+```
+
+**Description:**
+
+Execution control flow command `jump` allows to move G1ANT.Robot's action to previously defined label or procedure located in a process. Please note: after doing the jump, the script will not go back to the previous line unless you specify another jump, back to another label. 
+
+| Argument | Type | Required | Default Value | Description |
+| -------- | ---- | -------- | ------------- | ----------- |
+|`label`| "label":{TOPIC-LINK+label}| yes| | label name (preceded with "➜") |
+|`if`| "bool":{TOPIC-LINK+boolean}| no | true | runs the command only if condition is true |
+|`timeout`| "variable":{TOPIC-LINK+variable}| no | "♥timeoutcommand":{TOPIC-LINK+special-variables} | specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
+|`errorjump` | "label":{TOPIC-LINK+label}| no | | name of the label to jump to if given `timeout` expires |
+|`errormessage`| "string":{TOPIC-LINK+string}| no |  | message that will be shown in case error occurs and no `errorjump` argument is specified |
+
+For more information about `if`, `timeout`, `errorjump` and `errormessage` arguments, please visit "Common Arguments":{TOPIC-LINK+common-arguments} manual page.
+
+**Example 1:**
+
+```G1ANT
+program name ‴notepad‴
+jump ➜start
+keyboard ‴Jump over this text‴
+➜start 
+keyboard ‴Congratulation! You've made a jump!‴ 
+```
+
+In this example G1ANT.Robot opens notepad, then instead of typing ‴Jump over this text‴, it types ‴Congratulation! You've made a jump!‴  because we defined a jump command 
+
+```G1ANT
+jump ➜start
+keyboard ‴Jump over this text‴
+➜start 
+```
+
+which enables to omit certain part of the script between `jump ➜start` and `➜start`. In our case: `keyboard ‴Jump over this text‴`
+
+**Example 2:**
+
+```G1ANT
+➜robot
+dialog message ‴something to display‴
+jump ➜end
+jump label robot
+➜end
+dialog message ‴end‴ 
+```
