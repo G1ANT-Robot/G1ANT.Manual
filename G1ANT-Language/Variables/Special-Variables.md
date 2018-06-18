@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Special variables
 
 All special variables can be found in the menu `View/Special Variables`.
@@ -112,3 +113,7 @@ czy to dalej dziala? wypadlo z insert&gt;variables
 `numlock = ‴(Bool)false‴` - allows to switch off/on NumLock
 
 `capslock = ‴(Bool)false‴` - allows to switch off/on CapsLock
+=======
+# Special Variables
+
+>>>>>>> 944e05bb119938b11bb951036369305d6ef657df
