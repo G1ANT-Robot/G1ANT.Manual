@@ -15,7 +15,7 @@
 * [Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials)
 * [Technical Support](Getting-Started/Technical-Support.md)
 
-## 3. [G1ANT.Language](G1ANT-Lanugage)
+## 3. [G1ANT.Language](G1ANT-Language)
 
 * **[Commands](G1ANT-Language/Commands)**
     * [chrome](G1ANT-Language/Commands/chrome.md)
