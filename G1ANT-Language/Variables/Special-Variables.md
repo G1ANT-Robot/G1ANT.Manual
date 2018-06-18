@@ -1,3 +1,5 @@
+*Please note, that this topic is in the middle of re-editing. We are sorry for any inconveniences.*
+
 # Special variables
 
 All special variables can be found in the menu `View/Special Variables`.
