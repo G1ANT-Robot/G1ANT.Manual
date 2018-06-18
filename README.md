@@ -53,13 +53,13 @@
     * [waitfor.file](G1ANT-Language/Commands/waitfor-file.md)
     * [waitfor.window](G1ANT-Language/Commands/waitfor-window.md)
     * [window](G1ANT-Language/Commands/window.md)
-* **[Control Flow Commands](G1ANT-Lanugage/Control-Flow-Commands)**
+* **[Control Flow Commands](G1ANT-Language/Control-Flow-Commands)**
     * [Jump](G1ANT-Language/Control-Flow-Commands/jump.md)
     * [Loop](G1ANT-Language/Control-Flow-Commands/loop.md)
     * [Procedure](G1ANT-Language/Control-Flow-Commands/procedure.md)
     * [Call](G1ANT-Language/Control-Flow-Commands/call.md)
-* **[Common Arguments](Script-Writing/Common-Arguments.md)**
-* **[Structures](G1ANT-Lanugage/Structures)**
+* **[Common Arguments](G1ANT-Language/Common-Arguments.md)**
+* **[Structures](G1ANT-Language/Structures)**
     * [bool](G1ANT-Language/Structures/bool.md)
     * [date](G1ANT-Language/Structures/date.md)
     * [datetime](G1ANT-Language/Structures/datetime.md)
