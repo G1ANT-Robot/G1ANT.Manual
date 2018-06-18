@@ -9,6 +9,7 @@ Argument `if` followed by a condition, defines whether the command will be execu
 ### Syntax
 
 | Argument Name | Argument Value | Command Execution |
+| ------------- | -------------- | ----------------- |
 | if | true | yes |
 | if | false | no |
 
