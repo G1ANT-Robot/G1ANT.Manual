@@ -98,7 +98,7 @@
 
 * **[G1ANT.Addon.Net](https://github.com/G1ANT-Robot/G1ANT.Addon.Net)**
 
-<details><summary>    * [Commands](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/tree/master/G1ANT.Addon.Net/Commands) </summary>
+<details><summary><a href="https://github.com/G1ANT-Robot/G1ANT.Addon.Net/tree/master/G1ANT.Addon.Net/Commands">Commands</a></summary>
 <p>
         * [as400.open](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/As400OpenCommand.md)
         * [is.accessible](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/IsAccessibleCommand.md)
@@ -108,6 +108,16 @@
         * [vnc.connect](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/VncConnectCommand.md)
 </p>
 </details>
+
+<details>
+<summary>
+<i>Like this? </i>
+<a href="http://www.ironspider.ca/format_text/fontstyles.htm">
+Useful Source</a>
+</summary>
+<p>It's because the details block is html5. If you want to modify it your best bet is using html5. </p>
+</details>
+
 
     * [Commands](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/tree/master/G1ANT.Addon.Net/Commands)
         * [as400.open](https://github.com/G1ANT-Robot/G1ANT.Addon.Net/blob/master/G1ANT.Addon.Net/Commands/As400OpenCommand.md)
