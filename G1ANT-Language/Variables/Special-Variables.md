@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+*Please note, that this topic is in the middle of re-editing. We are sorry for any inconveniences.*
+
 # Special variables
 
 All special variables can be found in the menu `View/Special Variables`.
@@ -9,11 +10,11 @@ All special variables can be found in the menu `View/Special Variables`.
 
 `♥environment = environment⟦COMPUTERNAME⟧`- allows to get to environment variables
 
-`♥macronamespaces` ?????????
+`♥macronamespaces` 
 
-`♥macrodlls` ?????????
+`♥macrodlls`
 
-`♥macrondebug` ?????????
+`♥macrondebug` 
 
 `♥keyboardwait = (Bool)true` - when the value is true, robot performing keyboard command waits for another keystroke
 
@@ -33,9 +34,9 @@ All special variables can be found in the menu `View/Special Variables`.
 
 `♥timeoutwindow = (Int)3000` - timeout for a command window; determines the amount of time robot waits for the window before an error occurs; default value 3000 ms
 
-`♥timeoutrest = (Int)5000` - ??????
+`♥timeoutrest = (Int)5000`
 
-`♥timeoutremotedesktop = (Int)10000` - ??????
+`♥timeoutremotedesktop = (Int)10000` 
 
 `♥timeoutchrome = (Int)10000` - timeout for command chrome; determines the amount of time robot waits for Google Chrome browser to launch before an error occurs; default value 10000 ms
 
@@ -47,73 +48,52 @@ All special variables can be found in the menu `View/Special Variables`.
 
 `♥timeoutclipboard = (Int)500` - determine the time value for clipboard command; default value 500ms
 
-`♥timeoutfileexists = (Int)10000` - ??????
+`♥timeoutfileexists = (Int)10000`
 
-`♥timeoutconnect = (Int)100000` - ??????
+`♥timeoutconnect = (Int)100000` 
 
-`♥timeoutdownload = (Int)10000` - ??????
+`♥timeoutdownload = (Int)10000` 
 
-`♥timeoutfiledelete = (Int)10000` - ??????
+`♥timeoutfiledelete = (Int)10000`
 
-`♥timeoutcolorexpected = (Int)10000` - ??????
+`♥timeoutcolorexpected = (Int)10000`
 
-`♥timeoutocr = (Int)10000` - ??????
+`♥timeoutocr = (Int)10000` 
 
-`♥timeoutie = (Int)6000` - ??????
+`♥timeoutie = (Int)6000` 
 
-`♥timeoutcrm = (Int)1000` - ??????
+`♥timeoutcrm = (Int)1000` 
 
-`♥timeoutimageexpected = (Int)60000` - ??????
+`♥timeoutimageexpected = (Int)60000` 
 
-`♥timeoutimagefind = (Int)60000` - ??????
+`♥timeoutimagefind = (Int)60000`
 
-`♥timeoutwatson = (Int)60000` - ??????
+`♥timeoutwatson = (Int)60000`
 
-`♥timeoutcaptcha = (Int)20000` - ??????
+`♥timeoutcaptcha = (Int)20000` 
 
-`♥timeoutmailsmtp = (Int)10000` - ??????
+`♥timeoutmailsmtp = (Int)10000`
 
 `♥delayseconds = (Int)1` - time value for command delay; default value 1 sec
 
 `♥miliseconds = (Int)31`
 
- czy to dalej tak dziala? `♥dateformat = (Str)dd/\MM/\yyyy` - defines a date display format
+`♥dateformat = (Str)dd/\MM/\yyyy` - defines a date display format
 
- czy to dalej tak dziala? `♥date = ‴(Str)21/11/2016‴` - contains current date with format defined with dateformat variable
+`♥date = ‴(Str)21/11/2016‴` - contains current date with format defined with dateformat variable
 
- czy to dalej tak dziala? `♥timeformat = ‴(Str)HH:mm:ss‴` - defines time display format
+`♥timeformat = ‴(Str)HH:mm:ss‴` - defines time display format
 
- czy to dalej tak dziala? `♥time = ‴(Str)11:31:16‴` - contains current time with format defined with timeformat variable
+`♥time = ‴(Str)11:31:16‴` - contains current time with format defined with timeformat variable
 
-`♥debugkey = ‴(Str)space‴` - ??????
+`♥debugkey = ‴(Str)space‴` 
 
 `♥opengipassword = ‴(Str)G1678123‴ `
 
 `♥activewindow = ‴(Str)G1ANT.Robot Developer 1.312‴` - contains a name of the current active window
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-czy to dalej dziala? wypadlo z insert&gt;variables
-
 
 `scrollock = ‴(Bool)false‴` - allows to switch off/on ScrollLock
 
 `numlock = ‴(Bool)false‴` - allows to switch off/on NumLock
 
 `capslock = ‴(Bool)false‴` - allows to switch off/on CapsLock
-=======
-# Special Variables
-
->>>>>>> 944e05bb119938b11bb951036369305d6ef657df
