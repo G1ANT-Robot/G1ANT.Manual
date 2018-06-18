@@ -54,10 +54,10 @@
     * [waitfor.window](G1ANT-Language/Commands/waitfor-window.md)
     * [window](G1ANT-Language/Commands/window.md)
 * **[Control Flow Commands](G1ANT-Lanugage/Control-Flow-Commands)**
-    * [Jump](G1ANT-Lanugage/Control-Flow-Commands/Jump.md)
-    * [Loop](G1ANT-Lanugage/Control-Flow-Commands/Loop.md)
-    * [Procedure](G1ANT-Lanugage/Control-Flow-Commands/Procedure.md)
-    * [Call](G1ANT-Lanugage/Control-Flow-Commands/Call.md)
+    * [Jump](G1ANT-Lanugage/Control-Flow-Commands/jump.md)
+    * [Loop](G1ANT-Lanugage/Control-Flow-Commands/loop.md)
+    * [Procedure](G1ANT-Lanugage/Control-Flow-Commands/procedure.md)
+    * [Call](G1ANT-Lanugage/Control-Flow-Commands/call.md)
 * **[Common Arguments](Script-Writing/Common-Arguments.md)**
 * **[Structures](G1ANT-Lanugage/Structures)**
     * [bool](G1ANT-Language/Structures/bool.md)
