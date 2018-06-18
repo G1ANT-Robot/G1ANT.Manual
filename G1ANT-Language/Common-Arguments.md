@@ -2,11 +2,11 @@
 
 Here is the list and explanation of arguments which can be used within most commands.
 
-### if
+## if
 
 Argument `if` followed by a condition, defines whether the command will be executed or skipped. The condition is a C# macro and if the expression contain some spaces, we advise you to paste it within ⊂⊃ for a clearer readability.
 
-#### Syntax
+### Syntax
 
 | Argument Name | Argument Value | Command Execution |
 | if | true | yes |
@@ -42,9 +42,9 @@ program notepad if ⊂♥x==3 &amp;&amp; ♥y=="theatre"⊃
 
 G1ANT.Robot **will open** notepad.
  
-### result
+## result
 
-**Syntax:**
+### Syntax:
 
 Argument `result` lets us choose the name of a variable which will store the command's output. Variable name should be preceded by ♥.
 
@@ -73,7 +73,7 @@ Please, try it using dialog command that should display the command output like 
 dialog ♥result
 ```
 
-### errorjump 
+## errorjump 
 
 Argument `errorjump` specifies name of a label to jump to when an error occur in the command. It allows G1ANT.Robot to omit some part of the script and jump to other part of the script. Label name should be preceded by ➜.
 
@@ -103,7 +103,7 @@ dialog message ‴no expected color in this position‴
 
 In this example, if the specified color "1E1E1F" is in the specified position "616⫽384" on the screen. G1ANT.Robot will dialog what is inside ♥name and jump to ➜end label, if the color is not found, program will jump to  ➜wrong label and dialog "no expected color in this position".
 
-### errormessage
+## errormessage
 
 argument `errormessage` is a message that will be shown in case an error occurs and no `errorjump` argument is specified. If `errorjump` is specified, G1ANT.Robot will omit `errormessage` while executing the script.
 
@@ -115,7 +115,7 @@ color.expected position ‴616⫽384‴ color ‴1E1E1F‴ errormessage ‴no ex
 
 If color not found, such dialog displays:
  
-### timeout
+## timeout
 
 argument `timeout` lets us choose the amount of time (in milliseconds) of robot waiting for a command to be executed before throwing an error about time expiration. 
 
