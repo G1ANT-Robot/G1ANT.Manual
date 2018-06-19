@@ -54,10 +54,10 @@
     * [waitfor.window](G1ANT-Language/Commands/waitfor-window.md)
     * [window](G1ANT-Language/Commands/window.md)
 * **[Control Flow Commands](G1ANT-Language/Control-Flow-Commands)**
-    * [Jump](G1ANT-Language/Control-Flow-Commands/jump.md)
-    * [Loop](G1ANT-Language/Control-Flow-Commands/loop.md)
-    * [Procedure](G1ANT-Language/Control-Flow-Commands/procedure.md)
-    * [Call](G1ANT-Language/Control-Flow-Commands/call.md)
+    * [jump](G1ANT-Language/Control-Flow-Commands/jump.md)
+    * [loop](G1ANT-Language/Control-Flow-Commands/loop.md)
+    * [procedure](G1ANT-Language/Control-Flow-Commands/procedure.md)
+    * [call](G1ANT-Language/Control-Flow-Commands/call.md)
 * **[Common Arguments](G1ANT-Language/Common-Arguments.md)**
 * **[Structures](G1ANT-Language/Structures)**
     * [bool](G1ANT-Language/Structures/bool.md)
@@ -76,21 +76,20 @@
     * [xml](G1ANT-Language/Structures/xml.md)
 * **[Variables](G1ANT-Language/Variables)**
     * [Special Variables](G1ANT-Language/Variables/Special-Variables.md)
-    * [Creating New Variables](Script-Writing/Variables/Creating-New-Variables.md)
-* **[Special Characters](Script-Writing/Special-Characters)**
-    * [Comment](Script-Writing/Special-Characters/Comment.md)
-    * [Array Separator](Script-Writing/Special-Characters/Array-Separator.md)
-    * [Macro](Script-Writing/Special-Characters/Macro.md)
-    * [Search Place](Script-Writing/Special-Characters/Search-Place.md)
-    * [Text](Script-Writing/Special-Characters/Text.md)
-    * [Variable](Script-Writing/Special-Characters/Variable.md)
-    * [Variable Index](Script-Writing/Special-Characters/Variable-Index.md)
-    * [Key Code](Script-Writing/Special-Characters/Key-Code.md)
+    * [Creating New Variables](G1ANT-Language/Variables/Creating-New-Variables.md)
+* **[Special Characters](G1ANT-Language/Special-Characters)**
+    * [Comment](G1ANT-Language/Special-Characters/Comment.md)
+    * [Array Separator](G1ANT-Language/Special-Characters/Array-Separator.md)
+    * [Macro](G1ANT-Language/Special-Characters/Macro.md)
+    * [Search Place](G1ANT-Language/Special-Characters/Search-Place.md)
+    * [Text](G1ANT-Language/Special-Characters/Text.md)
+    * [Variable](G1ANT-Language/Special-Characters/Variable.md)
+    * [Variable Index](G1ANT-Language/Special-Characters/Variable-Index.md)
+    * [Key Code](G1ANT-Language/Special-Characters/Key-Code.md)
 * **[Triggers](G1ANT-Language/Triggers)**
     * [File Trigger](G1ANT-Language/Triggers/File-Trigger.md)
     * [Schedule Trigger](G1ANT-Language/Triggers/Schedule-Trigger.md)
     * [Mail Trigger](G1ANT-Language/Triggers/Mail-Trigger.md)
-
 
 ## 4. [G1ANT Addons](G1ANT-Addons)
 
