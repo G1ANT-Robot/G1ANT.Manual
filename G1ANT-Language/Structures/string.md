@@ -10,7 +10,7 @@ This example shows how string variable can be declared.
 
 ```G1ANT
 ♥text1 = ‴G1ANT‴
-♥text2 = (string)‴Please call our support.‴
+♥text2 = ⟦string⟧‴Please call our support.‴
 
 ```
 
