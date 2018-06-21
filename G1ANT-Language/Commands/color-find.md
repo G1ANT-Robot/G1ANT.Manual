@@ -26,7 +26,7 @@ For more information about `if`, `timeout`, `errorjump` and `errormessage` argum
 
 This command is contained in **G1ANT.Language.dll.**
 
-h4. Example:
+**Example:**
 
 This example shows how to find the first pixel which has required color (‴FFFFFF‴ - white in this case), starting from position X=50, Y=500 and going down.
 
