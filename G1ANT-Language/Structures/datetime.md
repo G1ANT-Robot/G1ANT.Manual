@@ -1,10 +1,6 @@
 # datetime
 
-** datetime ⟦datetime⟧**
-
 A datetime format stores information about date and time. 
-
-
 
 **Example 1:**
 
@@ -23,7 +19,6 @@ Elements of datetime (year, month, day, hour, minute, second) can be accessed as
 dialog ♥dat
 dialog ♥dat⟦hour⟧
 dialog ♥dat⟦year⟧
-
 ```
 
-!{IMAGE-LINK+datetime-1}!   !{IMAGE-LINK+datetime-2}!   !{IMAGE-LINK+datetime-3}!
+      
