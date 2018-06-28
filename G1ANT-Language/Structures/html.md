@@ -11,7 +11,7 @@ This example shows how htmls can be declared:
 
 ```G1ANT
 text.read filename ‴C:\html.txt‴ result ‴htmlString‴
-♥myhtml = (html)♥htmlString
+♥myhtml = ⟦html⟧♥htmlString
 ```
 
 **Example 2:**
@@ -19,7 +19,7 @@ Different parts of the html can be accessed as follows:
 
 ```G1ANT
 text.read filename ‴C:\html.txt‴ result ‴htmlString‴
-♥myhtml = (html)♥htmlString
+♥myhtml = ⟦html⟧♥htmlString
 dialog ♥myhtml
 dialog ♥myhtml⟦//body/table⟧
 ```
