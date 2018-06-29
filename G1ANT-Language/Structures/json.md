@@ -11,7 +11,7 @@ This example shows how jsons can be declared:
 
 ```G1ANT
 text.read filename ‴C:\json.txt‴ result ‴jsonString‴
-♥myjson = (json)♥jsonString
+♥myjson = ⟦json⟧♥jsonString
 ```
 
 **Example 2:**
@@ -20,7 +20,7 @@ Different parts of the json can be accessed as follows:
 ```G1ANT
 text.read filename ‴C:\json.txt‴ result ‴jsonString‴
 dialog ♥jsonString
-♥myjson = (json)♥jsonString
+♥myjson = ⟦json⟧♥jsonString
 dialog ♥myjson⟦widget.image.name⟧
 ```
 
