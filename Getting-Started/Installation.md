@@ -1,6 +1,6 @@
 # Installation
 
-To request Trial Developer License, email support@g1ant.com with the following information:
+To request Developer License, go to the website: http://beta.g1ant.com
 
 1.	Your name and surname
 2.	Email address 
