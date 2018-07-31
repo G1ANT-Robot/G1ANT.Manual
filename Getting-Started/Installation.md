@@ -1,17 +1,3 @@
 # Installation
 
-To request Developer License, go to the website: http://beta.g1ant.com
-
-1.	Your name and surname
-2.	Email address 
-3.	Company name
-4. Your job title
-
-To run the program on a system start-up, paste the shortcut to an executable file into the Windows startup folder.
-
-To navigate to Windows startup folder:
-Hold down the Windows key, and type R.
-Type: shell:startup.
-Click OK.
-
-G1ANT Robot is set to initialise automatically on a system start-up. When G1ANT Robot is running in the background, press Ctrl+G to choose a selected process or click on icon in the system tray to bring the robot window to the foreground.
+To request the Developer License which is free, please visit http://beta.g1ant.com and register by filling in your contact details at the bottom of the website. Then, you will receive an email from us, so please follow the link given and download G1ANT.Robot. You can choose version that is most suitable for you. EXE WITH ADDONS is a recommended one as you do not have to install it - just open .exe file and activate at the first use. Enjoy! 
