@@ -1,0 +1,40 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="G1ANT.Manual.Sync.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CopyrightHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/*
+ *    Copyright (C) {company}, All rights reserved
+ *    Solution {solution}, Project {project}
+ *    {website}
+ *
+ *    Licensed under the {license} license.
+ *    See License.txt file in the project root for full license information.
+ *
+ */
+</Value>
+    </Setting>
+    <Setting Name="ManualHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+
+| Name | Description | Addon |
+| ---- | ----------- | ----- |
+</Value>
+    </Setting>
+    <Setting Name="DefaultWebsiteUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">www.g1ant.com</Value>
+    </Setting>
+    <Setting Name="DefaultCompany" Type="System.String" Scope="User">
+      <Value Profile="(Default)">G1ANT Ltd</Value>
+    </Setting>
+    <Setting Name="DefaultLicense" Type="System.String" Scope="User">
+      <Value Profile="(Default)">G1ANT</Value>
+    </Setting>
+    <Setting Name="LogFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">G1ANT.Manual.Log</Value>
+    </Setting>
+    <Setting Name="RepositoryUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://github.com/G1ANT-Robot/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
