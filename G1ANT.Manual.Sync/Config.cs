@@ -11,7 +11,7 @@ namespace G1ANT.Manual.Sync
     public class Config
     {
         public string RepositoryUrl { get; set; } = Settings.Default.RepositoryUrl;
-        public DirectoryInfo Directory { get; set; } = new DirectoryInfo(@"C:\Users\a\Documents\Github"); //new DirectoryInfo(Environment.CurrentDirectory);
+        public DirectoryInfo Directory { get; set; } = new DirectoryInfo(Environment.CurrentDirectory);
         public string ManualHeader { get; set; } = Settings.Default.ManualHeader;
         public string CopyrightHeader { get; set; } = Settings.Default.CopyrightHeader;
         public string DefaultWebsiteUrl { get; set; } = Settings.Default.DefaultWebsiteUrl;
