@@ -69,6 +69,13 @@ namespace G1ANT.Manual.Sync
             PrepareFiles("Addons", GetSection("Addon"));
         }
 
+        public string GetMatch(string text, string attribute, string property)
+        {
+            string matchLine = Regex.Match(text, $@"\[{attribute}(Attribute)?\((.|\s)*?\)\s*\]").ToString();
+            string match = Regex.Match(matchLine, $@"({property}\s?)+=\s?(?<value>(.)*?)[,)]").Groups["value"].Value.ToString();
+            return match;
+        }
+
         public Section GetSection(string name)
         {
             Section section = new Section();
@@ -82,25 +89,11 @@ namespace G1ANT.Manual.Sync
                 {
                     section.Files.Add("Addon.md");
                     var text = File.ReadAllText(addoncs.FullName);
-                    Regex regexAddon = new Regex($@"\[Addon(Attribute)?\((.|\s)*?\)\s*\]");
-                    Match match1 = regexAddon.Match(text);
-
-                    Regex regexAddonName = new Regex($@"(Name\s?)+=\s?(?<theName>(.)*?)[,)]");
-                    Match matchAddonName = regexAddonName.Match(match1.ToString());
-                    string addonName = matchAddonName.Groups["theName"].Value.ToString().Replace("\"", "");
+                    string addonName = GetMatch(text, "Addon", "Name").Replace("\"", "");
                     section.Addons.Add(addonName);
-
-                    Regex regexTooltip = new Regex($@"(Tooltip\s?)+=\s?(?<theName>(.)*?)[,)]");
-                    Match matchTooltip = regexTooltip.Match(match1.ToString());
-                    string tooltip = matchTooltip.Groups["theName"].Value.ToString().Replace("\"", "");
+                    string tooltip = GetMatch(text, "Addon", "Tooltip").Replace("\"", "");
                     section.Tooltips.Add(tooltip);
-
-                    Regex regexCopyright = new Regex($@"\[Copyright(Attribute)?\((.|\s)*?\)\s*\]");
-                    Match match2 = regexCopyright.Match(text);
-
-                    Regex regexAuthor = new Regex($@"(Author\s?)+=\s?(?<theName>(.)*?)[,)]");
-                    Match matchAuthor = regexAuthor.Match(match2.ToString());
-                    string author = matchAuthor.Groups["theName"].Value.ToString().Replace("\"", "");
+                    string author = GetMatch(text, "Copyright", "Author").Replace("\"", "");
                     section.Sections.Add(author);
                 }
                 return section;
@@ -113,20 +106,13 @@ namespace G1ANT.Manual.Sync
                 if (csfile.FullName.Contains("Test") == false)
                 {
                     var text = File.ReadAllText(csfile.FullName);
-                    Regex regex = new Regex($@"\[{name}(Attribute)?\((.|\s)*?\)\s*\]");
-                    Match match = regex.Match(text);
-
-                    Regex sectionFound = new Regex($@"({argumentName}\s?)+=\s?(?<theName>(.)*?)[,)]");
-                    Match sectionMatch = sectionFound.Match(match.ToString());
-                    string sectionName = sectionMatch.Groups["theName"].Value.ToString();
+                    string sectionName = GetMatch(text, name, argumentName);
                     string addonName = csfile.FullName.Replace($@"{Settings.Directory.ToString()}\", "");
                     addonName = addonName.Substring(0, addonName.IndexOf(@"\"));
 
                     if (sectionName != "" && sectionName != "...")
                     {
-                        Regex sectionTooltip = new Regex(@"(Tooltip\s?)+=\s?(?<theTooltip>(.)*?)[,)]");
-                        Match sectionTooltipMatch = sectionTooltip.Match(match.ToString());
-                        string tooltip = sectionTooltipMatch.Groups["theTooltip"].Value.ToString().Replace("\"", "").Replace("\n", " ");
+                        string tooltip = GetMatch(text, name, "Tooltip").Replace("\"", "").Replace("\n", " ");
 
                         if (sectionName.Contains("\""))
                         {
@@ -143,18 +129,14 @@ namespace G1ANT.Manual.Sync
                                 string content = File.ReadAllText(file.FullName);
                                 if (content.Contains($"class {dictionarysection}"))
                                 {
-                                    sectionFound = new Regex($"({dictionaryundersection}\\s?)+=\\s?\"(?<theTitle>(.)*?)[\"]");
-                                    sectionMatch = sectionFound.Match(content);
-                                    sectionName = sectionMatch.Groups["theTitle"].Value.ToString();
+                                    sectionName = Regex.Match(content, $"({dictionaryundersection}\\s?)+=\\s?\"(?<theTitle>(.)*?)[\"]").Groups["theTitle"].Value.ToString();
                                     section.Sections.Add(sectionName);
                                 }
                             }
                         }
                         else
                         {
-                            sectionFound = new Regex($"({sectionName}\\s?)+=\\s?\"(?<theTitle>(.)*?)[\"]");
-                            sectionMatch = sectionFound.Match(text.ToString());
-                            sectionName = sectionMatch.Groups["theTitle"].Value.ToString();
+                            sectionName = Regex.Match(text, $"({sectionName}\\s?)+=\\s?\"(?<theTitle>(.)*?)[\"]").Groups["theTitle"].Value.ToString();
                             section.Sections.Add(sectionName);
                         }
                         section.Files.Add(csfile.Name.ToString().Replace("cs", "md"));

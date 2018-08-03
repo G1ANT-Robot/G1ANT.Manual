@@ -21,7 +21,7 @@ namespace G1ANT.Manual.Sync
 
         public void Add(string message)
         {
-            File.AppendAllText(FileName, String.Format(LineFormat, DateTime.Now, message);
+            File.AppendAllText(FileName, String.Format(LineFormat, DateTime.Now, message));
         }
     }
 }

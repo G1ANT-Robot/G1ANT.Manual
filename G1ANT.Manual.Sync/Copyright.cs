@@ -10,6 +10,5 @@ namespace G1ANT.Manual.Sync
     {
         public string Company { get; set; } = "";
         public string WebsiteUrl { get; set; } = "";
-        public string 
     }
 }
