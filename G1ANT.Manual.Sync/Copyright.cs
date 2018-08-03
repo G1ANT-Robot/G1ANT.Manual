@@ -10,5 +10,7 @@ namespace G1ANT.Manual.Sync
     {
         public string Company { get; set; } = "";
         public string WebsiteUrl { get; set; } = "";
+        public string LicenseName { get; set; } = "";
+        public string Header { get; set; } = "";
     }
 }
