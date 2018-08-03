@@ -109,5 +109,17 @@ namespace G1ANT.Manual.Sync.Properties {
                 this["RepositoryUrl"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("{0:yyyy-MM-dd HH:mm:ss} - {1}")]
+        public string LogLineFormat {
+            get {
+                return ((string)(this["LogLineFormat"]));
+            }
+            set {
+                this["LogLineFormat"] = value;
+            }
+        }
     }
 }
