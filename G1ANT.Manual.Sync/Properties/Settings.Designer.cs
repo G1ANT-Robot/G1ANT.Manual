@@ -12,7 +12,7 @@ namespace G1ANT.Manual.Sync.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.3.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -28,7 +28,7 @@ namespace G1ANT.Manual.Sync.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("/*\r\n *    Copyright (C) {company}, All rights reserved\r\n *    Solution {solution}" +
             ", Project {project}\r\n *    {website}\r\n *\r\n *    Licensed under the {license} lic" +
             "ense.\r\n *    See License.txt file in the project root for full license informati" +
-            "on.\r\n *\r\n */")]
+            "on.\r\n *\r\n */\r\n")]
         public string CopyrightHeader {
             get {
                 return ((string)(this["CopyrightHeader"]));

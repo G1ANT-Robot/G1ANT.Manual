@@ -11,7 +11,8 @@
  *    Licensed under the {license} license.
  *    See License.txt file in the project root for full license information.
  *
- */</Value>
+ */
+</Value>
     </Setting>
     <Setting Name="ManualHeader" Type="System.String" Scope="User">
       <Value Profile="(Default)">

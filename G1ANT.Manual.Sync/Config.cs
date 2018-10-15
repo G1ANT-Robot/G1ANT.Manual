@@ -19,6 +19,5 @@ namespace G1ANT.Manual.Sync
         public string DefaultLicense { get; set; } = Settings.Default.DefaultLicense;
         public string LogFileName { get; set; } = Settings.Default.LogFileName;
         public string LogLineFormat { get; set; } = Settings.Default.LogLineFormat;
-        // TODO: More settings like LogFile
     }
 }
