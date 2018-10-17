@@ -14,7 +14,7 @@ namespace G1ANT.Manual.Sync
         static void Main(string[] args)
         {
             Config settings = new Config();
-            for (int index = 1; index < args.Length; index++)
+            for (int index = 0; index < args.Length; index++)
                 SetArgument(settings, GetArgument(args[index]));
 
             ParseFiles(settings);
@@ -35,7 +35,6 @@ namespace G1ANT.Manual.Sync
                 case "help":
                 case "h":
                     ShowHelp();
-                    Environment.Exit(0);
                     break;
                 case "directory":
                 case "dir":
@@ -92,7 +91,7 @@ namespace G1ANT.Manual.Sync
                 "Creates Addons.md, Variables.md, Commands.md, Structures.md, Panels.md and Wizards.md files in G1ANT.Manual repository.\r\n" +
                 "Checks all README.md files and adds an Addon.md link if not present. Inserts or modifies all needed headers in all *.cs files in every repository containing “Addon” word, G1ANT.Robot and G1ANT.Language.\r\n\r\n" +
 
-                "G1ANT.Manual.Sync.exe [/? | /h | /help][/d:direcotries | /dir:directories | /directory:directories][/ch:path | /copyrightheader:path][/w: | /website:][/c: | /company:][/l: | /license:][/n: | /logfilename:][/r: | /repositoryurl:][/f: | /loglineformat:]\r\n\r\n" +
+                "G1ANT.Manual.Sync.exe [/? | /h | /help][/d:path | /dir:path | /directory:path][/ch:path | /copyrightheader:path][/w: | /website:][/c: | /company:][/l: | /license:][/n: | /logfilename:][/r: | /repositoryurl:][/f: | /loglineformat:]\r\n\r\n" +
 
                 "Arguments:\r\n" +
                 "   /?, /h, /help           Shows help\r\n" +

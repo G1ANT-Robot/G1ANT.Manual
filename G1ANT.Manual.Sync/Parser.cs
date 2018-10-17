@@ -20,7 +20,7 @@ namespace G1ANT.Manual.Sync
         public void PrepareFiles(string sectionName, Section section)
         {
             string pathToSection = $@"{Settings.Directory}\G1ANT.Manual\{sectionName}.md";
-            string fullHeader = $"# List of All {sectionName}{Settings.ManualHeader}";
+            string fullHeader = $"# List of All {sectionName}";
             if (sectionName == "Addons")
                 fullHeader = fullHeader.Replace("Addon ", "Author ");
             string text = "";
