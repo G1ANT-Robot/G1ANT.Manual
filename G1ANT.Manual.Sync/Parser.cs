@@ -20,7 +20,7 @@ namespace G1ANT.Manual.Sync
         public void PrepareFiles(string sectionName, Section section)
         {
             string pathToSection = $@"{Settings.Directory}\G1ANT.Manual\{sectionName}.md";
-            string fullHeader = $"# List of All {sectionName}";
+            string fullHeader = $"# List of All {sectionName}{Settings.ManualHeader}";
             if (sectionName == "Addons")
                 fullHeader = fullHeader.Replace("Addon ", "Author ");
             string text = "";
@@ -43,7 +43,7 @@ namespace G1ANT.Manual.Sync
                         File.AppendAllText(addonPath, Environment.NewLine + fullHeader.Replace(" Addon |", "").Replace(" ----- |", ""));
                     else
                         text = File.ReadAllText(addonPath);
-                    if (text.Contains(fullHeader.Replace(" Addon |", "").Replace(" ----- |", "")) == false)
+                    if (text.Contains(fullHeader.Replace(" Addon |", "").Replace(" ----- |", "")) == false && string.IsNullOrWhiteSpace(text) == false)
                         File.AppendAllText(addonPath, Environment.NewLine + fullHeader.Replace(" Addon |", "").Replace(" ----- |", ""));
                     File.AppendAllText(addonPath, $"| [{section.Sections[i]}]({sectionLink}) | {section.Tooltips[i]} |{Environment.NewLine}");
                 }
@@ -56,9 +56,12 @@ namespace G1ANT.Manual.Sync
         {
             foreach (var directory in Settings.Directory.GetDirectories())
             {
-                string path = $@"{Settings.Directory}\{directory.Name}\{directory.Name}\Addon.md";
-                if (File.Exists(path))
-                    File.Delete(path);
+                if (directory.Name.Contains("G1ANT.Addon.") && directory.Name.Contains(".Tests") == false)
+                {
+                    string path = $@"{Settings.Directory}\{directory.Name}\{directory.Name}\Addon.md";
+                    if (File.Exists(path))
+                        File.Delete(path);
+                }
             }
             PrepareFiles("Commands", GetSection("Command"));
             PrepareFiles("Structures", GetSection("Structure"));
@@ -85,63 +88,78 @@ namespace G1ANT.Manual.Sync
                 argumentName = "Title";
             else if (name == "Addon")
             {
-                foreach (var addoncs in Settings.Directory.GetFiles("Addon.cs", SearchOption.AllDirectories))
+                foreach (var directory in Settings.Directory.GetDirectories())
                 {
-                    section.Files.Add("Addon.md");
-                    var text = File.ReadAllText(addoncs.FullName);
-                    string addonName = GetMatch(text, "Addon", "Name").Replace("\"", "");
-                    section.Addons.Add(addonName);
-                    string tooltip = GetMatch(text, "Addon", "Tooltip").Replace("\"", "");
-                    section.Tooltips.Add(tooltip);
-                    string author = GetMatch(text, "Copyright", "Author").Replace("\"", "");
-                    section.Sections.Add(author);
+                    if (directory.Name.Contains("G1ANT.Addon.") && directory.Name.Contains(".Tests") == false)
+                    {
+                        DirectoryInfo addonDirectory = new DirectoryInfo(directory.FullName);
+                        foreach (var addoncs in addonDirectory.GetFiles("Addon.cs", SearchOption.AllDirectories))
+                        {
+                            section.Files.Add("Addon.md");
+                            var text = File.ReadAllText(addoncs.FullName);
+                            string addonName = GetMatch(text, "Addon", "Name").Replace("\"", "");
+                            section.Addons.Add(addonName);
+                            string tooltip = GetMatch(text, "Addon", "Tooltip").Replace("\"", "");
+                            section.Tooltips.Add(tooltip);
+                            string author = GetMatch(text, "Copyright", "Author").Replace("\"", "");
+                            section.Sections.Add(author);
+                        }
+                    }
                 }
                 return section;
             }
             else
                 argumentName = "Name";
 
-            foreach (var csfile in Settings.Directory.GetFiles("*.cs", SearchOption.AllDirectories))
+            foreach (var directory in Settings.Directory.GetDirectories())
             {
-                if (csfile.FullName.Contains("Test") == false)
+                if (directory.Name == "G1ANT.Language" || directory.Name == "G1ANT.Robot" || (directory.Name.Contains("G1ANT.Addon.") && directory.Name.Contains(".Tests") == false))
                 {
-                    var text = File.ReadAllText(csfile.FullName);
-                    string sectionName = GetMatch(text, name, argumentName);
-                    string addonName = csfile.FullName.Replace($@"{Settings.Directory.ToString()}\", "");
-                    addonName = addonName.Substring(0, addonName.IndexOf(@"\"));
+                    DirectoryInfo repDirectory = new DirectoryInfo(directory.FullName);
 
-                    if (sectionName != "" && sectionName != "...")
+                    foreach (var csfile in repDirectory.GetFiles("*.cs", SearchOption.AllDirectories))
                     {
-                        string tooltip = GetMatch(text, name, "Tooltip").Replace("\"", "").Replace("\n", " ");
+                        if (csfile.FullName.Contains(".Tests") == false)
+                        {
+                            var text = File.ReadAllText(csfile.FullName);
+                            string sectionName = GetMatch(text, name, argumentName);
+                            string addonName = csfile.FullName.Replace($@"{Settings.Directory.ToString()}\", "");
+                            addonName = addonName.Substring(0, addonName.IndexOf(@"\"));
 
-                        if (sectionName.Contains("\""))
-                        {
-                            sectionName = sectionName.Replace("\"", "");
-                            section.Sections.Add(sectionName);
-                        }
-                        else if (sectionName.Contains("."))
-                        {
-                            string dictionarysection = sectionName.Substring(0, sectionName.IndexOf("."));
-                            string dictionaryundersection = sectionName.Replace(dictionarysection, "").Replace(".", "");
-                            DirectoryInfo dictionary = new DirectoryInfo($@"{Settings.Directory.ToString()}\{addonName}");
-                            foreach (var file in dictionary.GetFiles("*.cs", SearchOption.AllDirectories))
+                            if (sectionName != "" && sectionName != "...")
                             {
-                                string content = File.ReadAllText(file.FullName);
-                                if (content.Contains($"class {dictionarysection}"))
+                                string tooltip = GetMatch(text, name, "Tooltip").Replace("\"", "").Replace("\n", " ");
+
+                                if (sectionName.Contains("\""))
                                 {
-                                    sectionName = Regex.Match(content, $"({dictionaryundersection}\\s?)+=\\s?\"(?<theTitle>(.)*?)[\"]").Groups["theTitle"].Value.ToString();
+                                    sectionName = sectionName.Replace("\"", "");
                                     section.Sections.Add(sectionName);
                                 }
+                                else if (sectionName.Contains("."))
+                                {
+                                    string dictionarysection = sectionName.Substring(0, sectionName.IndexOf("."));
+                                    string dictionaryundersection = sectionName.Replace(dictionarysection, "").Replace(".", "");
+                                    DirectoryInfo dictionary = new DirectoryInfo($@"{Settings.Directory.ToString()}\{addonName}");
+                                    foreach (var file in dictionary.GetFiles("*.cs", SearchOption.AllDirectories))
+                                    {
+                                        string content = File.ReadAllText(file.FullName);
+                                        if (content.Contains($"class {dictionarysection}"))
+                                        {
+                                            sectionName = Regex.Match(content, $"({dictionaryundersection}\\s?)+=\\s?\"(?<theTitle>(.)*?)[\"]").Groups["theTitle"].Value.ToString();
+                                            section.Sections.Add(sectionName);
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    sectionName = Regex.Match(text, $"({sectionName}\\s?)+=\\s?\"(?<theTitle>(.)*?)[\"]").Groups["theTitle"].Value.ToString();
+                                    section.Sections.Add(sectionName);
+                                }
+                                section.Files.Add(csfile.Name.ToString().Replace("cs", "md"));
+                                section.Tooltips.Add(tooltip);
+                                section.Addons.Add(addonName);
                             }
                         }
-                        else
-                        {
-                            sectionName = Regex.Match(text, $"({sectionName}\\s?)+=\\s?\"(?<theTitle>(.)*?)[\"]").Groups["theTitle"].Value.ToString();
-                            section.Sections.Add(sectionName);
-                        }
-                        section.Files.Add(csfile.Name.ToString().Replace("cs", "md"));
-                        section.Tooltips.Add(tooltip);
-                        section.Addons.Add(addonName);
                     }
                 }
             }
@@ -165,9 +183,9 @@ namespace G1ANT.Manual.Sync
                     if (File.Exists(addonFile))
                     {
                         string addonContent = File.ReadAllText(addonFile);
-                        Regex authorRegex = new Regex($@"(Author\s?)+=\s?(?<theName>(.)*?)[,)]");
-                        Match authorMatch = authorRegex.Match(addonContent);
-                        string author = authorMatch.Groups["theName"].Value.ToString();
+                        string author = Regex.Match(addonContent, $@"(Author\s?)+=\s?(?<theName>(.)*?)[,)]").Groups["theName"].Value.ToString();
+                        string website = Regex.Match(addonContent, $@"(Website\s?)+=\s?(?<theName>(.)*?)[,)]").Groups["theName"].Value.ToString();
+
 
                         if (author.Contains("G1ANT"))
                         {
