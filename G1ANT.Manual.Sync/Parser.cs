@@ -185,7 +185,7 @@ namespace G1ANT.Manual.Sync
                         string addonContent = File.ReadAllText(addonFile);
                         string author = Regex.Match(addonContent, $@"(Author\s?)+=\s?(?<theName>(.)*?)[,)]").Groups["theName"].Value.ToString();
                         string website = Regex.Match(addonContent, $@"(Website\s?)+=\s?(?<theName>(.)*?)[,)]").Groups["theName"].Value.ToString();
-
+                        string license = GetMatch(addonContent, "License", "Type").Replace("\"", "");
 
                         if (author.Contains("G1ANT"))
                         {
