@@ -166,6 +166,42 @@ namespace G1ANT.Manual.Sync
             return section;
         }
 
+        public void CopyAllMDFilesToG1ANTDocs()
+        {
+            foreach(var directory in Settings.Directory.GetDirectories())
+            {
+                if(directory.Name == "G1ANT.Language" || directory.Name == "G1ANT.Robot" || directory.Name.Contains("G1ANT.Addon."))
+                {
+                    DirectoryInfo repository = new DirectoryInfo(directory.FullName);
+                    string folderName;
+                    if (repository.Name == "G1ANT.Language")
+                        folderName = "G1ANT-Language";
+                    else if (repository.Name == "G1ANT.Robot")
+                        folderName = "G1ANT-Robot";
+                    else
+                        folderName = "G1ANT-Addons";
+                        
+                    foreach (var mdfile in repository.GetFiles("*.md", SearchOption.AllDirectories))
+                    {
+                        string destinationPath = $@"{Settings.Directory}\G1ANT.Docs\{folderName}\";
+                        string subPath = mdfile.FullName.Substring($@"{Settings.Directory}\".Length);
+                        string[] inFolders = subPath.Split(new string[] { "\\" }, StringSplitOptions.None);
+
+                        foreach (var folder in inFolders)
+                            destinationPath += folder + "\\";;
+
+                        destinationPath = destinationPath.Substring(0, destinationPath.Length - 1);
+
+                        if (File.Exists(destinationPath) == false)
+                        {
+                            Directory.CreateDirectory(destinationPath.Substring(0, destinationPath.LastIndexOf("\\")));
+                            File.Copy(mdfile.FullName, destinationPath);
+                        }
+                    }
+                }
+            }
+        }
+
         public void CheckAllHeaders()
         {
             foreach (var file in Settings.Directory.GetFiles("*.sln", SearchOption.AllDirectories))
@@ -191,7 +227,6 @@ namespace G1ANT.Manual.Sync
                         {
                             foreach (var csfile in path.GetFiles("*.cs", SearchOption.AllDirectories))
                             {
-                                // TODO: get website and license from current project
                                 string header = Settings.CopyrightHeader.Replace("{project}", project).Replace("{solution}", solution).Replace("{company}", author).Replace("{website}", Settings.DefaultWebsiteUrl).Replace("{license}", Settings.DefaultLicense);
                                 string fileContent = File.ReadAllText(csfile.FullName);
                                 if ((!fileContent.Contains(" Copyright") || fileContent.Contains("G1ANT.Addon,")) && !csfile.FullName.Contains("Sdk"))

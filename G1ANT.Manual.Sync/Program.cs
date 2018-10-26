@@ -78,8 +78,9 @@ namespace G1ANT.Manual.Sync
         static void ParseFiles(Config settings)
         {
             Parser parser = new Parser(settings);
-            parser.GenerateFiles();
-            parser.CheckAllHeaders();
+            //parser.GenerateFiles();
+            //parser.CheckAllHeaders();
+            parser.CopyAllMDFilesToG1ANTDocs();
         }
 
         static void ShowHelp()
@@ -89,6 +90,7 @@ namespace G1ANT.Manual.Sync
 
                 "Based on attributes from *.cs files, generates Addon.md files containing lists of all Variables, Commands, Structures, Panels and Wizards in all Addon repositories.\r\n" +
                 "Creates Addons.md, Variables.md, Commands.md, Structures.md, Panels.md and Wizards.md files in G1ANT.Manual repository.\r\n" +
+                "Copies all .md files from current G1ANT.Manual repository and all G1ANT.Addon.* repositories to G1ANT.Docs repository." +
                 "Checks all README.md files and adds an Addon.md link if not present. Inserts or modifies all needed headers in all *.cs files in every G1ANT.Addon.* repository as long as its name does not contain \".Tests\" word, G1ANT.Robot and G1ANT.Language.\r\n\r\n" +
 
                 "G1ANT.Manual.Sync.exe [/? | /h | /help][/d:path | /dir:path | /directory:path][/ch:path | /copyrightheader:path][/w: | /website:][/c: | /company:][/l: | /license:][/n: | /logfilename:][/r: | /repositoryurl:][/f: | /loglineformat:]\r\n\r\n" +
