@@ -34,7 +34,7 @@ dialog ♥my_float
 dialog ♥price
 ```
 
-In this example we are forcing the type of the variable using `⟦float⟧` formula. Forcing is not necessary, but useful when for example you are assigning a list with prices to a variable and some of them might be integers like 399, 459 and others may be float numbers like 399,99. If you force the type to ⟦float⟧, then G1ANT.Robot will be aware than prices may not be integers. If you force type to ⟦integer⟧, G1ANT.Robot will ignore floats and round numbers to integers.
+In this example we are forcing the type of the variable using `⟦float⟧` formula. Forcing is not necessary, but useful when for example you are assigning a list with prices to a variable and some of them might be integers like 399, 459 and others may be float numbers like 399,99. If you force the type to `⟦float⟧`, then G1ANT.Robot will be aware than prices may not be integers. If you force type to `⟦integer⟧`, G1ANT.Robot will ignore floats and round numbers to integers.
 
 **Example 6:**
 

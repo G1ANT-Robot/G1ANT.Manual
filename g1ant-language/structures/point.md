@@ -20,12 +20,11 @@ dialog ♥pnt⟦x⟧
 dialog ♥pnt⟦y⟧
 ```
 
-    
+   
 
 ```G1ANT
 ♥pnt = 935⫽580
 ♥pnt⟦x⟧=800
 dialog ♥pnt
 ```
-
 

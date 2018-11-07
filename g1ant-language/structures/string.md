@@ -4,7 +4,6 @@
 
 A string is an object of type String which stores text value.
 
-
 **Example 1:**
 This example shows how string variable can be declared.
 
@@ -21,8 +20,6 @@ program notepad
 ♥test = ‴After this text enter will be placed \nTabulator\t "tab" \nSpecial chars:" \ / {(}{)}‴
 keyboard ♥test
 ```
-
- 
 
 Characters in a string can be addressed using the notation of:
 

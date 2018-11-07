@@ -18,8 +18,7 @@ Example:
 ```G1ANT
 jump ‴➜start‴
 dialog ‴Jump over this text‴
-➜start 
-dialog ‴Congratulations! You've made a jump to start label!‴ 
+➜start
+dialog ‴Congratulations! You've made a jump to start label!‴
 ```
-
 

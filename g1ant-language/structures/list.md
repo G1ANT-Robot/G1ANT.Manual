@@ -3,14 +3,15 @@
 **Example:**
 
 ```G1ANT
-♥list = ‴value1‴❚‴value 2‴❚‴value 3‴
-dialog ♥list 
-dialog ♥list⟦2⟧ 
+♥list = value1❚value 2❚value 3
+dialog ♥list
+dialog ♥list⟦2⟧
 ```
 
 **Description:**
 
-List is a special type of data that enables to store multiple countable ordered values within a single variable. It behaves as a 'container' and the values can occur a number of times. However, every value inside of a list has to be separated by an array separator - ❚. What is more, the values have to be of the same type- either string, number, datetime, date, etc. If you accidentally insert a different value type inside of a list, G1ANT.Robot will convert it to the type of the first value from the list, because the first element defines the type. 
+List is a special type of data that enables to store multiple countable ordered values within a single variable. It behaves as a 'container' and the values can occur a number of times. However, every value inside of a list has to be separated by an array separator - ❚. What is more, the values have to be of the same type- either string, integer, datetime, date, etc. If you accidentally insert a different value type inside of a list, G1ANT.Robot will convert it to the type of the first value from the list, because the first element defines the type.
+
 Please check the topic "array separator":{TOPIC-LINK+array-separator}
 
 **Accessing values inside of a list:**
@@ -22,17 +23,15 @@ To count the number of list elements, follow the variable's name with `⟦count�
 **Example 1:**
 
 ```G1ANT
-♥arr = ‴apple‴❚‴mango‴❚‴melon‴❚‴kiwi‴
-dialog ♥arr[0]
+♥arr = apple❚mango❚melon❚kiwi
+♥arr⟦1⟧ = banana
+dialog ♥arr
 ```
-
- 
 
 **Example 2:**
 
 ```G1ANT
-♥arr = ‴apple‴❚‴mango‴❚‴melon‴❚‴kiwi‴
+♥arr = apple❚mango❚melon❚kiwi
 dialog ♥arr⟦count⟧
 ```
-
 
