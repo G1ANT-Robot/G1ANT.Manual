@@ -43,11 +43,11 @@ program notepad if ⊂♥x==3 &amp;&amp; ♥y=="theatre"⊃
 
 G1ANT.Robot **will open** notepad.
  
-## result
+## errorresult
 
 ### Syntax:
 
-Argument `result` lets us choose the name of a variable which will store the command's output. Variable name should be preceded by ♥.
+Argument `errorresult` lets us choose the name of a variable which will store the command's output. Variable name should be preceded by ♥.
 
 **Example 1:**
 
