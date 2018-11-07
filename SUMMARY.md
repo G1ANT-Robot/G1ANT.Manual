@@ -22,6 +22,7 @@
 * [Menu](g1ant.robot-window/menu.md)
 * [Toolbar](g1ant.robot-window/toolbar.md)
 * [Panels](g1ant.robot-window/panels.md)
+* [System Tray](g1ant.robot-window/system-tray.md)
 * [Auxiliary Windows](g1ant.robot-window/auxiliary-windows/README.md)
   * [Find and Replace](g1ant.robot-window/auxiliary-windows/special.md)
   * [Mouse Position](g1ant.robot-window/auxiliary-windows/mouse-position.md)

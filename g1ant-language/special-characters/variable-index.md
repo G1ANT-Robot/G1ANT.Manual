@@ -23,7 +23,7 @@ You can insert the variable index characters from `Insert/Variable Index` menu o
 dialog ♥str⟦4⟧
 ```
 
-![](https://manula.r.sizr.io/large/user/7252/img/var-ind-1_v3.png)
+![](../../.gitbook/assets/varindex1.png)
 
 In this example the fourth character of the text variable ♥str is displayed.
 
@@ -34,7 +34,7 @@ In this example the fourth character of the text variable ♥str is displayed.
 dialog ♥str⟦4:13⟧
 ```
 
-![](https://manula.r.sizr.io/large/user/7252/img/var-ind-2_v3.png)
+![](../../.gitbook/assets/varindex2.png)
 
 In this example, characters starting from the fourth up to the thirteenth position of the text variable ♥str are displayed.
 

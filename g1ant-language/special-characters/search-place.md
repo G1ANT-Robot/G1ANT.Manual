@@ -22,9 +22,9 @@ text.find ♥source search Name:✱Surname: result ♥name
 dialog ♥name
 ```
 
-![](https://manula.r.sizr.io/large/user/7252/img/search1_v1.png)
+![img](../../.gitbook/assets/search1_v1.png)
 
-### **Example 2**
+**Example 2**
 
 When there are more elements matching your query, the result is an array \(a list\). More on arrays [here](array-separator.md).
 
@@ -34,5 +34,5 @@ text.find ♥source search Name:✱Surname: result ♥name
 dialog ♥name
 ```
 
-![](../../.gitbook/assets/search.jpg)
+![](../../.gitbook/assets/search2.png)
 

@@ -19,7 +19,7 @@ In this example, you will use a C\# snippet to display current date and hour. In
 dialog ♥macro
 ```
 
-![](https://manula.r.sizr.io/large/user/7252/img/macro.png)
+![img](../../.gitbook/assets/macro.png)
 
 ### Example 2
 

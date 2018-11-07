@@ -19,7 +19,7 @@ program name ‴notepad‴
 keyboard ‴here you can place any text‴
 ```
 
-![](https://manula.r.sizr.io/large/user/7252/img/text.png)
+![](../../.gitbook/assets/text.png)
 
 In the first line the text contained within triple quotes is a name of the program to be run. The text in the next line should be entered by the `keyboard` command in the launched program.
 
