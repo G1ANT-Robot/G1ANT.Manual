@@ -9,6 +9,7 @@ random.value
 **Description:**
 
 Command `random.value` allows to get random integer value between [min,max] (both inclusive).
+
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
 |`min`| [integer](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/integer.md)  | no| 0| lower range of random value[inclusive]|
