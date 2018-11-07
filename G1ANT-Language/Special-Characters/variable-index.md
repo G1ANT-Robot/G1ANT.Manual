@@ -1,53 +1,40 @@
-# Variable index
+# Variable Index
 
-**Syntax:**
+## **Syntax**
 
-```G1ANT
-♥var = 124Kitty
-♥var⟦4⟧
+```text
+♥variable⟦position⟧
 ```
 
-Above: accessing variable's 4th digit
-
-
-```G1ANT
-♥var = 1029384766647480
-♥var⟦4:8⟧
+```text
+♥variable⟦start:end⟧
 ```
 
-Above: accessing variable's positions starting from 4th digit, ending at 8th digit
+## Description
 
-**Description:**
+In G1ANT.Language particular indices \(characters\) in variables can be addressed. Using `a:b` notation, whole ranges of indices in variables can be addressed.
 
-In G1ANT.Language particular indexes/characters in variables can be addressed. Using "a:b" notation, whole ranges of indexes in variables can be addressed.
+You can insert the variable index characters from `Insert/Variable Index` menu or with **Ctrl+\[** keyboard shortcut.
 
-`⟦⟧` **Variable index** - available at G1ANT Developer Studio -&gt; Menu Insert -&gt; Variable index.
+### Example 1
 
-
-
-**Example 1:**
-
-```G1ANT
+```text
 ♥str = ‴123456789MyText‴
 dialog ♥str⟦4⟧
 ```
 
- 
+![](https://manula.r.sizr.io/large/user/7252/img/var-ind-1_v3.png)
 
-**Example 2:**
+In this example the fourth character of the text variable ♥str is displayed.
 
-```G1ANT
+### **Example 2**
+
+```text
 ♥str = ‴123456789MyText‴
 dialog ♥str⟦4:13⟧
 ```
 
- 
+![](https://manula.r.sizr.io/large/user/7252/img/var-ind-2_v3.png)
 
-**Example 3:**
-
-```G1ANT
-♥rect = 24⫽12⫽40⫽48
-dialog ♥rect⟦height⟧
-```
-
+In this example, characters starting from the fourth up to the thirteenth position of the text variable ♥str are displayed.
 

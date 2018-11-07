@@ -1,41 +1,47 @@
-# Array separator
+# Array Separator
 
-**Syntax:**
+## Syntax
 
-```G1ANT
-♥array = ‴element1‴❚‴element 2‴❚‴ele ment 3‴
+```text
+♥array = element1❚element 2❚ele ment 3
 ```
 
-**Description:**
+## **Description**
 
-In G1ANT.Language variables which are arrays can be defined. In an array multiple values can be held to pass them later to command or display specific value. It is not possible to use multiple types in the same list. 
-`❚` **Array separator** - available at G1ANT Developer Studio -&gt; Menu Insert -&gt; Array separator.
+You can define array variables \(lists\) in G1ANT.Language. An array is used to store multiple values, which can then be passed to a command. It is not possible to use multiple variable types in the same list.
 
+An array separator `❚` is available from `Insert/Array Separator` menu or with **Ctrl+\** keyboard shortcut.
 
+### **Example 1**
 
-**Example 1:**
-
-```G1ANT
-♥array = ‴element1‴❚‴element 2‴❚‴ele ment 3‴
+```text
+♥array = element1❚element 2❚ele ment 3
 dialog ♥array
 ```
 
- 
+![](https://manula.r.sizr.io/large/user/7252/img/2018-01-04-array-separator_v1.jpg)
 
-**Example 2:**
+In the example above the `♥array` variable contains 3 elements: `element1`, `element 2` and `ele ment 3`. They are all displayed with the `dialog` command.
 
-```G1ANT
-♥arr = ‴element1‴❚‴element 2‴❚‴ele ment 3‴
-dialog ♥arr⟦1⟧
+### **Example 2**
+
+```text
+♥array = element1❚element 2❚ele ment 3
+dialog ♥array⟦1⟧
 ```
 
- 
+![](https://manula.r.sizr.io/large/user/7252/img/2018-01-04-array-separator-2_v1.jpg)
 
-**Example 3:**
+Here, the `dialog` command displays the first element of the `♥array` variable — as specified by`⟦1⟧` index.
 
-```G1ANT
-♥arr = ⟦list:date⟧12/12/2007❚1/2/2017❚22/3/2018
-dialog ♥arr⟦3⟧
+### **Example 3**
+
+```text
+♥array = ⟦list:date⟧12/12/2007❚1/2/2017❚22/3/2018
+dialog ♥array⟦3⟧
 ```
 
+![](../../.gitbook/assets/image.png)
+
+In the first line the `♥array` variable is declared as a list of date type elements. The third element called by the  `dialog` command will be displayed in a proper date format.
 

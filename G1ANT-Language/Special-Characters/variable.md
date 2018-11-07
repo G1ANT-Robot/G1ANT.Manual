@@ -1,19 +1,28 @@
-# variable
+# Variable
 
-Section `variable` defines script variables with global range.
-Each entry of this section should be defined as below:
+## **Syntax**
 
-`variable = value`
+```text
+♥myvar = ‴some text‴
+```
 
-where `variable` is variable name and `value` describes its value.
-The same principles apply during declaring variable value as it works in the G1ANT scripts.
+```text
+♥myvarnumber = 773
+```
 
+## **Description**
 
+The variable special character `♥` is placed before the name of a variable. Any value from all possible types of structures can be assigned to a variable.
 
-**Example 1:**
+You can insert this character from `Insert/Variable` menu or with **Ctrl+4** keyboard shortcut.
 
-In this example a variable `pi` is set to `3.14` in G1ANT.Robot.ini file. Then we start G1ANT.Robot and using `dialog` command initialized variable is displayed. 
+### **Example**
 
- 
+```text
+♥text = ‴text to be placed to notepad‴
+program name ‴notepad‴
+keyboard ♥text
+```
 
+![](https://manula.r.sizr.io/large/user/7252/img/variable.png)
 

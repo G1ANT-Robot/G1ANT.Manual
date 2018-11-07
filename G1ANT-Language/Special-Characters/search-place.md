@@ -1,46 +1,38 @@
-# Search place
+# Search Place
 
-**Syntax:**
+## **Syntax**
 
-```G1ANT
+```text
 ✱part of text✱
 ```
 
-**Description:**
+## **Description**
 
-`✱` **Search place** is used within the text.find command to specify location for text search. If only part of the text to find is known, or you wish to find ANYTHING in the text, this special character shall highlight the ANYTHING. 
-Example use in commands "Text find":{TOPIC-LINK+command-text-find} , window "window":{TOPIC-LINK+command-window} or "waitfor.window":{TOPIC-LINK+command-waitfor-window}
+Search place character ****`✱`  is used within the text.find command to specify location for text search. If only a part of the text to find is known, or you wish to find ANYTHING in the text, this special character shall highlight the ANYTHING.
 
+You can insert this character from `Insert/Search Place` menu or with **Ctrl+8** keyboard shortcut.
 
+### **Example 1**
 
-**Example 1:**
+You want to search for a text stored in a variable, and get everything between texts `Name:` and `Surname:`. 
 
-```G1ANT
+```text
 ♥source = ‴Name: John Surname: Smith‴
 text.find ♥source search Name:✱Surname: result ♥name
 dialog ♥name
 ```
 
- 
+![](https://manula.r.sizr.io/large/user/7252/img/search1_v1.png)
 
-**Example 2:**
+### **Example 2**
 
-```G1ANT
+When there are more elements matching your query, the result is an array \(a list\). More on arrays [here](array-separator.md).
+
+```text
 ♥source = ‴Name: John Surname: Smith Name: Alfred Surname: Smith‴
 text.find ♥source search Name:✱Surname: result ♥name
 dialog ♥name
 ```
 
-Here result is an array of names. More info of arrays at "this topic":{TOPIC-LINK+array-separator}. 
-
- 
-
-**Example 3:**
-
-```G1ANT
-♥source = ‴Name: John Surname: Smith Name: Alfred Surname: Smith‴
-text.find ♥source search Name:✱Surname: result ♥name
-dialog ♥name[2]
-```
-
+![](../../.gitbook/assets/search.jpg)
 

@@ -1,19 +1,20 @@
-# Key code
+# Key Code
 
-**Syntax:**
+## **Syntax**
 
-```G1ANT
-keyboard ⋘keycode⋙
+```text
+⋘key name⋙
 ```
 
-**Description:**
-`⋘⋙` **Key code** includes a single key code (e.g. `⋘enter⋙`), repeated key code (e.g. `⋘tab 4⋙`) or key combination (e.g. `⋘ctrl+a⋙`). For specific use with "keyboard":{TOPIC-LINK+command-keyboard}. You can also mix using key codes with keys without special character. See example 6 in Keyboard. 
+## **Description**
 
+The key code special character `⋘⋙` includes a single key code \(e.g. `⋘enter⋙`\), repeated key code \(e.g. `⋘tab 4⋙`\) or a key combination \(e.g. `⋘ctrl+a⋙`\). It is for a specific use with the `keyboard` command. You can also mix key codes with regular keys \(without a special purpose\).
 
+You can insert this character from `Insert/Key Code` menu or with **Ctrl+,** \(comma\) keyboard shortcut.
 
-**Example 1:**
+### **Example**
 
-```G1ANT
+```text
 ♥text = ‴text to be placed to notepad‴
 program name ‴notepad‴
 keyboard ♥text
@@ -22,4 +23,5 @@ keyboard ♥text
 keyboard ⋘shift+up⋙
 ```
 
+![](https://manula.r.sizr.io/large/user/7252/img/keycode.png)
 
