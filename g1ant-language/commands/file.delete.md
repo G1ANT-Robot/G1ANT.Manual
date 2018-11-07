@@ -1,22 +1,19 @@
-# string.getsimilarity
+# file.delete
 
 **Syntax:**
 
 ```G1ANT
-string.getsimilarity  phrase1 ‴‴  phrase2 ‴‴  
+file.delete 
 ```
 
 **Description:**
 
-Command `string.getsimilarity` calculates percentage similarity of two strings.
+Command `file.delete` aims to delete the file specified by filename. It waits given timeout and when the expected file does not appear or cannot be deleted, it jumps to the defined label or stops the process.
 
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
-|`phrase1`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  | phrase to compare |
-|`phrase2`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  | phrase to compare |
-|`ignorecase`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | determines whether to ignore case, true by default |
-|`normalize`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | normalises phrases before comparison by replacing diacritic characters with their equivalents, true by default |
-|`result`| "variable":{TOPIC-LINK+string}| no |  [♥result](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Common-Arguments.md)  | name of variable where command's result will be stored |
+|`filename`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | no |  | path and filename of the expected file |
+|`result`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥result](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Common-Arguments.md)  | name of variable where execution status will be stored |
 |`if`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | runs the command only if condition is true |
 |`timeout`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥timeoutcommand](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Variables/Special-Variables.md)  | specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
 |`errorjump` | [label](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/label.md) | no | | name of the label to jump to if given `timeout` expires |
@@ -28,12 +25,29 @@ This command is contained in **G1ANT.Language.dll**.
 
 **Example 1:**
 
-The example below shows comparison between two identical phrases. The result in dialog window will show '100'. 
-
- 
+This example shows how to check if expected file will appear in given timeout, and delete the file when it appears.
 
 ```G1ANT
-string.getsimilarity phrase1 ‴robot‴ phrase2 ‴robot‴ ignorecase false normalize false 
-result ♥myvar                     
-dialog ♥myvar
+try errorcall ➤notfound
+    file.exists C:\G1ANT\test.txt timeout 1000
+    dialog ‴File exists‴
+    call ➤delete
+end try
+-
+procedure ➤delete
+    file.delete C:\G1ANT\test.txt
+    dialog ♥result
+end procedure
+-
+procedure ➤notfound
+    dialog ‴File doesn't exists‴
+end procedure
+```
+
+**Example 2:**
+
+Please, bear in mind that in order to delete a file, you need to have permission to access it.
+
+```G1ANT
+file.delete filename C:\Tests\TestLogo.png
 ```

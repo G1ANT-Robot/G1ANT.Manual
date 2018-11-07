@@ -22,17 +22,17 @@ For more information about `if`, `timeout`, `errorjump` and `errormessage` argum
 
 This command is contained in **G1ANT.Language.dll**.
 
-**Example 1**: 
+**Example 1**:
 
-This example opens notepad using `program` command, then opens firefox using `selenium.open` command, then `waitfor.window` command waits for notepad to be brought to the front. 
+This example opens notepad using `program` command, then opens firefox using `selenium.open` command, then `waitfor.window` command waits for notepad to be brought to the front.
 
 ```G1ANT
 program notepad timeout 5000
 selenium.open type ‴firefox‴ url ‴http://google.pl‴
-waitfor.window title ‴Untitled - Notepad‴ timeout 5000 
+waitfor.window title ‴Untitled - Notepad‴ timeout 5000
 ```
 
-  
+ 
 
 **Example 2:**
 

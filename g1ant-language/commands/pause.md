@@ -3,7 +3,7 @@
 **Syntax:**
 
 ```G1ANT
-pause 
+pause
 ```
 
 **Description:**
@@ -37,11 +37,9 @@ pause ⋘alt+s⋙
 **Example 3:**
 
 ```G1ANT
-➜robot
-dialog message ‴something to display‴
-pause key ⋘ENTER⋙
-jump ➜end
-jump label robot
-➜end
-dialog message ‴end‴
+for counter ♥i from 1 to 2
+    dialog ‴something to display‴
+    pause ⋘enter⋙
+    dialog end
+end for
 ```

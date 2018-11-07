@@ -3,7 +3,7 @@
 **Syntax:**
 
 ```G1ANT
-test  condition ⊂⊃ 
+test condition ⊂⊃
 ```
 
 **Description:**
@@ -32,29 +32,28 @@ In this example, two variables are compared. If they are not equal, **condition*
 test condition ⊂♥test==♥web⊃ errormessage ‴Text orange not found‴
 ```
 
-
-
 **Example 2:**
 
-In this example, variable is compared to a string. They are not equal, so the condition is not fulfilled, we set an **errorjump** argument that jumps over `dialog ‴Yes! Chris likes bananas!‴` to `dialog ‴Sorry, Chris doesn't like bananas!‴` if the condition is false.
+In this example, variable ♥text is compared to the text "Chris likes bananas". We set an **errorcall** argument to the test command so that it will call the procedure  ➤banana if those values are not equal, so display "Sorry, Chris doesn't like bananas!" in the dialog box and stop the script using stop command. Otherwise, "Yes! Chris likes bananas!" message will be printed.
 
 ```G1ANT
 ♥text = ‴Chris likes apples‴
-test condition ⊂♥text == "Chris likes bananas"⊃ errorjump ➜banana
+-
+test condition ⊂♥text == "Chris likes bananas"⊃ errorcall ➤banana
 dialog ‴Yes! Chris likes bananas!‴
-stop silentmode true
-➜banana
-dialog ‴Sorry, Chris doesn't like bananas!‴
+-
+procedure ➤banana
+    dialog ‴Sorry, Chris doesn't like bananas!‴
+    stop silentmode true
+end procedure
 ```
-
- 
 
 **Example 3:**
 
 ```G1ANT
 test condition ⊂♥environment⟦HOMEDRIVE⟧=="C:"⊃
-test condition ⊂♥environment⟦OS⟧ != "Windows*xp"⊃
-dialog message ‴System settings ok.‴ 
+test condition ⊂♥environment⟦OS⟧ != "Windows_xp"⊃
+dialog message ‴System settings ok.‴
 ```
 
 **Example 4:**

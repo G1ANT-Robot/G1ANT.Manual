@@ -1,19 +1,21 @@
-# random.value
+# text.write
 
 **Syntax:**
 
 ```G1ANT
-random.value 
+text.write  text ‴‴  filename ‴‴
 ```
 
 **Description:**
 
-Command `random.value` allows to get random integer value between [min,max] (both inclusive).
+Command `text.write` allows writing text directly into the provided file.
+
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
-|`min`| [integer](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/integer.md)  | no| 0| lower range of random value[inclusive]|
-|`max`| [integer](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/integer.md) | no| 100| upper range of  random value [inclusive]|
-|`result`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md)  | no | [♥result](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Common-Arguments.md)  |name of variable where integer from random value will be stored|
+|`text`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes|  | text or a variable with the content to be written |
+|`filename`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  | the path to file to write to |
+|`encodingculture`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | no |  | specifies file's coding page. If not specified, UTF8 Encoding will be used |
+|`writemode`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | no |  | specifies writing mode. Available modes: Append, CreateOnly, Override |
 |`if`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | runs the command only if condition is true |
 |`timeout`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥timeoutcommand](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Variables/Special-Variables.md)  | specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
 |`errorjump` | [label](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/label.md) | no | | name of the label to jump to if given `timeout` expires |
@@ -25,16 +27,13 @@ This command is contained in **G1ANT.Language.dll**.
 
 **Example 1**:
 
-This example generates random value using `random.value` command, generated number is between [-1000, 1000]. Then result is displayed in a `dialog` window. The command can be repeated a number of times and G1ANT.Robot will randomly generate a new value each time.
-
 ```G1ANT
-random.value min -1000  max 1000 
-dialog ♥result
-random.value  min -1000 max 1000 
-dialog ♥result
+text.write text ‴⊂System.Environment.NewLine⊃Lorem Ipsum‴ filename ‴C:\tests\test.txt‴
+writemode ‴Append‴
 ```
 
- 
+**Example 2:**
 
-
-
+```G1ANT
+text.write text ‴Lorem Ipsum‴ filename ‴C:\tests\test.txt‴ writemode ‴CreateOnly‴
+```

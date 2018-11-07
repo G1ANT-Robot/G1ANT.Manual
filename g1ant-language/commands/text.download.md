@@ -1,19 +1,19 @@
-# file.delete
+# text.download
 
 **Syntax:**
 
 ```G1ANT
-file.delete  
+text.download  url ‴‴
 ```
 
 **Description:**
 
-Command `file.delete` aims to delete the file specified by filename. It waits given timeout and when the expected file does not appear or cannot be deleted, it jumps to the defined label or stops the process.
+Command `text.download` allows to download text content from the website and attach it to the variable.
 
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
-|`filename`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | no |  | path and filename of the expected file |
-|`result`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥result](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Common-Arguments.md)  | name of variable where execution status will be stored |
+|`url`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md)  | yes|  |web address as an input for a command|
+|`result`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md)  | no |  [♥result](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Common-Arguments.md)  |selected variable name to store command’s output data|
 |`if`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | runs the command only if condition is true |
 |`timeout`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥timeoutcommand](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Variables/Special-Variables.md)  | specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
 |`errorjump` | [label](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/label.md) | no | | name of the label to jump to if given `timeout` expires |
@@ -25,25 +25,11 @@ This command is contained in **G1ANT.Language.dll**.
 
 **Example 1:**
 
-This example shows how to check if expected file will appear in given timeout, and delete the file when it appears.
+In this example, G1ANT.Robot downloads text from Google to a variable named **♥clipboard** using `text.download` command. Then using `program`, Notepad is opened and using keyboard shortcut ⋘ctrl+v⋙ downloaded text is pasted.
 
 ```G1ANT
-file.exists filename ‴C:\G1ANT\test.txt‴ timeout 1000 errorjump ➜notfound
-dialog ‴File exists‴
-jump ➜delete
-➜notFound
-dialog ‴File doesn't exist‴
-jump ➜end
-➜delete
-file.delete C:\G1ANT\test.txt
-dialog ♥result
-➜end
+text.download url http://www.google.com result ♥clipboard
+program notepad
+keyboard ⋘ctrl+v⋙
 ```
 
-**Example 2:**
-
-Please, bear in mind that in order to delete a file, you need to have permission to access it.
-
-```G1ANT
-file.delete filename ‴C:\Tests\TestLogo.png‴
-```

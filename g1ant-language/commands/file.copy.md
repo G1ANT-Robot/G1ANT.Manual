@@ -3,7 +3,7 @@
 **Syntax:**
 
 ```G1ANT
-file.copy  path ‴‴  destinationpath ‴‴ 
+file.copy  path ‴‴  destinationpath ‴‴
 ```
 
 **Description:**
@@ -29,13 +29,13 @@ This command is contained in **G1ANT.Language.dll**.
 This example copies specified file using `file.copy` command.
 
 ```G1ANT
-file.copy path ‴D:\New folder\test.txt‴ destinationpath ‴D:\New folder\copied*file.txt‴
+file.copy path ‴D:\New folder\test.txt‴ destinationpath ‴D:\New folder\copied_file.txt‴
 ```
 
 Same results can be achieved by using:
 
 ```G1ANT
-file.copy path ‴D:\New folder\test.txt‴ destinationpath ‴copied*file.txt‴
+file.copy path ‴D:\New folder\test.txt‴ destinationpath ‴copied_file.txt‴
 ```
 
 or, if the file needs to be copied to "D:\New Folder 1", however leave the file name unchanged:
@@ -46,19 +46,15 @@ file.copy path ‴D:\New folder\test.txt‴ destinationpath ‴..\New Folder 1�
 
 Before using the script:
 
- 
-
 After using the script:
-
- 
 
 **Example 2:**
 
 ```G1ANT
-file.exists filename ‴C:\Tests\TestLogo.png‴ errorjump ➜noFile
-file.copy path ‴C:\Tests\TestLogo.png‴  destinationpath ‴C:\Tests\TestLogo2.png‴ overwrite true
-jump ➜end
-➜noFile
-dialog message ‴File not found‴
-➜end
+file.exists C:\Tests\TestLogo.png timeout 1000 errorcall ➤noFile
+file.copy path ‴C:\Tests\TestLogo.png‴ destinationpath ‴C:\Tests\TestLogo2.png‴ overwrite true
+-
+procedure ➤noFile
+    dialog ‴File not found‴
+end procedure
 ```

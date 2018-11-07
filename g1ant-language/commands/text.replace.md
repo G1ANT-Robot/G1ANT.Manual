@@ -47,11 +47,7 @@ dialog ♥newText
 
 This is some text from our file:
 
- 
-
 `text.replace` command replaces word 'distributing' with 'flying'.
-
- 
 
 **Example 3:**
 
@@ -62,5 +58,4 @@ In this example, G1ANT.Robot searches for a word using regex expression and exch
 text.replace text ♥loremIpsum regex ‴\b\w{3}\b‴ replace ‴fox‴ result ♥NN1
 dialog ♥NN1
 ```
-
 

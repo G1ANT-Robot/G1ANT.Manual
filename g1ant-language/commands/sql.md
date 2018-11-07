@@ -8,7 +8,7 @@ sql query ‴‴
 
 **Description:**
 
-Command `sql` allows to execute any SQL query while user is connected to their database. Please use `database` command first, to establish the connection to database. Results of the query are returned as array variables with the same names as columns in the query. 
+Command `sql` allows to execute any SQL query while user is connected to their database. Please use `database` command first, to establish the connection to database. Results of the query are returned as array variables with the same names as columns in the query.
 See also : "database ":{TOPIC-LINK+command-database}.
 
 | Argument | Type | Required | Default Value | Description |

@@ -8,7 +8,7 @@ keyboard
 
 **Description:**
 
-Command `keyboard` allows to send keyboard actions to a window. 
+Command `keyboard` allows to send keyboard actions to a window.
 
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
@@ -27,7 +27,7 @@ This command is contained in **G1ANT.Language.dll**.
 
 **Text:**
 
-`text` argument can be continuous combination of two different forms (see examples 3, 6). First form is a sequence of characters i.e. `‴abc !# 闈河圬曅‴` (`‴` can be omitted if text does not contain any white space characters), with exception of characters the plus sign `+`, caret `^`, percent sign `%`, tilde `~`, parentheses `(` `)`, braces `{` `}` and brackets `[` `]` are treated differently in keyboard command. To send these characters enclose them in braces (see examples 2,3,4,5). Second form to specify keyboard input is "key code":{TOPIC-LINK+key-code}. 
+`text` argument can be continuous combination of two different forms (see examples 3, 6). First form is a sequence of characters i.e. `‴abc !# 闈河圬曅‴` (`‴` can be omitted if text does not contain any white space characters), with exception of characters the plus sign `+`, caret `^`, percent sign `%`, tilde `~`, parentheses `(` `)`, braces `{` `}` and brackets `[` `]` are treated differently in keyboard command. To send these characters enclose them in braces (see examples 2,3,4,5). Second form to specify keyboard input is "key code":{TOPIC-LINK+key-code}.
 
 **Example 1:**
 
@@ -35,8 +35,6 @@ This command is contained in **G1ANT.Language.dll**.
 program notepad
 keyboard Hello!
 ```
-
- 
 
 **Example 2:**
 
@@ -46,8 +44,6 @@ keyboard ‴This is random text‴
 keyboard  ⋘ctrl+a⋙⋘ctrl+c⋙⋘right⋙⋘enter⋙⋘ctrl+v⋙
 ```
 
- 
-
 **Example 3:**
 
 ```G1ANT
@@ -55,8 +51,6 @@ program notepad
 keyboard ⋘alt+o⋙⋘f⋙⋘tab 2⋙20⋘enter⋙
 keyboard ‴Welcome to G1ANT Robot‴
 ```
-
- 
 
 **Example 4:**
 
@@ -98,8 +92,6 @@ This example shows how to combine character sequence, white characters and key c
 program notepad
 keyboard ‴first line of text⋘shift down⋙⋘left 20⋙⋘shift up⋙⋘ctrl+c⋙⋘end⋙⋘enter⋙pasted line: ⋘ctrl+v⋙‴
 ```
-
- 
 
 **Video example 1:**
 

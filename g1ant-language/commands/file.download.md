@@ -3,7 +3,7 @@
 **Syntax:**
 
 ```G1ANT
-file.download  url ‴‴  filename ‴‴  
+file.download  url ‴‴  filename ‴‴ 
 ```
 
 **Description:**
@@ -15,7 +15,7 @@ Command `file.download` allows to download file from the web of FTP server and s
 |`url`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes | | direct link to the file to be downloaded |
 |`filename`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  | destination path and filename for a downloaded file |
 |`if`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | runs the command only if condition is true |
-|`timeout`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥timeoutcommand](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Variables/Special-Variables.md)  | specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
+|`timeout`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥timeoutfiledownload](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Variables/Special-Variables.md) | maximal time for downloading a file from the server; negative value indicates infinite timeout |
 |`errorjump` | [label](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/label.md) | no | | name of the label to jump to if given `timeout` expires |
 |`errormessage`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | no |  | message that will be shown in case error occurs and no `errorjump` argument is specified |
 
@@ -26,13 +26,11 @@ This command is contained in **G1ANT.Language.dll**.
 **Example 1:**
 
 ```G1ANT
-file.download url ‴http://download.teamviewer.com/download/TeamViewer*Setup*en.exe‴ 
-filename ‴C:\G1ANT\TeamViewer*Setup*en.exe‴
+file.download url ‴http://download.teamviewer.com/download/TeamViewer_Setup_en.exe‴ filename ‴C:\G1ANT\TeamViewer_Setup_en.exe‴
 ```
 
 **Example 2:**
 
 ```G1ANT
-file.download url ‴https://www.mozilla.org/en-US/firefox/new/?scene=2‴ 
-filename ‴C:\test\firefox.html‴
+file.download url ‴https://www.mozilla.org/en-US/firefox/new/?scene=2‴ filename ‴C:\test\firefox.html‴
 ```

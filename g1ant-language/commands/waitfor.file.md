@@ -33,7 +33,6 @@ waitfor.file ‴ My Documents\G1ANT.Robot\ ‴
 **Example 2:**
 
 ```G1ANT
-waitfor.file path ‴C:\Users\♥environment⟦USERNAME⟧\Desktop\test.txt‴ timeout 10000 
-errormessage ‴no file‴
+waitfor.file path ‴C:\Users\♥environment⟦USERNAME⟧\Desktop\test.txt‴ timeout 10000 errormessage ‴no file‴
 dialog message ‴file found‴
 ```

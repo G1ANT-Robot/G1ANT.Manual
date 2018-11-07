@@ -29,7 +29,6 @@ This example captures a screenshot using `screenshot` command and saves the scre
 
 ```G1ANT
 screenshot path ‴abc.jpg‴ result ♥path
-dialog ♥path 
+dialog ♥path
 ```
-
 

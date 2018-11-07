@@ -1,18 +1,20 @@
-# test.equals
+# text.read
 
 **Syntax:**
 
 ```G1ANT
-test.equals  current ‴‴  expected ‴‴
+text.read  filename ‴‴
 ```
 
 **Description:**
 
-Command `test.equals` allows to check if current variable has expected value.
+Command `text.read` allows to obtain file content and assign to variable.
+
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
-|`current`|  [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | yes| | variable on which the test is performed (it can be a string, number, bool, rectangle) |
-|`expected`|  [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | yes| | expected value of **current** |
+|`filename`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  | the path to selected file |
+|`result`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no |  [♥result](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Common-Arguments.md)  | name of variable where red text will be stored |
+|`encodingculture`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | no |  | specifies file's coding page. If not specified, UTF8 Encoding will be used |
 |`if`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | runs the command only if condition is true |
 |`timeout`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥timeoutcommand](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Variables/Special-Variables.md)  | specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
 |`errorjump` | [label](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/label.md) | no | | name of the label to jump to if given `timeout` expires |
@@ -22,20 +24,10 @@ For more information about `if`, `timeout`, `errorjump` and `errormessage` argum
 
 This command is contained in **G1ANT.Language.dll**.
 
-**Example 1**: 
+**Example 1:**
 
 ```G1ANT
-♥text = ‴bananas and kiwi‴
-text.find text ♥text search ‴orange‴ result ♥test 
-test.equals current ♥test expected ‴orange‴ message ‴Text orange not found‴
+text.read filename ‴C:\tests\test.txt‴ result ♥read
+dialog ♥read
 ```
 
-**Example 2:**
-
-```G1ANT
-♥text = ‴Chris likes apples‴
-test.equals current text expected ‴Chris likes bananas‴ jump ➜banana
-dialog ‴Yes! Chris likes bananas!‴
-➜banana
-dialog ‴Sorry, Chris doesn't like bananas!‴
-```

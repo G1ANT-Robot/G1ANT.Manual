@@ -1,21 +1,22 @@
-# text.write
+# string.getsimilarity
 
 **Syntax:**
 
 ```G1ANT
-text.write  text ‴‴  filename ‴‴ 
+string.getsimilarity  phrase1 ‴‴  phrase2 ‴‴ 
 ```
 
 **Description:**
 
-Command `text.write` allows writing text directly into the provided file. 
+Command `string.getsimilarity` calculates percentage similarity of two strings.
 
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
-|`text`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes|  | text or a variable with the content to be written |
-|`filename`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  | the path to file to write to |
-|`encodingculture`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | no |  | specifies file's coding page. If not specified, UTF8 Encoding will be used |
-|`writemode`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | no |  | specifies writing mode. Available modes: Append, CreateOnly, Override |
+|`phrase1`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  | phrase to compare |
+|`phrase2`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  | phrase to compare |
+|`ignorecase`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | determines whether to ignore case, true by default |
+|`normalize`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | normalises phrases before comparison by replacing diacritic characters with their equivalents, true by default |
+|`result`| "variable":{TOPIC-LINK+string}| no |  [♥result](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Common-Arguments.md)  | name of variable where command's result will be stored |
 |`if`| [bool](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/bool.md) | no | true | runs the command only if condition is true |
 |`timeout`| [variable](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Special-Characters/variable.md) | no | [♥timeoutcommand](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Variables/Special-Variables.md)  | specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
 |`errorjump` | [label](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/label.md) | no | | name of the label to jump to if given `timeout` expires |
@@ -25,15 +26,11 @@ For more information about `if`, `timeout`, `errorjump` and `errormessage` argum
 
 This command is contained in **G1ANT.Language.dll**.
 
-**Example 1**:
+**Example 1:**
+
+The example below shows comparison between two identical phrases. The result in dialog window will show '100'.
 
 ```G1ANT
-text.write text ‴⊂System.Environment.NewLine⊃Lorem Ipsum‴ filename ‴C:\tests\test.txt‴ 
-writemode ‴Append‴
-```
-
-**Example 2:**
-
-```G1ANT
-text.write text ‴Lorem Ipsum‴ filename ‴C:\tests\test.txt‴ writemode ‴CreateOnly‴
+string.getsimilarity phrase1 ‴robot‴ phrase2 ‴robot‴ ignorecase false normalize false result ♥myvar                    
+dialog ♥myvar
 ```

@@ -4,9 +4,9 @@
 
 ```G1ANT
 text.find  text ‴‴
- 
-**Description:**
 ```
+
+**Description:**
 
 Command `text.find` allows to search for text within text or variable and assign result to another variable.
 
@@ -36,8 +36,6 @@ text.find ♥source search Name:✱Surname: result ♥name
 dialog ♥name
 ```
 
- 
-
 **Example 2:**
 
 This example creates variable ♥address and using `text.find` command with specified 'regex' we search for results. Finally, the result is prompted in dialog window using `dialog` command.
@@ -48,18 +46,14 @@ text.find text ♥address regex ‴(\d+)-?(\d+)**(\D)?(w+)?‴ result ♥house
 dialog ♥house
 ```
 
- 
-
 **Example 3:**
 
 ```G1ANT
 ♥catText = ‴Wack the mini furry mouse run outside as soon as door open yet run in circles, or try to jump onto window and fall while scratching at wall so munch on tasty moths or sweet beast. Play time destroy the blinds, and jump around on couch, meow constantly until given food, so meow to be let in. ‴
-text.find text ♥catText search ‴Wack✱in.‴ search2 ‴window✱blinds‴ search3 ‴at wall so✱. Play‴ 
+text.find text ♥catText search ‴Wack✱in.‴ search2 ‴window✱blinds‴ search3 ‴at wall so✱. Play‴
 result ♥textBefore
 dialog ♥textBefore
 ```
-
- 
 
 **Example 4:**
 
@@ -69,14 +63,11 @@ text.find text ♥adress regex ‴(\d+)-?(\d+)**(\D)?(w+)?‴ result ♥house
 dialog ♥house
 ```
 
- 
-
 **Example 5:**
 
 ```G1ANT
 ♥html = ‴&lt;html&gt;&lt;body&gt;This is fake page With some spaces&lt;crazydiv&gt;`#$**&amp; and special ch`rs !09 &lt;number&gt;123&lt;/number&gt;();&lt;/crazydiv&gt; '|+&lt;/body&gt;&lt;/html&gt;‴
 text.find text ♥html search ‴&lt;html&gt;✱&lt;/html&gt;‴ search2 ‴&lt;crazydiv&gt;✱&lt;/crazydiv&gt;‴ regex ‴\d\d\d‴ result ♥toExpect
-dialog ♥toExpect 
+dialog ♥toExpect
 ```
-
 

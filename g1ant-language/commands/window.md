@@ -3,7 +3,7 @@
 **Syntax:**
 
 ```G1ANT
-window  title ‴‴ 
+window  title ‴‴
 ```
 
 **Description:**
@@ -25,8 +25,6 @@ This command is contained in **G1ANT.Language.dll**.
 
 In order to access the names of all opened windows, you can use  `CTRL+W` shortcut.
 
- 
-
 **Example 1:**
 
 In this example we want to activate Notepad window. In order to do this, despite the name of the Notepad file, there is always a "Notepad" word so we can bring this window to the front just by using `✱` sign in the following lines of code. Note that some names of windows might differ due to one's Operating System language.
@@ -36,8 +34,6 @@ window ‴✱Notepad‴
 window  ‴✱Notepad✱‴
 window ‴filename✱pad‴
 ```
-
- 
 
 **Example 2:**
 

@@ -25,11 +25,10 @@ For more information about `if`, `timeout`, `errorjump` and `errormessage` argum
 
 This command is contained in **G1ANT.Language.dll**.
 
-**Example 1**: 
+**Example 1**:
 
 ```G1ANT
 waitfor.color position ‴300⫽300‴ color ‴FFFFFF‴ relative true
-dialog ♥result 
+dialog ♥result
 ```
-
 

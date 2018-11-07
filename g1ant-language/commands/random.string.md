@@ -3,7 +3,7 @@
 **Syntax:**
 
 ```G1ANT
-random.string  length ‴‴ 
+random.string  length ‴‴
 ```
 
 **Description:**
@@ -32,17 +32,14 @@ This command is contained in **G1ANT.Language.dll**.
 This example generates random string using `random.string` command, generated string is 23 characters long and it is case sensitivity (uses uppercase letters). Then result is displayed on a `dialog` window using `dialog` command.
 
 ```G1ANT
-random.string length 23  casesensitivity true 
+random.string length 23  casesensitivity true
 dialog ♥result
 ```
-
- 
 
 **Example 2:**
 
 ```G1ANT
 random.string length 10 useletters true usenumbers true usechars false casesensitivity true result ♥ranStr
-dialog ♥ranStr 
+dialog ♥ranStr
 ```
-
 
