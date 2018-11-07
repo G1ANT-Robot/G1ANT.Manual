@@ -9,6 +9,7 @@ waitfor.window  title ‴‴
 **Description:**
 
 Command `waitfor.window` waits for specified window to become focused.
+
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
 |`title`| [string](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/string.md) | yes |  |specifies title of the window|
