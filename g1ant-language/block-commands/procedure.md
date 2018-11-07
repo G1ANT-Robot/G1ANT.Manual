@@ -1,8 +1,8 @@
-﻿# procedure
+# procedure
 
 **Description:**
 
-**Procedure** allows to define procedure with input parameters (or without) anywhere in the script code. You can later call the procedure with specific parameters where you need it. Designed to use for set of repeatable commands which can be used multiple times with different parameters. The special ➤ character is available in the Robot Menu -&gt; Insert -&gt; Procedure
+**Procedure** allows to define procedure with input parameters (or without) anywhere in the script code. You can later call the procedure with specific parameters where you need it. Designed to use for set of repeatable commands which can be used multiple times with different parameters. The special ➤ character is available in the Robot Menu -> Insert -> Procedure
 When defining, make sure to:
 
 1. Put default value after parameter name - it is needed to define the "type":{TOPIC-LINK+types-of-variables} of input parameter.
@@ -42,8 +42,8 @@ procedure ➤populateExcel
 The part of the script below is where the magic happens, we are defining a **loop**, that is some fragment of the script that G1ANT.Robot will execute all over again as long as the condition is true.
 
 The following script will insert values from the list **♥dataList⟦♥i⟧** starting from the value with index=1 (in our case it is 'OrderDate') into columns, we specified it in variables above. The execution of the script will only fill 7 columns, because of the condition we specified:
-`if ⊂♥columIndex &lt;= 7⊃`
-The line `jump ➜columns if ⊂♥columIndex &lt;= 7⊃` means that G1ANT.Robot will move to the top of the script where we started defining the loop if the **♥columIndex** is 1,2,3,4,5,6 or 7, when it is 8, G1ANT.Robot will go further.
+`if ⊂♥columIndex <= 7⊃`
+The line `jump ➜columns if ⊂♥columIndex <= 7⊃` means that G1ANT.Robot will move to the top of the script where we started defining the loop if the **♥columIndex** is 1,2,3,4,5,6 or 7, when it is 8, G1ANT.Robot will go further.
 The 'key' of the loop is a number that gets incremented every time G1ANT.Robot reads the script inside of the loop.
 `♥i=♥i+1` - it increments the index of the values from our list.
 `♥columIndex = ♥columIndex + 1` - it increments the columns number.
@@ -53,7 +53,7 @@ The 'key' of the loop is a number that gets incremented every time G1ANT.Robot r
     excel.setvalue value ♥dataList⟦♥i⟧ row ♥rowIndex colindex ♥columIndex errorjump ➜done
     ♥i=♥i+1
     ♥columIndex = ♥columIndex + 1
-    jump ➜columnsandrows if ⊂♥columIndex &lt;= 7⊃
+    jump ➜columnsandrows if ⊂♥columIndex <= 7⊃
 ```
 
 This part of the script is responsible for inserting values inside of rows as long as the number of rows does not exceed 91 (it can equal 91). It is important to set  `♥columIndex  = 1` again, because we were incrementing it before and it was 7.  
@@ -61,7 +61,7 @@ This part of the script is responsible for inserting values inside of rows as lo
 ```G1ANT
     ♥columIndex  = 1
     ♥rowIndex = ♥rowIndex + 1
-    jump ➜columnsandrows if ⊂♥i&lt;=91⊃
+    jump ➜columnsandrows if ⊂♥i<=91⊃
     ➜done
 end procedure
 excel.open

@@ -1,4 +1,4 @@
-﻿# json
+# json
 
 Json format stores values of imported json files.
 A json file can be imported into G1ANT.Robot using "text.read":{TOPIC-LINK+command-text-read} command. It is imported as a string by default. It can be then converted to the **json** format, to enable various operations on the data.

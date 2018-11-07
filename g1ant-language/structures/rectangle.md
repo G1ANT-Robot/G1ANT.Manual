@@ -10,7 +10,7 @@ This example shows how rectangles can be declared:
 ♥rect = 2⫽4⫽12⫽40
 ```
 
-Rectangles can also be easily inserted from Robot's Menu Insert -&gt; rectangle, or using shortcut `ctrl+r`
+Rectangles can also be easily inserted from Robot's Menu Insert -> rectangle, or using shortcut `ctrl+r`
 Rectangles' width, height and x,y coordinates of their top left corners can be accessed as follows:
 
 ```G1ANT

@@ -10,7 +10,7 @@ This example shows how points can be declared:
 ♥pnt = 935⫽580
 ```
 
-Mouse position is also stored in point format. It can be easily inserted from G1ANT.Robot's Menu Insert -&gt; mouse position, or using shortcut `ctrl+e`.
+Mouse position is also stored in point format. It can be easily inserted from G1ANT.Robot's Menu Insert -> mouse position, or using shortcut `ctrl+e`.
 
 Point's coordinates can be accessed as follows:
 

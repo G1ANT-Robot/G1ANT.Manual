@@ -152,7 +152,7 @@ Parentheses can be used to delimit a subexpression to allow repetition or other 
 
 The first part of the expression searches for a one to three digit number followed by a literal period `.`. This is enclosed in parentheses and repeated three times using the `{3}` quantifier, followed by the same expression without the trailing period.
 
-Note, this example allows IP addresses with arbitrary one, two, or three digit numbers separated by periods even though a valid IP address cannot have numbers larger than 255. It would be useful to arithmetically compare a captured number N to enforce N&lt;256, but this is not possible with regular expressions alone.
+Note, this example allows IP addresses with arbitrary one, two, or three digit numbers separated by periods even though a valid IP address cannot have numbers larger than 255. It would be useful to arithmetically compare a captured number N to enforce N<256, but this is not possible with regular expressions alone.
 
 The below example tests various alternatives based on the starting digits to guarantee the limited range of numbers by pattern matching. This shows that an expression can become cumbersome even when looking for a pattern that is simple to describe.
 

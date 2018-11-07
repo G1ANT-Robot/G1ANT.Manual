@@ -124,7 +124,7 @@ text.read filename ‴C:\html.txt‴ result ♥htmlString
 ```
 
 ```G1ANT
-♥html = ⟦html⟧‴&lt;html&gt;&lt;head&gt;This is the title&lt;div&gt;The content of a div&lt;/div&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;‴
+♥html = ⟦html⟧‴<html><head>This is the title<div>The content of a div</div></head><body></body></html>‴
 ```
 
 [xml](https://github.com/G1ANT-Robot/G1ANT.Manual/blob/master/G1ANT-Language/Structures/xml.md)

@@ -12,7 +12,7 @@ A for loop enables to run chosen tasks as many times as specified.
 ➜forloop
 ♥i=♥i+1
 dialog message ‴here are the tasks to be done in a loop: ♥i time‴
-jump label ➜forloop if ♥i&lt;3
+jump label ➜forloop if ♥i<3
 ```
 
 In this loop the message is dialogued 3 times. It is initiated as long as the ♥i variable is smaller than number of iterations (here: 3).
@@ -74,8 +74,8 @@ A FOR loop with another FOR loop nested inside.
 -start loop
 dialog message ‴here is the row ♥x column ♥y of our imaginary matrix‴
 -end loop
-jump label ‴➜nestedloop‴ if ♥y&lt;2
-jump label ‴➜forloop‴ if ♥x&lt;3
+jump label ‴➜nestedloop‴ if ♥y<2
+jump label ‴➜forloop‴ if ♥x<3
 ```
 
 This example is especially useful when used with matrixes or spreadsheets - imagine the x and y iterators as coordinates.

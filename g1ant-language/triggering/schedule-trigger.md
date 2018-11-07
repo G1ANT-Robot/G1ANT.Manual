@@ -17,9 +17,9 @@ Schedule trigger launches tasks at some specified time.
 **Example of defining Schedule Trigger in Settings**
 
 ```G1ANT
-&lt;Trigger Class="ScheduleTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot"&gt;
-	&lt;Arguments&gt;
-		&lt;Argument Key="CrontabExpression"&gt;5 4 ** ** **&lt;/Argument&gt;
-	&lt;/Arguments&gt;
-&lt;/Trigger&gt;
+<Trigger Class="ScheduleTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot">
+	<Arguments>
+		<Argument Key="CrontabExpression">5 4 ** ** **</Argument>
+	</Arguments>
+</Trigger>
 ```

@@ -66,8 +66,8 @@ dialog ♥house
 **Example 5:**
 
 ```G1ANT
-♥html = ‴&lt;html&gt;&lt;body&gt;This is fake page With some spaces&lt;crazydiv&gt;`#$**&amp; and special ch`rs !09 &lt;number&gt;123&lt;/number&gt;();&lt;/crazydiv&gt; '|+&lt;/body&gt;&lt;/html&gt;‴
-text.find text ♥html search ‴&lt;html&gt;✱&lt;/html&gt;‴ search2 ‴&lt;crazydiv&gt;✱&lt;/crazydiv&gt;‴ regex ‴\d\d\d‴ result ♥toExpect
+♥html = ‴<html><body>This is fake page With some spaces<crazydiv>`#$**&amp; and special ch`rs !09 <number>123</number>();</crazydiv> '|+</body></html>‴
+text.find text ♥html search ‴<html>✱</html>‴ search2 ‴<crazydiv>✱</crazydiv>‴ regex ‴\d\d\d‴ result ♥toExpect
 dialog ♥toExpect
 ```
 

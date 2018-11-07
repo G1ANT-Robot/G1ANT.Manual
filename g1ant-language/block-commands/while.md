@@ -29,7 +29,7 @@ In this example ♥index variable has initial value 1. The while loop will be be
 
 ```G1ANT
 ♥index = 1
-while ♥index&lt;5
+while ♥index<5
    dialog ♥index
    ♥index = ♥index + 1
 end while

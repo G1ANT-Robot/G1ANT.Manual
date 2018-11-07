@@ -8,7 +8,7 @@
 
 **Description:**
 
-`➜` **labelname** defines a label element. This is the place where the script will start executing if you ask them to jump ➜labelname. It is available at G1ANT Developer Studio -&gt; Insert -&gt; Label
+`➜` **labelname** defines a label element. This is the place where the script will start executing if you ask them to jump ➜labelname. It is available at G1ANT Developer Studio -> Insert -> Label
 
 See also : "Commands - label":{TOPIC-LINK+command-labels}
 See also : "Commands - jump":{TOPIC-LINK+command-jump}

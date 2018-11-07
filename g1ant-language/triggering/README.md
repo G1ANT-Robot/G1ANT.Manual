@@ -5,17 +5,17 @@ Each entry of this section should be defined as below.
 
 **Initial Arguments**
 
-Arguments needed for a trigger to be called before running the script. In order to set them, you need to open `Tools\Settings` and paste some xml code between `&lt;Triggers&gt;` … `&lt;/Triggers&gt;`.
+Arguments needed for a trigger to be called before running the script. In order to set them, you need to open `Tools\Settings` and paste some xml code between `<Triggers>` … `</Triggers>`.
 Note that some possible arguments are not required to be set because they already have a default value.
 
 **Example**
 
 ```G1ANT
-&lt;Trigger Class="FileTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot"&gt;
-	&lt;Arguments&gt;
-		&lt;Argument Key="Directory"&gt;C:\Users\a\Documents\G1ANT.Robot&lt;/Argument&gt;
-	&lt;/Arguments&gt;
-&lt;/Trigger&gt; 
+<Trigger Class="FileTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot">
+	<Arguments>
+		<Argument Key="Directory">C:\Users\a\Documents\G1ANT.Robot</Argument>
+	</Arguments>
+</Trigger> 
 ```
 
 **Arguments to define a trigger:**
@@ -24,7 +24,7 @@ Note that some possible arguments are not required to be set because they alread
 `TaskName` - either a name of a robot script without extension that we want to launch, name of it with extension or just a path to this robot script
 
 **Argument to define trigger initial arguments:**
-`Key` - name of a trigger initial argument, value of that trigger argument should be put between `&lt;Argument&gt;` ... `&lt;/Argument&gt;`.
+`Key` - name of a trigger initial argument, value of that trigger argument should be put between `<Argument>` ... `</Argument>`.
 
 **Task Arguments**
 

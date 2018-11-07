@@ -31,15 +31,15 @@ Arguments generated while executing the script for each of the incoming email.
 **Example of defining File Trigger in Settings**
 
 ```G1ANT
-&lt;Trigger Class="MailTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot"&gt;
-	&lt;Arguments&gt;
-		&lt;Argument Key="Host"&gt;imap.gmail.com&lt;/Argument&gt;
-		&lt;Argument Key="Login"&gt;example`example.com&lt;/Argument&gt;
-		&lt;Argument Key="Password"&gt;example123&lt;/Argument&gt;
-		&lt;Argument Key="Frequency"&gt;300000&lt;/Argument&gt;
-		&lt;Argument Key="Port"&gt;993&lt;/Argument&gt;
-	&lt;/Arguments&gt;
-&lt;/Trigger&gt; 
+<Trigger Class="MailTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot">
+	<Arguments>
+		<Argument Key="Host">imap.gmail.com</Argument>
+		<Argument Key="Login">example`example.com</Argument>
+		<Argument Key="Password">example123</Argument>
+		<Argument Key="Frequency">300000</Argument>
+		<Argument Key="Port">993</Argument>
+	</Arguments>
+</Trigger> 
 ```
 
 **Example**

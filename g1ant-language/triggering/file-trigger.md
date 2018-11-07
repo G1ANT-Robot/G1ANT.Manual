@@ -25,11 +25,11 @@ Arguments generated while executing the script for each of the file in the monit
 **Example of defining File Trigger in Settings**
 
 ```G1ANT
-&lt;Trigger Class="FileTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot"&gt;
-	&lt;Arguments&gt;
-		&lt;Argument Key="Directory"&gt;C:\Users\a\Documents\G1ANT.Robot&lt;/Argument&gt;
-	&lt;/Arguments&gt;
-&lt;/Trigger&gt; 
+<Trigger Class="FileTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot">
+	<Arguments>
+		<Argument Key="Directory">C:\Users\a\Documents\G1ANT.Robot</Argument>
+	</Arguments>
+</Trigger> 
 ```
 
 **Example**
