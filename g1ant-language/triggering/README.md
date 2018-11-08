@@ -1,14 +1,16 @@
 # Triggering
 
-Section triggering describes all the triggers which can be generated in specific circumstances (depending on the trigger) and can call user defined process.
-Each entry of this section should be defined as below.
+This section describes all triggers which can be generated in specific circumstances (depending on a trigger) and can call user defined process.
 
-**Initial Arguments**
+Each entry of this section is described with the following principles:
 
-Arguments needed for a trigger to be called before running the script. In order to set them, you need to open `Tools\Settings` and paste some xml code between `<Triggers>` … `</Triggers>`.
-Note that some possible arguments are not required to be set because they already have a default value.
+## Initial Arguments
 
-**Example**
+These are the arguments needed for a trigger to be called before running the script. In order to set them, you need to open `Tools\Settings` and paste some xml code between `<Triggers>` … `</Triggers>`.
+
+Note that some arguments are not required to be set, because they already have a default value.
+
+### Example
 
 ```G1ANT
 <Trigger Class="FileTrigger" Name="test" TaskName="C:\Users\a\Documents\G1ANT.Robot\test.robot">
@@ -18,20 +20,24 @@ Note that some possible arguments are not required to be set because they alread
 </Trigger> 
 ```
 
-**Arguments to define a trigger:**
-`Class` - describes what type of trigger it is (possible: FileTrigger, ScheduleTrigger, MailTrigger)
-`Name` - unique name declared to distinguish triggers from the same Class
-`TaskName` - either a name of a robot script without extension that we want to launch, name of it with extension or just a path to this robot script
+### Arguments to Define a Trigger
 
-**Argument to define trigger initial arguments:**
-`Key` - name of a trigger initial argument, value of that trigger argument should be put between `<Argument>` ... `</Argument>`.
+| Argument   | Description                                                  |
+| ---------- | ------------------------------------------------------------ |
+| `Class`    | Describes the type of a trigger: `FileTrigger`, `ScheduleTrigger` or `MailTrigger` |
+| `Name`     | A unique name to distinguish triggers from the same `Class`  |
+| `TaskName` | Either a name of a robot script that we want to launch (with or without the file extension) or a full path to this robot script |
 
-**Task Arguments**
+### An Argument Defining Trigger Initial Arguments
 
-Arguments generated while executing the script. In order to get them, use special variable `♥task` and inside these special rectangle characters `⟦⟧` insert the name of an argument.
-e.g. `♥task⟦filepath⟧`
+`Key` is the name of a trigger initial argument. The value of that trigger argument should be put between `<Argument>` ... `</Argument>`.
 
-For the list of possible task or initial arguments, please visit manual page regarding a specific trigger.
+## Task Arguments
 
-Note that triggers are not active at the start of G1ANT.Robot. Whenever we want to use them, the triggersactive option must be switched on before launching the script. You can do this by choosing `Triggers/Active` from the Menu in Robot.
+Task arguments are generated while executing the script. In order to get them, use a special variable `♥task` and insert the name of an argument inside special double brackets `⟦⟧`,
+e.g. `♥task⟦filepath⟧`.
+
+For the list of possible task or initial arguments, see the description of a specific trigger.
+
+Note that triggers are not active when G1ANT.Robot starts. Whenever you want to use them, you have to activate them before launching the script. You can do this by choosing `Triggers/Active` menu in Robot window.
 
