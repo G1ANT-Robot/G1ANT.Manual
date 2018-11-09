@@ -6,7 +6,7 @@ File Trigger monitors files in the specified folder and provides information whe
 
 | Trigger Argument | Required | Default value | Description |
 | -------- | ---- | -------- | ------------- |
-| `Directory` | yes | - | Path of the folder to monitor |
+| `Directory` | yes |  | Path of the folder to monitor |
 | `Filter` | no |  `*.*` | Determines what files are monitored in a directory, all files are watched by default (`*.*`) |
 | `AddExistingFilesAtStart` | no | false | Determines whether all initially existing files will be triggered or not |
 

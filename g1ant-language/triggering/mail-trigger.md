@@ -6,11 +6,11 @@ Mail Trigger provides information about incoming emails.
 
 | Trigger Argument | Required | Default value | Description |
 | -------- | ---- | -------- | ------------- |
-| `Host` | yes | - | IMAP server address |
-| `Login` | yes | - | Login (e.g. email address) for the account the emails will be sent from |
-| `Password` | yes | - | Password for this email account |
+| `Host` | yes |  | IMAP server address |
+| `Login` | yes |  | Login (e.g. email address) for the account the emails will be sent from |
+| `Password` | yes |  | Password for this email account |
 | `Frequency` | no | 30000 | Time interval between updates on incoming emails (in milliseconds) |
-| `Port` | yes | - | Incoming mail server port |
+| `Port` | yes |  | Incoming mail server port |
 
 ## Task Arguments
 

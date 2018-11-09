@@ -6,7 +6,7 @@ Schedule trigger launches tasks at some specified time.
 
 | Trigger Argument | Required | Default value | Description |
 | -------- | ---- | -------- | ------------- |
-| `CrontabExpression` | yes | - | Time specified for the trigger to be called at (for more information about setting this crontab argument, please visit [Crontab](https://crontab.guru/) website) |
+| `CrontabExpression` | yes |  | Time specified for the trigger to be called at (for more information about setting this crontab argument, please visit [Crontab](https://crontab.guru/) website) |
 
 ## Task Arguments
 
