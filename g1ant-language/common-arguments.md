@@ -1,87 +1,79 @@
 # Common Arguments
 
-Here is the list and explanation of arguments which can be used within most commands.
+Here is the list and explanation of arguments, which can be used with most commands.
 
 ## if
 
-Argument `if` followed by a condition, defines whether the command will be executed or skipped. The condition is a C# macro and if the expression contain some spaces, we advise you to paste it within ⊂⊃ for a clearer readability.
+This argument followed by a condition, defines whether the command will be executed or skipped. The condition is a C# macro and if the expression contain some spaces, we advise you to paste it within `⊂⊃` for a clearer readability.
 
-### Syntax:
+### Syntax
 
 | Argument Name | Argument Value | Command Execution |
 | ------------- | -------------- | ----------------- |
-| if | true | yes |
-| if | false | no |
+| `if` | true | yes |
+| `if` | false | no |
 
-**Example 1:**
+### Example 1
 
 ```G1ANT
 ♥x = 3
 program notepad if ♥x==3
 ```
 
-In the example above, number 3 is assigned to a variable ♥x.  This part of the script: `program notepad if ♥x==3` will only be executed, if the condition is true. In this case it is. G1ANT.Robot **will open** notepad.
+In the example above, number 3 is assigned to a variable `♥x`.  The part of the script: `program notepad if ♥x==3` will only be executed, if the condition is true. In this case it is, so G1ANT.Robot **will open** notepad.
 
-**Example 2:**
+### Example 2
 
 ```G1ANT
-♥x = theatre
+♥x = theater
 program notepad if ♥x=="movie"
 ```
 
-In the example above, word "theatre" is assigned to a variable ♥x.  This part of the script: `program notepad if ♥x=="movie"` will only be executed, if the condition is true. In this case it is false (theatre is not equal to movie). G1ANT.Robot **will not** open notepad.
+In the example above, word “theater” is assigned to a variable `♥x`.  The part of the script: `program notepad if ♥x=="movie"` will only be executed, if the condition is true. In this case it is false (theater is not equal to movie), so G1ANT.Robot **will not** open notepad.
 
 Please, note that movie has to be in double quotes because that is how strings have to be declared in C#.
 
-**Example 3:**
+### Example 3
 
 ```G1ANT
 ♥x = 3
-♥y = theatre
-program notepad if ⊂♥x==3 &amp;&amp; ♥y=="theatre"⊃
+♥y = theater
+program notepad if ⊂♥x==3 & ♥y=="theatre"⊃
 ```
 
-G1ANT.Robot **will open** notepad.
- 
-## errorresult
+G1ANT.Robot **will open** notepad, since both criteria are met and the resulting condition is true.
 
-### Syntax:
+## errorcall
 
-Argument `errorresult` lets us choose the name of a variable which will store the command's output. Variable name should be preceded by ♥.
+This argument specifies a procedure to call when a command throws an exception (error) or a timeout expires. The procedure name should be preceded by the `➜` special character (**Ctrl+2**).
 
-**Example 1:**
+### Example
+
+The following script tries to select a *Sometitle* window. If it succeeds, the content of the window is copied and then pasted into Notepad. But when there's no such window, an error occurs and the `➤ErrorOccurred` procedure is called. This procedure displays a dialog box with *An error has occurred* message.
+
+Note that when a user clicks OK in the dialog, the procedure ends, but the script continues: the robot goes back to where the procedure was called and tries to select and copy all content of the active window and paste it into Notepad.
 
 ```G1ANT
-text.find text ♥clipboard search ♥web result ♥test
+window sometitle errorcall ➤ErrorOccurred
+keyboard ⋘CTRL+A⋙⋘CTRL+C⋙
+program notepad keyboard ⋘CTRL+V⋙ 
+
+procedure ➤ErrorOccurred
+	dialog ‴An error has occurred‴
+end procedure
 ```
 
-**Example 2:**
-
-```G1ANT
-excel.getvalue row 3 colindex 2 result ♥cellcontent
-```
-
-Please, note that you do not have to declare result variable in order to get a command's output.
-If you leave this line of code as below, you can access the result using ♥result variable that is created automatically by G1ANT.Robot.
-
-```G1ANT
-excel.getvalue row 3 colindex 2
-```
-
-Please, try it using dialog command that should display the command output like this:
-
-```G1ANT
-dialog ♥result
-```
+This return to the place of a call in the script is the main difference between `errorcall` and `errorjump` arguments.
 
 ## errorjump 
 
-Argument `errorjump` specifies name of a label to jump to when an error occur in the command. It allows G1ANT.Robot to omit some part of the script and jump to other part of the script. Label name should be preceded by ➜.
+This argument specifies the name of a label to jump to when a command throws an exception (error) or a timeout expires. It allows G1ANT.Robot to omit some part of the script and jump to other part of the script. The label name should be preceded by the `➤` special character (**Ctrl+3**).
 
-**Example 1:**
+### Example 1
 
-In the example below we are assigning some text to a variable **♥text**.
-Our condition `⊂♥text == "Chris likes bananas"⊃` is false, so thanks to `errorjump` argument specified,  G1ANT.Robot jumps to label **➜banana** which is a value for `errorjump` argument. G1ANT.Robot will not dialog ‴Yes! Chris likes bananas!‴, because it will perform `errorjump` before he sees another command. Anything that is inside of  **➜banana**  label, will be executed. In our case: ‴Sorry, Chris doesn't like bananas!‴
+In the example below a text is assigned to a variable named `♥text`.
+
+The condition `⊂♥text == "Chris likes bananas"⊃` is false, and since the `errorjump` argument is specified,  G1ANT.Robot jumps to the part of script labeled `➜banana` (the value of the `errorjump` argument). G1ANT.Robot will not display a dialog box with the text *Yes! Chris likes bananas!*, because it will execute `errorjump` and skip the `dialog` command. Instead, all commands within the  `➜banana`  label will be executed. In this case, it would mean displaying a dialog box with the text *Sorry, Chris doesn't like bananas!*
 
 ```G1ANT
 ♥text = ‴Chris likes apples‴
@@ -91,7 +83,7 @@ dialog ‴Yes! Chris likes bananas!‴
 dialog ‴Sorry, Chris doesn't like bananas!‴
 ```
 
-**Example 2:**
+### Example 2
 
 ```G1ANT
 color.expected position ‴616⫽384‴ color ‴1E1E1F‴ errorjump ➜wrong result ♥name
@@ -102,28 +94,46 @@ dialog message ‴no expected color in this position‴
 ➜end
 ```
 
-In this example, if the specified color "1E1E1F" is in the specified position "616⫽384" on the screen. G1ANT.Robot will dialog what is inside ♥name and jump to ➜end label, if the color is not found, program will jump to  ➜wrong label and dialog "no expected color in this position".
+In this example, if the specified color `1E1E1F` is found in the specified position `616⫽384` on the screen, G1ANT.Robot will open a dialog box displaying contents of the `♥name` variable and then will jump to the `➜end` label. If the color is not found, program will jump to the `➜wrong` label and show a dialog box with *no expected color in this position*.
 
 ## errormessage
 
-argument `errormessage` is a message that will be shown in case an error occurs and no `errorjump` argument is specified. If `errorjump` is specified, G1ANT.Robot will omit `errormessage` while executing the script.
+This argument is simply a message that will be displayed in case a command throws an exception (error) or a timeout expires, and no `errorjump` argument is specified. If `errorjump` is specified, G1ANT.Robot will skip `errormessage`, while executing the rest of the script.
 
-**Example 1:**
+### Example
 
 ```G1ANT
 color.expected position ‴616⫽384‴ color ‴1E1E1F‴ errormessage ‴no expected color in this position‴
 ```
 
-If color not found, such dialog displays:
- 
-## timeout
+If the specified color is not found, the following dialog box is displayed:
 
-argument `timeout` lets us choose the amount of time (in milliseconds) of robot waiting for a command to be executed before throwing an error about time expiration. 
+![](../.gitbook/assets/errormessage-1542110074594.jpg)
 
-**Example 1:**
+## errorresult
+
+This argument lets us choose the name of a variable, which will store the error information. The variable name should be preceded by `♥`.
+
+### Example
+
+The script below tries to select window titled `blah`. In case there's an error, its information will be passed to `♥someError` variable, and then the `➤ErrorOccurred` procedure is called. The procedure opens a dialog box displaying `♥someError` variable's value (error information). In this case, the dialog box will show such message: *Specified window blah not found*.
 
 ```G1ANT
-chrome ‴google.com‴ timeout 100
+window blah errorresult ♥someError errorcall ➤ErrorOccurred
+
+procedure ➤ErrorOccurred
+    dialog ♥someError
+end procedure
 ```
 
-Obviously, it is way too unexpected that within 100 ms our computer would perform such action so timeout error occurred as in the image below.
+## timeout
+
+This argument lets us choose the amount of time (in milliseconds) the robot waits for a command to be executed before throwing an error about time expiration. 
+
+### Example
+
+```G1ANT
+chrome ‴google.com‴ timeout 10
+```
+
+Obviously, it is very unlikely that a computer would perform such an action within 10ms, so a timeout error occurs.
