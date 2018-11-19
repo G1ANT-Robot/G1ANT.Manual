@@ -21,9 +21,9 @@ program notepad
 keyboard ♥test
 ```
 
-Note that these special characters were inserted into a variable using C# snippets (the text embraced with [macro signs](../special-characters/macro.md) `⊂⊃`).
+Note that these special characters were inserted into a variable using C# snippets (the text embraced with [macro signs](g1ant-language/special-characters/macro.md) `⊂⊃`).
 
-Particular characters in a text can be addressed using the index notation embraced with [variable index](../special-characters/variable-index.md) double brackets (`⟦⟧`):
+Particular characters in a text can be addressed using the index notation embraced with [variable index](g1ant-language/special-characters/variable-index.md) double brackets (`⟦⟧`):
 
 ```G1ANT
 ♥mytext = ‴123456789ThisIsMyText‴
