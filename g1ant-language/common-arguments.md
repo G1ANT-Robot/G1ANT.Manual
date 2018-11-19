@@ -109,7 +109,7 @@ color.expected position ‴616⫽384‴ color ‴1E1E1F‴ errormessage ‴no ex
 
 If the specified color is not found, the following dialog box is displayed:
 
-![](../.gitbook/assets/errormessage-1542110074594.jpg)
+![](.gitbook/assets/errormessage-1542110074594.jpg)
 
 ## errorresult
 
