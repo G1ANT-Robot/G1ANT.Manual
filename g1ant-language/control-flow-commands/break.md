@@ -2,7 +2,7 @@
 
 ## Syntax
 
-```
+```G1ANT
 break
 ```
 
@@ -12,13 +12,13 @@ The `break` command immediately exits current block and continues task execution
 
 | Argument | Type                       | Required | Default Value | Description                                |
 | -------- | -------------------------- | -------- | ------------- | ------------------------------------------ |
-| `if`     | [bool](../structures/bool) | no       | true          | Runs the command only if condition is true |
+| `if`     | [bool](g1ant-language/structures/bool) | no       | true          | Runs the command only if condition is true |
 
-For more information about `if`, see [Common Arguments](../Common-Arguments.md) page.
+For more information about `if`, see [Common Arguments](g1ant-language/common-arguments.md) page.
 
 ## Example
 
-```
+```G1ANT
 for counter ♥cnt from 1 to 20
   if ⊂♥cnt==10⊃
     dialog ‴break‴    
