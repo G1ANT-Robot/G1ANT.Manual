@@ -56,7 +56,8 @@ Note that when a user clicks OK in the dialog, the procedure ends, but the scrip
 ```G1ANT
 window sometitle errorcall ➤ErrorOccurred
 keyboard ⋘CTRL+A⋙⋘CTRL+C⋙
-program notepad keyboard ⋘CTRL+V⋙ 
+program notepad
+keyboard ⋘CTRL+V⋙ 
 
 procedure ➤ErrorOccurred
 	dialog ‴An error has occurred‴
