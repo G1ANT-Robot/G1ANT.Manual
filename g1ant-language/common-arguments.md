@@ -67,7 +67,7 @@ This return to the place of a call in the script is the main difference between 
 
 ## errorjump 
 
-This argument specifies the name of a label to jump to when a command throws an exception (error) or a timeout expires. It allows G1ANT.Robot to omit some part of the script and jump to other part of the script. The label name should be preceded by the `➤` special character (**Ctrl+3**).
+This argument specifies the name of a label to jump to when a command throws an exception (error) or a timeout expires. It allows G1ANT.Robot to omit some part of the script and jump to other part of the script. The label name should be preceded by the `➜` special character (**Ctrl+2**).
 
 ### Example 1
 
