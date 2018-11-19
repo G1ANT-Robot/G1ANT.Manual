@@ -12,19 +12,19 @@ The `text.matches` command gives a percentage value [0,100] of how much a specif
 
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
-|`text`| [text](../Structures/text.md) | yes |  | Text or a variable with the content to be written |
-|`regexes`| [text](../Structures/text.md)                 | yes |  | List of regexes to be matched against text input |
-|`result`| [variable](../Special-Characters/variable.md) | no | [♥result](../Common-Arguments.md) | Name of a variable where the command's result will be stored |
-|`if`| [bool](../Structures/bool.md) | no | true | Executes the command only if specified condition is true |
-|`timeout`| [variable](../Special-Characters/variable.md) | no | [♥timeoutcommand](../Variables/Special-Variables.md) | Specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
-|`errorcall`| [procedure](../Structures/procedure.md) | no |  | Name of a procedure to call when the command throws an exception or when a given `timeout` expires |
-|`errorjump` | [label](../Structures/label.md) | no | | Name of the label to jump to when the command throws an exception or when a given `timeout` expires |
-|`errormessage`| [text](../Structures/text.md) | no |  | A message that will be shown in case the command throws an exception or when a given `timeout` expires, and no `errorjump` argument is specified |
-|`errorresult`| [error](../Structures/error.md) | no | | Name of a variable that will store the returned exception |
+|`text`| [text](g1ant-language/structures/text.md) | yes |  | Text or a variable with the content to be written |
+|`regexes`| [text](g1ant-language/structures/text.md)                 | yes |  | List of regexes to be matched against text input |
+|`result`| [variable](g1ant-language/special-characters/variable.md) | no | [♥result](g1ant-language/common-arguments.md) | Name of a variable where the command's result will be stored |
+|`if`| [bool](g1ant-language/structures/bool.md) | no | true | Executes the command only if specified condition is true |
+|`timeout`| [variable](g1ant-language/special-characters/variable.md) | no | [♥timeoutcommand](g1ant-language/variables/special-variables.md) | Specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed |
+|`errorcall`| [procedure](g1ant-language/structures/procedure.md) | no |  | Name of a procedure to call when the command throws an exception or when a given `timeout` expires |
+|`errorjump` | [label](g1ant-language/structures/label.md) | no | | Name of the label to jump to when the command throws an exception or when a given `timeout` expires |
+|`errormessage`| [text](g1ant-language/structures/text.md) | no |  | A message that will be shown in case the command throws an exception or when a given `timeout` expires, and no `errorjump` argument is specified |
+|`errorresult`| [error](g1ant-language/structures/error.md) | no | | Name of a variable that will store the returned exception |
 
-For more information about `if`, `timeout`, `errorcall`, `errorjump`, `errormessage` and `errorresult` arguments, see [Common Arguments](../Common-Arguments.md) page.
+For more information about `if`, `timeout`, `errorcall`, `errorjump`, `errormessage` and `errorresult` arguments, see [Common Arguments](g1ant-language/common-arguments.md) page.
 
-For more on regular expressions (regexes), see our [Regex Appendix](../../appendices/regex) or [Wikipedia entry](https://en.wikipedia.org/wiki/Regular_expression).
+For more on regular expressions (regexes), see our [Regex Appendix](appendices/regex) or [Wikipedia entry](https://en.wikipedia.org/wiki/Regular_expression).
 
 ## Example
 
