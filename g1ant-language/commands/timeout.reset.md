@@ -1,11 +1,9 @@
 # timeout.reset
 
-h1. KOMENDA NIE DZIALA!!!!!
-
 **Syntax:**
 
 ```G1ANT
-timeout.reset value number if true errorjump ➜labelname errormessage ‴‴
+timeout.reset value ‴‴ if true errorjump ➜labelname errormessage ‴‴
 ```
 
 **Description:**
