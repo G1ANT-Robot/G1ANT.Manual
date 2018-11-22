@@ -157,7 +157,7 @@ The first line opens Windows Notepad and the second line enters a text into it.
 
 In case of the `program` command, the most obvious argument is a _name_ of the program to be launched by the robot. This name can be given in a short form such as `notepad`, `calc`, `chrome`, `word` (provided that these programs are installed in the system) or with a full path to the executable file, eg. `‴C:\Program Files\Internet Explorer\iexplore.exe‴` (again, note the triple prime character `‴` embracing the path — it's a special sign used in G1ANT.Robot for values containing spaces; to enter it, press **Ctrl** and apostrophe **'** key).
 
-Sending keyboard inputs to a program is easy and requires the `keyboard` command followed by the text to be entered or keyboard shorG1ANTtcuts/function keys to be mimicked by the robot.
+Sending keyboard inputs to a program is easy and requires the `keyboard` command followed by the text to be entered or keyboard shortcuts/function keys to be mimicked by the robot.
 
 But what if you wanted to make the robot write the text from the example above in two lines instead of just one? Like this:
 
