@@ -283,7 +283,7 @@ With Notepad window selected, tell the robot to move the cursor close to the let
 
 Wait, how can you determine the mouse cursor position? Don’t worry, we have you covered: use the [Mouse Position](g1ant.robot-window/auxiliary-windows/mouse-position.md) tool (`Insert/Mouse Position` menu or **Ctrl+E**) after you type the `mouse.click` command. Answer “No” in the dialog box, since you want a relative coordinates, point your cursor to the right place and click. The tool will insert the resulting position as an argument for you:
 
-```G1
+```G1ANT
 mouse.click ⟦point⟧41⫽70 type down
 ```
 
