@@ -308,7 +308,7 @@ keyboard ⋘CTRL+V⋙
 And that’s it! Your whole script should look like this:
 
 ```G1ANT
-window *notepad
+window ✱notepad
 mouse.click ⟦point⟧41⫽70 type down
 mouse.click ⟦point⟧98⫽71 type up
 keyboard ⋘CTRL+C⋙
