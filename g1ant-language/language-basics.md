@@ -80,7 +80,7 @@ In the following example the golden “command-argument-value” rule is a bit t
 text.read c:\Users\♥USERNAME\Desktop\g1ant.txt result ♥g1
 ```
 
-The `text.read` command is immediately followed by a value (`c:\Users\♥USERNAME\Desktop\g1ant.txt`), not an argument. It’s because some argument names can be omitted, since they are obvious and mandatory. In this case, the missing argument name is `filename`, which is followed by a value with the name of a file to open. Then, there is the `result` argument and its `♥g1` value.
+The `text.read` command is immediately followed by a value (`c:\Users\♥USERNAME\Desktop\g1ant.txt`), not an argument. It’s because first arguments can be omitted, since they are obvious. In this case, the missing argument is `filename`, which is followed by a value with the name of a file to open. Then, there is the `result` argument and its `♥g1` value.
 
 Other examples of arguments that can be skipped and replaced by their values, include `name` for the `program` command (which specifies the program to be launched) or `title` for the `window`command (which specifies the title of the window to focus on):
 
