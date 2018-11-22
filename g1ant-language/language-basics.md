@@ -122,7 +122,7 @@ Now you know what a variable is and how to generally use it in G1ANT.Language. A
 
 As an RPA software, G1ANT.Robot has to deal with the user interface of the host operating system, pretending to be a human sitting in the front of a PC. It includes many commands designed to mimic user activity in Windows and its applications. For example, the robot can launch programs, open dialog boxes, ask user for some input, select application windows, enter keystrokes, move mouse cursor and many more.
 
-For the purpose of this introductory guide, let’s take a look at the most fundamental UI commands in G1ANT.Language: `dialog` and `dialog.ask`, `keyboard`, `mouse.`, `program` and `window`.
+For the purpose of this introductory guide, let’s take a look at the most fundamental UI-related commands in G1ANT.Language: `dialog` and `dialog.ask`, `keyboard`, `mouse.`, `program` and `window`.
 
 ### Show Me a Dialog
 
