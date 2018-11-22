@@ -42,7 +42,7 @@ G1ANT.Language syntax is pure and simple:
 command argument value 
 ```
 
-As you can see, you always start with a command followed by its argument and then a value of that argument. Compare this with natural language: if you say *“pass this to me”*, “pass” would be a command, “this” — an argument, “to me” — value.
+As you can see, you always start with a command followed by its argument and then a value of that argument. Compare this with natural language: if you say *“pass this cat to me”*, “pass” would be a command, “this” and “to” — arguments, “cat” and “me” — values.
 
 Now, let’s learn who is who — or rather what is what.
 
