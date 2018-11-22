@@ -58,7 +58,7 @@ Each family of commands has its special ‘activities’. Once you start typing 
 
 ### Argument
 
-A command needs to know, what exactly it is supposed to do. So, you must provide some information — and this data is called an *argument*. For example, when you type `program`, the robot will suggest you next input in a drop-down list and the first item will be `name`. It is an argument for the `program` command followed with a name of the program to be launched. So, if you wanted the robot to open Notepad, you would write `program name notepad` — remember the “command argument value” rule?
+A command needs to know, what exactly it is supposed to do. So, usually you must provide some information — and this data is called an *argument*. For example, when you type `program`, the robot will suggest you next input in a drop-down list and the first item will be `name`. It is an argument for the `program` command followed with a name of the program to be launched. So, if you wanted the robot to open Notepad, you would write `program name notepad` — remember the “command argument value” rule?
 
 ### Value
 
