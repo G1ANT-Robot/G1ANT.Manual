@@ -274,7 +274,7 @@ For the purpose of this exercise, we will stick to the good old Notepad and the 
 First, you have to select the right window:
 
 ```G1ANT
-window *notepad
+window ✱notepad
 ```
 
 > This command will work correctly only when there’s just one Notepad window open. If you have more of them, you must precisely specify the window you want to use, e.g. `window ‴Untitled - Notepad‴`. The full list of open windows titles is available in [All Windows](g1ant.robot-window/auxiliary-windows/all-windows.md) tool (`Tools/Window` menu or **Ctrl+W**).
