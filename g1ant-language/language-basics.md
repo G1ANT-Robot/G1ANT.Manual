@@ -183,7 +183,7 @@ keyboard ‴Hello!⋘enter⋙I'm a robot.‴
 
 Now you could use common Windows shortcuts such as **Ctrl+C** (copy to clipboard), **Ctrl+S** (save to a file) or **Alt+F4** (close program) to make the robot perform respective tasks. But Notepad allows you to do many other things: all of its tools are accessible with keyboard alternatives, which show up after pressing **Alt** key.
 
-Run your robot by pressing **F9**. With Notepad open, you can investigate available keyboard options: press **Alt** key and look at the menu bar. First menu item, `File`, is depressed and all menu items have one letter in their names underlined. Now you can use arrow keys to navigate through menus or press the underlined letter to select a desired menu item. Fo example, if you wanted to activate word wrapping option, which is available in the `Format` menu, you would have to press **O** key (the underlined letter of the Format menu), then **W** in the dropped-down Format menu to select the `Word Wrap` item. The robot command sequence for these keystrokes would look like this:
+Run your robot by pressing **F9**. With Notepad open, you can investigate available keyboard options: press **Alt** key and look at the menu bar. First menu item, `File`, is selected and all menu items have one letter in their names underlined. Now you can use arrow keys to navigate through menus or press the underlined letter to select a desired menu item. Fo example, if you wanted to activate word wrapping option, which is available in the `Format` menu, you would have to press **O** key (the underlined letter of the Format menu), then **W** in the dropped-down Format menu to select the `Word Wrap` item. The robot command sequence for these keystrokes would look like this:
 
 ```G1ANT
 keyboard ⋘alt+o⋙w
