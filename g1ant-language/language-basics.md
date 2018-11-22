@@ -88,7 +88,7 @@ Other examples of arguments that can be skipped and replaced by their values, in
 
 `window ✱chrome` instead of `window title ✱chrome`
 
-Note the asterisk before `chrome`: it serves as a wildcard for all characters preceding the word “chrome”, so that any Google Chrome browser window would be selected no matter what its full title is.
+Note the special asterisk symbol before `chrome`: it's called Search Place and serves as a wildcard for all characters preceding the word “chrome”, so that any Google Chrome browser window would be selected no matter what its full title is. You can enter this character from `Insert/Search Place` menu, with **Ctrl+8** keyboard shortcut or by clicking the ✱ icon on the toolbar.
 
 ## Using Variables
 
