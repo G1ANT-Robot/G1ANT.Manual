@@ -12,7 +12,7 @@ G1ANT.Robot program offers you powerful and convenient tools to help you master 
 
 The script editor is equipped with IntelliSense technology, which gives you suggestions while you type. It’s an extremely comfortable and productive variation of an interactive help.
 
-How does it work? When you start typing, IntelliSense looks for matches in the G1ANT.Language dictionary and displays them in a drop-down list. A description of the selected item appears in a tooltip — a small box to the right with a brief explanation of what a particular function does.
+How does it work? When you start typing, IntelliSense looks for matches in the language dictionary and displays them in a drop-down list. A description of the selected item appears in a tooltip — a small box to the right with a brief explanation of what a particular element does.
 
 For example, start typing `program` in the script editor. With every letter, the suggested list of matching entries narrows down: five items in the list after you type “p”, then just three, when you press “r”, and when you reach “g”, there’s only `program` left to choose. But IntelliSense doesn’t stop there: after selecting an item from the suggested options, you are prompted with further language elements — arguments then their values. In case of the `program` command, when you pick it and press space, you will see a list of nine arguments available for that command along with their descriptions in tooltips:
 
