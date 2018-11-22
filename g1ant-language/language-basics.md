@@ -86,7 +86,7 @@ Other examples of arguments that can be skipped and replaced by their values, in
 
 `program notepad` instead of `program name notepad`
 
-`window *chrome` instead of `window title *chrome`
+`window ✱chrome` instead of `window title ✱chrome`
 
 Note the asterisk before `chrome`: it serves as a wildcard for all characters preceding the word “chrome”, so that any Google Chrome browser window would be selected no matter what its full title is.
 
