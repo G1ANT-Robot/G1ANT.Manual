@@ -293,7 +293,7 @@ Confused with the lack of the `button` argument? You probably expected `mouse.cl
 
 Now you should tell the robot to move the mouse cursor to the end of the “robot” word and stop selection by releasing the mouse button. Again, use the Mouse Position tool to insert the right coordinates:
 
-```G1
+```G1ANT
 mouse.click ⟦point⟧98⫽71 type up
 ```
 
