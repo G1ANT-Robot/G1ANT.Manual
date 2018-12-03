@@ -4,7 +4,7 @@ The Credential Container stores keys (eg. user IDs, logins etc.) and their corre
 
 To add a new credential, click Add in the Credential Container window and enter key and its value in the resulting Credential window. The key must be provided in the `ContainerName:key` format:
 
-![](/G1ANT.Manual/.gitbook/assets/credential-container.png)
+![](../../-assets/credential-container.png)
 
 To read the value of a key, enter the name of this key within the `♥credential` special variable brackets:
 

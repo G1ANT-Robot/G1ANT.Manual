@@ -24,5 +24,5 @@ program name ‴notepad‴
 keyboard ♥text
 ```
 
-![img](../../.gitbook/assets/variable.png)
+![img](../../-assets/variable.png)
 

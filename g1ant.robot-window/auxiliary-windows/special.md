@@ -2,7 +2,7 @@
 
 The `Find and Replace` window is common across applications. It allows searching for specified strings  \(`Find` tab\) and replacing them with new content \(`Replace` tab\). It's accessible from `Edit/Find` or `Edit/Replace` menu, or with **Ctrl+F** and **Ctrl+H** keyboard shortcuts, respectively.
 
-![](../../.gitbook/assets/find.jpg)
+![](../../-assets/find.jpg)
 
 There are several options available for finding and/or replacing text:
 

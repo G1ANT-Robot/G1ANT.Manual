@@ -19,7 +19,7 @@ An array separator `❚` is available from `Insert/Array Separator` menu or with
 dialog ♥array
 ```
 
-![img](../../.gitbook/assets/2018-01-04-array-separator_v1.jpg)
+![img](../../-assets/2018-01-04-array-separator_v1.jpg)
 
 In the example above the `♥array` variable contains 3 elements: `element1`, `element 2` and `ele ment 3`. They are all displayed with the `dialog` command.
 
@@ -30,7 +30,7 @@ In the example above the `♥array` variable contains 3 elements: `element1`, `e
 dialog ♥array⟦1⟧
 ```
 
-![img](../../.gitbook/assets/2018-01-04-array-separator-2_v1.jpg)
+![img](../../-assets/2018-01-04-array-separator-2_v1.jpg)
 
 Here, the `dialog` command displays the first element of the `♥array` variable — as specified by`⟦1⟧` index.
 
@@ -41,7 +41,7 @@ Here, the `dialog` command displays the first element of the `♥array` variable
 dialog ♥array⟦3⟧
 ```
 
-![](../../.gitbook/assets/array3.png)
+![](../../-assets/array3.png)
 
 In the first line the `♥array` variable is declared as a list of date type elements. The third element called by the  `dialog` command will be displayed in a proper date format.
 
