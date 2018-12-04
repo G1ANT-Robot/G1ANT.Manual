@@ -14,7 +14,7 @@ In order to start using the RDP Controller, you have to follow these steps:
 
 3. Enter username and password of the user on the remote machine.
 
-4. Launch G1ANT.Robot, go to `Tools/Installers` menu and select `RDP Controller`.
+4. Launch G1ANT.Robot, go to `Tools/Installers` menu and select `RDP Controller`. You will need administrator rights to install the RDP Controller.
 
 5. Repeat step 3. and enter these credentials in the RDP Configuration dialog box.
 
