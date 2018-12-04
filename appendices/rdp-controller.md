@@ -22,7 +22,7 @@ In order to start using the RDP Controller, you have to follow these steps:
 
    To check if the RDP Controller was successfully installed, open Windows Task Manager (press **Ctrl+Shift+Esc**) go to Services tab and look for *Disconnected Rdp Session Replacer* service. If it’s there and running, the RDP Controller is ready for use.
 
-   ![](G1ANT.Manual/-assets/rdp-task.jpg)
+   ![](../-assets/rdp-task.jpg)
 
 7. Run your script.
 
