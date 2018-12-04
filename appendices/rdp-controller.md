@@ -2,7 +2,7 @@
 
 RDP stands for Remote Desktop Protocol and is the foundation for remote desktop connections in Windows. With RDP you can connect to a remote computer running Windows and use it as if it was your local machine.
 
-Our RDP Controller is a tool for running G1ANT.Robot on a remote PC: you just connect to a remote computer with the standard Remote Desktop Connection app in Windows, start a local robot script on this connected system, and then you can minimize or even close the remote connection. The script will continue the execution uninterrupted.
+Our RDP Controller is a tool for running G1ANT.Robot automations on a remote PC: you just connect to a remote computer with the standard Remote Desktop Connection app in Windows, start a local robot script on this connected system, and then you can minimize or even close the remote connection client. The script will continue the execution without disturbance.
 
 In order to start using the RDP Controller, you have to follow these steps:
 
