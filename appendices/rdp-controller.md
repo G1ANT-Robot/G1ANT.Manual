@@ -28,7 +28,7 @@ In order to start using the RDP Controller, you have to follow these steps:
 
 Now you can minimize the remote desktop window or close it altogether.
 
-**Note:** the two Registry keys, which are added by our file installed in step 1, allow minimizing the remote desktop window without affecting the robot and its script execution.
+**Note:** the two Registry keys, which are added by our file installed in step 1, allow minimizing the remote desktop window without affecting the robot and its script execution. Without these Registry entries the automation will not work correctly when the RDP client is minimized.
 
 To uninstall the RDP Controller from the remote machine, launch G1ANT.Robot, go to `Tools/Installers` menu, select `RDP Controller`, delete the credentials in the RDP Configuration dialog box and click Save. The RDP Controller will uninstall itself.
 
