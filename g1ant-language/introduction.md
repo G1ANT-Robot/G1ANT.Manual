@@ -16,6 +16,6 @@ And we are confident G1ANT.Language is the solution we dreamed of.
 
 First of all, it’s tailored specifically for controlling robot. There are no superfluous commands and arguments, only tools that help you robotize repetitive tasks on a computer.
 
-Secondly, G1ANT.Language is an open platform. You can lurk into the code in our SDK and develop your own addons with new language elements. This makes G1ANT.Language a living, flexible, adapting organism, which grows in resources and functions thanks to community and its innovations.
+Secondly, G1ANT.Language is open to your ideas. You can lurk into the code in our SDK and develop your own addons with new language elements. This makes G1ANT.Language a living, flexible, adapting organism, which grows in resources and functions thanks to community and its innovations.
 
 And last but not least, if you are C# proficient, you can still use this familiar code in your robot scripts! 
