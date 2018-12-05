@@ -8,7 +8,7 @@ Well, you would be, if you were forced to rely solely on Microsoft’s solution.
 
 ## Excel, Procedures and Loops
 
-Let’s start with automating Excel spreadsheets. Imagine you want to get data from one file and enter them into another, newly created file. For the purposes of this tutorial, create a folder called Data in your Documents (Windows 10) or My Documents (earlier Windows versions) folder and put this excel data file [data.xlsx](https://github.com/G1ANT-Robot/G1ANT.Tutorials/blob/master/data.xlsx) into it.
+Let’s start with automating Excel spreadsheets. Imagine you want to get data from one file and enter them into another, newly created file. For the purposes of this tutorial, create a folder called Data in your Documents (Windows 10) or My Documents (earlier Windows versions) folder and put this excel data file [data.xlsx](https://github.com/G1ANT-Robot/G1ANT.Tutorials/blob/master/-assets/data.xlsx) into it.
 
 Since using the whole path to a file every time you want to refer to it is a bit tedious, robotizing this repetitive task would be a good starting point. All you have to do is to declare a new variable — named  `♥datafile1`, for example — with its value equal to the filepath.
 
@@ -148,21 +148,20 @@ Procedures are sets of commands in our programming language. Sometimes the robot
 First, create main procedure, which will refer to other procedures that you will add soon:
 
 ```G1ANT
-procedure ➤CopyToNewExcelFile
+procedure CopyToNewExcelFile
 
 end
 ```
 
-There are three rules for procedures:
+There are two rules for procedures:
 
-- Names of procedures in G1ANT.Language are preceded by a thick arrow special character (you can insert it with the keyboard shortcut **Ctrl+3**, from the `Insert/Procedure` menu or by clicking its icon on the toolbar).
 - Every procedure ends with the word `end`.
 - Using tabs (line indents) within a procedure makes it clearer and more convenient to read.
 
 Whenever you want to refer to a procedure, use the `call` command followed by the procedure name:
 
 ```G1ANT
-call ➤CopyToNewExcelFile
+call CopyToNewExcelFile
 ```
 
 Alright, you know how to create procedures, so start actually doing it. The first thing that this procedure will do is to open the source file *data.xlsx*:
@@ -179,15 +178,15 @@ In the next line, tell the robot to open a new, blank Excel file and remember it
    excel.open result ♥excelid2
 ```
 
-You will need two more procedures: one to get the data from the source file and one to enter the data into the target file. Let’s name the first one `➤GetValues` and the second one `➤SetValues`:
+You will need two more procedures: one to get the data from the source file and one to enter the data into the target file. Let’s name the first one `GetValues` and the second one `SetValues`:
 
 ```G1ANT
-procedure ➤GetValues
+procedure GetValues
 
 
 end
 
-procedure ➤SetValues
+procedure SetValues
 
 
 end
@@ -198,7 +197,7 @@ You have the outline of your new script. It’s time add some functionality to y
 As we mentioned before, there’s the `excel.switch` command, which allows switching through Excel files opened by G1ANT.Robot. You will need this command, because you want to switch repeatedly between *data.xlsx* and *data2.xlsx* files to get data, enter data, get data, enter data etc... Now you can use the `excelid1` variable that you created earlier to open a file with the ID stored there:
 
 ```G1ANT
-procedure ➤GetValues 
+procedure GetValues 
     excel.switch ♥excelid1
     
     
@@ -226,15 +225,15 @@ for counter ♥rownumber from 1 to 5
 The next lines of this loop should call procedures for reading and entering data from the cells in the current row:
 
 ```G1ANT
-    call ➤GetValues
-    call ➤SetValues
+    call GetValues
+    call SetValues
 end
 ```
 
 Since you already have a variable, which stores current row number (`♥rownumber`), you can use it in the procedures called from within the loop:
 
 ```G1ANT
-procedure ➤GetValues
+procedure GetValues
     excel.switch ♥excelid1
     excel.getvalue row ♥rownumber colname a result ♥cell1
     excel.getvalue row ♥rownumber colname b result ♥cell2
@@ -246,7 +245,7 @@ end
 ```
 
 ```G1ANT
-procedure ➤SetValues
+procedure SetValues
     excel.switch ♥excelid2
     excel.setvalue value ♥cell1 row ♥rownumber colname a 
     excel.setvalue value ♥cell2 row ♥rownumber colname b 
@@ -257,15 +256,15 @@ procedure ➤SetValues
 end
 ```
 
-It’s time to go back to the main `➤CopyToNewExcelFile` procedure and update it with commands that open Excel files, call the procedures that get/set cell values for each row and then save the target file:
+It’s time to go back to the main `CopyToNewExcelFile` procedure and update it with commands that open Excel files, call the procedures that get/set cell values for each row and then save the target file:
 
 ```G1ANT
-procedure ➤CopyToNewExcelFile
+procedure CopyToNewExcelFile
     excel.open path ♥datafile1 result ♥excelid1
     excel.open result ♥excelid2
     for counter ♥rownumber from 1 to 5
-    	call ➤GetValues
-		call ➤SetValues
+    	call GetValues
+		call SetValues
 	end
 	excel.save path ♥datafile2
 end
@@ -276,17 +275,17 @@ Now that you have all necessary bricks for your robot, put them together and mak
 ```G1ANT
 ♥datafile1 = ‴♥environment⟦USERPROFILE⟧\Documents\Data\data.xlsx‴
 ♥datafile2 = ‴♥environment⟦USERPROFILE⟧\Documents\Data\data2.xlsx‴
-call ➤NewExcelFile
-procedure ➤CopyToNewExcelFile
+call NewExcelFile
+procedure CopyToNewExcelFile
     excel.open path ♥datafile1 result ♥excelid1
     excel.open result ♥excelid2
     for counter ♥rownumber from 1 to 5
-    	call ➤GetValues
-		call ➤SetValues
+    	call GetValues
+		call SetValues
 	end
 	excel.save path ♥datafile2
 end
-procedure ➤GetValues
+procedure GetValues
     excel.switch ♥excelid1
     excel.getvalue row ♥rownumber colname a result ♥cell1
     excel.getvalue row ♥rownumber colname b result ♥cell2
@@ -295,7 +294,7 @@ procedure ➤GetValues
     excel.getvalue row ♥rownumber colname e result ♥cell5
     excel.getvalue row ♥rownumber colname f result ♥cell6
 end
-procedure ➤SetValues
+procedure SetValues
     excel.switch ♥excelid2
     excel.setvalue value ♥cell1 row ♥rownumber colname a 
     excel.setvalue value ♥cell2 row ♥rownumber colname b 
