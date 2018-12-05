@@ -22,7 +22,7 @@ text.find ♥source search Name:✱Surname: result ♥name
 dialog ♥name
 ```
 
-![img](../../.gitbook/assets/search1_v1.png)
+![img](../../-assets/search1_v1.png)
 
 **Example 2**
 
@@ -34,5 +34,5 @@ text.find ♥source search Name:✱Surname: result ♥name
 dialog ♥name
 ```
 
-![](../../.gitbook/assets/search2.png)
+![](../../-assets/search2.png)
 

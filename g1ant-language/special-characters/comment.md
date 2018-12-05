@@ -27,5 +27,5 @@ In this example you can see what happens in G1ANT.Robot window when lines of com
 The first commented out line of script is a simple text: `-The line below will not be executed.`  
 The other commented out line is a command \(`-keyboard ‴text2‴⋘enter⋙`\) that would perform an action if it wasn’t commented out.
 
-![](../../.gitbook/assets/comments.jpg)
+![](../../-assets/comments.jpg)
 

@@ -2,7 +2,7 @@
 
 G1ANT. Robot system tray menu can be accessed by right-clicking the green G icon in your system tray
 
-![](../.gitbook/assets/tray.png)
+![](../-assets/tray.png)
 
 Menu items:
 
