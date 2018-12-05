@@ -1,6 +1,6 @@
 # Menu
 
-![](../.gitbook/assets/menu.jpg)
+![](../-assets/menu.jpg)
 
 ### Process
 

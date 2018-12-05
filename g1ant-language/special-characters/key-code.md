@@ -23,5 +23,5 @@ keyboard ♥text
 keyboard ⋘shift+up⋙
 ```
 
-![img](../../.gitbook/assets/text.png)
+![img](../../-assets/text.png)
 
