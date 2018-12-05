@@ -6,7 +6,7 @@ G1ANT.Language is no different, so before you start creating robots, you must kn
 
 ## Workspace
 
-G1ANT.Robot program offers you powerful and convenient tools to help you master all aspects of programming in G1ANT.Language.
+G1ANT.Robot program offers you powerful and convenient tools to help you master all aspects of programming in G1ANT.Language to robotize and automate common and repetitive tasks.
 
 ### Suggestions and Tooltips
 
