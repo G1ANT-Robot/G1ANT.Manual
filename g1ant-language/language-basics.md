@@ -16,9 +16,9 @@ How does it work? When you start typing, IntelliSense looks for matches in the l
 
 For example, start typing `program` in the script editor. With every letter, the suggested list of matching entries narrows down: five items in the list after you type “p”, then just three, when you press “r”, and when you reach “g”, there’s only `program` left to choose. But IntelliSense doesn’t stop there: after selecting an item from the suggested options, you are prompted with further language elements — arguments then their values. In case of the `program` command, when you pick it and press space, you will see a list of nine arguments available for that command along with their descriptions in tooltips:
 
-![](.gitbook/assets/.gitbook/assets/suggestions1.png)
+![](../-assets/suggestions1.png)
 
-![](.gitbook/assets/.gitbook/assets/suggestions2.png)
+![](../-assets/suggestions2.png)
 
 This way, not only you don’t make obvious typo mistakes, but also create code with correct syntax and learn how to use G1ANT.Language efficiently.
 
@@ -54,7 +54,7 @@ A command can be simple, one-word, like `dialog` or extended, like `selenium.ope
 
 Each family of commands has its special ‘activities’. Once you start typing the command inside the script editor window, a list of available activities will pop up, as you can see below:
 
-![](.gitbook/assets/selenium.png)
+![](../-assets/selenium.png)
 
 ### Argument
 
@@ -254,7 +254,7 @@ There are three variations of the `mouse.` command:
 
 3. `mouse.move`, as its name implies, merely moves the cursor to the specified position.
 
-All of the `mouse.` family of commands shares also `position` and `relative` arguments.  `position` needs a value representing pixel coordinates and `relative` defines if these coordinates are relative to the upper left corner of the active window (by default) or absolute on the screen (measured from its bottom left corner).
+All of the `mouse.` family of commands shares also `position` and `relative` arguments.  `position` needs a value representing pixel coordinates and `relative` defines if these coordinates are relative to the upper left corner of the active window (by default) or absolute on the screen (also measured from its upper left corner).
 
 Since we are here with coordinates relative to the active window, it’s necessary to tell the robot, which window should be active for mouse actions. Otherwise, in case a wrong window would be active, the relative position of the cursor could lead to unpredictable results.
 
