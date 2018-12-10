@@ -21,7 +21,7 @@ where *Username* is the name of the current Windows user — that is you — so 
 This is how your filename variable would be declared in the script:
 
 ```G1ANT
-♥datafile1 = ‴C:\Users\Username\Documents\Data\data.xlsx‴
+♥datafile1 = C:\Users\Username\Documents\Data\data.xlsx
 ```
 
 ### Protect the Environment
