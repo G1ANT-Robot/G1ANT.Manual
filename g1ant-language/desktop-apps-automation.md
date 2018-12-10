@@ -43,7 +43,7 @@ Alright, now you are able to use the script independently of the user account �
 You have the path to your first Excel file specified in a variable. The second Excel file will be named *data2.xlsx*. Even if it doesn't exist at the moment, you can already set its future path in a new variable `♥datafile2`:
 
 ```G1ANT
-♥datafile2 = ‴♥environment⟦USERPROFILE⟧\Documents\Data\data2.xlsx‴
+♥datafile2 = ♥environment⟦USERPROFILE⟧\Documents\Data\data2.xlsx
 ```
 
 ### Excel-lent Commands
