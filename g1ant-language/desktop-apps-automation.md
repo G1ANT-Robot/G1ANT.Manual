@@ -1,4 +1,4 @@
-# Desktop Apps Automation
+# Practical Robot: Real-Life Scenarios
 
 One of the most typical examples of robotization on PCs is automating daily tasks, which are done in desktop apps. MS Office applications, for instance, have their own automation engine — Visual Basic macros — to help users change repetitive actions into code in the easiest possible way: by recording their activities in Word or Excel. This recorded actions can then be tweaked and edited in Visual Basic Editor.
 
