@@ -17,6 +17,13 @@ Please note the G1ANT.Robot has a code of conduct, so please follow it in all yo
 1. Ensure your request is well described, so that the Robot understands what you want to do. Otherwise the Robot will issue the 400 Bad Request error.
 2. Be patient. The Robot will process your request eventually. But sooner than you think.
 
+## Documentation Build Process
+
+1. G1ANT.Manual repository is the place for all documentation content that is not a description of individual G1ANT.Language and G1ANT.Addons components such as commands, variables, structures etc. If you want to write something on the Robot's user interface, real case scenarios, tips and tricks and so on, use the G1ANT.Manual repository.
+2. Tutorials are stored in G1ANT.Tutorials repository. Use it when you want to add courses and/or short lessons for users showing practical use of G1ANT.Language.
+3. All content related to G1ANT.Addons, including G1ANT.Language commands descriptions, is in the G1ANT.Addons repository. This repository relies on developers, who create addons and accompanying documentation.
+4. Our sync tool gathers together all Markdown files from Manual, Tutorials and Addons repositories and creates content to be displayed on G1ANT.Manual website.
+
 ## Code of Conduct
 
 ### Our Pledge
