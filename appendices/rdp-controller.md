@@ -6,7 +6,7 @@ Our RDP Controller is a tool for running G1ANT.Robot automations on a remote PC:
 
 In order to start using the RDP Controller, you have to follow these steps:
 
-1. Download and run [this file](../-assets/RDP local machine.reg) on your local Windows system, answering *Yes* to the security warning message.
+1. Download and run [this file](../-assets/RDP%20local%20machine.reg) on your local Windows system, answering *Yes* to the security warning message.
 
 2. Launch Remote Desktop Connection tool in Windows: type `remote` in the Windows Search box (*Windows 7:* click Start Menu, then use the search box; *Windows 8 and above:* click the Search icon on the taskbar) and click the name of the app in the search results. You can also select the tool in the Accessories (Windows 7) or Windows Accessories (Windows 8 and above) folder of the Start menu (click All Programs first in case of Windows 7).
 
@@ -14,9 +14,9 @@ In order to start using the RDP Controller, you have to follow these steps:
 
 3. Enter username and password of the user on the remote machine.
 
-4. Launch G1ANT.Robot, go to `Tools/Installers` menu and select `RDP Controller`. You will need administrator rights to install the RDP Controller.
+4. Launch G1ANT.Robot on the remote machine, go to `Tools/Installers` menu and select `RDP Controller`. You will need administrator rights to install the RDP Controller.
 
-5. Repeat step 3. and enter these credentials in the RDP Configuration dialog box.
+5. In the resulting RDP Configuration dialog box enter the same credentials you provided in step 3.
 
 6. Click Yes in the security warning message box. Wait until the command line installer finishes its work and when it does, press any key to close the command line window.
 
