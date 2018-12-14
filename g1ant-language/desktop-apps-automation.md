@@ -266,7 +266,7 @@ procedure CopyToNewExcelFile
         call GetValues
         call SetValues
     end
-excel.save path ♥datafile2
+    excel.save path ♥datafile2
 end
 ```
 
@@ -283,7 +283,7 @@ procedure CopyToNewExcelFile
         call GetValues
         call SetValues
     end
-excel.save path ♥datafile2
+    excel.save path ♥datafile2
 end
 procedure GetValues
     excel.switch ♥excelid1
