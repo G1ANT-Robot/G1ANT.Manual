@@ -263,10 +263,10 @@ procedure CopyToNewExcelFile
     excel.open path ♥datafile1 result ♥excelid1
     excel.open result ♥excelid2
     for counter ♥rownumber from 1 to 5
-    	call GetValues
-		call SetValues
-	end
-	excel.save path ♥datafile2
+        call GetValues
+        call SetValues
+    end
+excel.save path ♥datafile2
 end
 ```
 
@@ -280,10 +280,10 @@ procedure CopyToNewExcelFile
     excel.open path ♥datafile1 result ♥excelid1
     excel.open result ♥excelid2
     for counter ♥rownumber from 1 to 5
-    	call GetValues
-		call SetValues
-	end
-	excel.save path ♥datafile2
+        call GetValues
+        call SetValues
+    end
+excel.save path ♥datafile2
 end
 procedure GetValues
     excel.switch ♥excelid1
