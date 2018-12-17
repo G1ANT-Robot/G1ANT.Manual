@@ -8,7 +8,7 @@ The robot \(its script\) is stored in plain text or binary files, locally or on 
 
 Deployment can be both local and central, as requested.
 
-**G1ANT & Big Data**
+#### **G1ANT & Big Data**
 
 For Big Data processing, G1ANT uses external AI software, such as IBM Watson, connecting them via API. We can also connect with any other API, thanks to our RESTprotocol.
 
