@@ -4,7 +4,7 @@ The code is never good enough. Of course, the golden rule says that if it works,
 
 In the past two exercises, you used some basic commands and logic. In the first code, you can notice that there are many lines that could be reduced to just one, using a list variable and a loop:
 
-```G1
+```G1ANT
 excel.getvalue row ♥rownumber colname a result ♥cell1
 excel.getvalue row ♥rownumber colname b result ♥cell2
 excel.getvalue row ♥rownumber colname c result ♥cell3
