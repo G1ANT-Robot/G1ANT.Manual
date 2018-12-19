@@ -63,7 +63,7 @@ There are two variables used in this procedure: `♥yesterday` and `♥emails`. 
 
 ### Injecting C# Code
 
-It’s easy to get the current date in G1ANT.Language — all you need is to use the `♥date` special variable. But    things get tough when you want to make some operations on a date, for example to add or subtract days. Sometimes it’s better not to invent a wheel, rather to use existing functions from C# language instead. These C# “injections” — called snippets — into G1ANT.Language are done using `⊂⊃` special characters (`Insert/Macro` menu, **Ctrl+9** keyboard shortcut or the `⊂⊃` icon on the toolbar).
+It’s easy to get the current date in G1ANT.Language — all you need is to use the `♥date` special variable. But things get tough when you want to make some operations on a date, for example to add or subtract days. Sometimes it’s better not to invent a wheel, rather to use existing functions from C# language instead. These C# “injections” — called snippets — into G1ANT.Language are done using `⊂⊃` special characters (`Insert/Macro` menu, **Ctrl+9** keyboard shortcut or the `⊂⊃` icon on the toolbar).
 
 In this exercise you want the `♥yesterday` variable to be calculated as a day before the current date. We will do it for you:
 
