@@ -21,7 +21,7 @@ The second approach would be even better, since you could apply the same increme
 
 Before calling `GetValues` and `SetValues` procedures, you have to declare the `♥cell` variable and put it somewhere at the beginning of your script, after both `♥datafile` variables, for example:
 
-```G1
+```G1ANT
 ♥datafile1 = ‴♥environment⟦USERPROFILE⟧\Documents\Data\data.xlsx‴
 ♥datafile2 = ‴♥environment⟦USERPROFILE⟧\Documents\Data\data2.xlsx‴
 ♥cell = ⟦cell1❚cell2❚cell3❚cell4❚cell5❚cell6⟧
