@@ -110,7 +110,7 @@ You could write the condition this way:
 if ⊂♥message⟦subject⟧ == "unsubscribe"⊃
 ```
 
-It would work perfectly — unless the message subject contains more characters or words, “unsubscribe me” for instance. The code above checks if the subject exactly matches the given text. If you want to be sure  that any occurence of “unsubscribe” in the subject will make the condition true, use this snippet:
+It would work perfectly — unless the message subject contains more characters or words, “unsubscribe me” for instance. The code above checks if the subject exactly matches the given text. If you want to be sure that any occurence of “unsubscribe” in the subject will make the condition true, use this snippet:
 
 ```G1
 if ⊂♥message⟦subject⟧.Contains("unsubscribe")⊃
