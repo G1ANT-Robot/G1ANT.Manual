@@ -79,7 +79,7 @@ OK, you got your unread emails retrieved from the inbox. But where are they exac
 
 You probably wonder, how you can reach out to this data — especially that you will need to check subjects for “unsubscribe” word. First of all, you should know how lists work.
 
-A list — also called an array — is simply a set of elements. Each element is a separate entity, which can be referred to or changed independently of the others. An example list would look like this:
+A list is simply a set of elements. Each element is a separate entity, which can be referred to or changed independently of the others. An example list would look like this:
 
 ```G1ANT
 ♥list = element1❚element2❚element3
