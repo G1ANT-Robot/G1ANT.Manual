@@ -43,7 +43,7 @@ procedure deleteaddress
 end procedure
 ```
 
-Start with the `checkmail` procedure. It should simply login to your email account and retrieve messages. The `mail.imap` command does it in one fell swoop. What it needs is the email server information, your login credentials and a name of the variable, which will store emails. You can also specify some filtering, which is helpful when processing huge mailboxes: time range (start and end dates of messages), an option to process only unread messages and whether to mark them as read afterwards. The full syntax for the command is as follows:
+Start with the `checkmail` procedure. It should simply login to your email account and retrieve messages. The `mail.imap` command does it in one fell swoop. What it needs is the email server information, your login credentials and a name of the variable, which will store your emails. You can also specify some filtering, which is helpful when processing huge mailboxes: time range (start and end dates of messages), an option to process only unread messages and whether to mark them as read afterwards. The full syntax for the command is as follows:
 
 ```G1ANT
 mail.imap host ‴imap.server.name‴ port 993 login ‴your@email.address‴ password ‴p@$$w0rd‴ sincedate ⟦date⟧ todate ⟦date⟧ onlyunreadmessages true markallmessagesasread true result ♥result
