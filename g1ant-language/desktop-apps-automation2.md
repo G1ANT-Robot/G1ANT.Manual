@@ -46,14 +46,14 @@ end procedure
 Start with the `checkmail` procedure. It should simply login to your email account and retrieve messages. The `mail.imap` command does it in one fell swoop. What it needs is the email server information, your login credentials and a name of the variable, which will store your emails. You can also specify some filtering, which is helpful when processing huge mailboxes: time range (start and end dates of messages), an option to process only unread messages and whether to mark them as read afterwards. The full syntax for the command is as follows:
 
 ```G1ANT
-mail.imap host ‴imap.server.name‴ port 993 login ‴your@email.address‴ password ‴p@$$w0rd‴ sincedate ⟦date⟧ todate ⟦date⟧ onlyunreadmessages true markallmessagesasread true result ♥result
+mail.imap host imap.server.name port 993 login your@email.address password p@$$w0rd sincedate ⟦date⟧ todate ⟦date⟧ onlyunreadmessages true markallmessagesasread true result ♥result
 ```
 
 Let’s assume your script should check only unread messages received since the day before the robot is run. These messages will be marked as read (it’s the default value, so you don’t have to specify it) and will be passed to the `♥emails` variable. So here is your `checkmail` procedure:
 
 ```G1ANT
 procedure checkmail
-	mail.imap host ‴imap.server.name‴ port ‴993‴ login ‴your@email.address‴ password ‴p@$$w0rd‴ sincedate ♥yesterday onlyunreadmessages true result ♥emails
+	mail.imap host imap.server.name port 993 login your@email.address password p@$$w0rd sincedate ♥yesterday onlyunreadmessages true result ♥emails
 end procedure
 ```
 
@@ -112,7 +112,7 @@ if ⊂♥message⟦subject⟧ == "unsubscribe"⊃
 
 It would work perfectly — unless the message subject contains more characters or words, “unsubscribe me” for instance. The code above checks if the subject exactly matches the given text. If you want to be sure that any occurence of “unsubscribe” in the subject will make the condition true, use this snippet:
 
-```G1
+```G1ANT
 if ⊂♥message⟦subject⟧.Contains("unsubscribe")⊃
 ```
 
@@ -142,7 +142,7 @@ You will use the `text.find` command for this purpose, feeding it with the text 
 
 ```G1ANT
 procedure deleteaddress
-	text.find ♥message⟦from⟧ search ‴<✱>‴ result ♥address
+	text.find ♥message⟦from⟧ search <✱> result ♥address
 ```
 
 Remember the asterisk called Search Place? You learned it in the [Basics](language-basics.md): it serves as a wildcard for all characters. You can enter this character from `Insert/Search Place` menu, with **Ctrl+8** keyboard shortcut or by clicking the `✱` icon on the toolbar.
@@ -167,7 +167,7 @@ Now go back to the `deleteaddress` procedure where you have left off and replace
 
 ```G1ANT
 procedure deleteaddress
-	text.find ♥message⟦from⟧ search ‴<✱>‴ result ♥address
+	text.find ♥message⟦from⟧ search <✱> result ♥address
 	text.replace ♥mailinglist search ♥address replace ‴‴ result ♥mailinglist
 end procedure
 ```
@@ -192,7 +192,7 @@ call checksubject
 text.write ♥mailinglist filename ♥listfile writemode override
 
 procedure checkmail
-    mail.imap host ‴imap.server.name‴ port ‴993‴ login ‴your@email.address‴ password ‴p@$$w0rd‴ sincedate ♥yesterday onlyunreadmessages true result ♥emails
+    mail.imap host imap.server.name port 993 login your@email.address password p@$$w0rd sincedate ♥yesterday onlyunreadmessages true result ♥emails
 end procedure
 
 procedure checksubject
@@ -204,7 +204,7 @@ procedure checksubject
 end procedure
 
 procedure deleteaddress
-    text.find ♥message⟦from⟧ search ‴<✱>‴ result ♥address
+    text.find ♥message⟦from⟧ search <✱> result ♥address
     text.replace ♥mailinglist search ♥address replace ‴‴ result ♥mailinglist
 end procedure
 ```
