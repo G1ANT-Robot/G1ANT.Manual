@@ -1,6 +1,6 @@
 ## Refining Your Code
 
-The code is never good enough. Of course, the golden rule says that if it works, don’t fix it — and we couldn’t agree more. But when you are practicing with programming, refinements are the part of the learning process. You learn new things and you can look back at your previous works to see if it’s possible to use your latest knowledge to optimize the code, make it clearer and more efficient.
+The code is never good enough. Of course, the golden rule of life says that if it ain't broke, don’t fix it — and we couldn’t agree more. But when you are practicing with programming, refinements are the part of the learning process. You learn new things and you can look back at your previous works to see if it’s possible to use your latest knowledge to optimize the code, make it clearer and more efficient.
 
 In the past two exercises, you used some basic commands and logic. In the first code, you can notice that there are many lines that could be reduced to just one, using a list variable and a loop:
 
