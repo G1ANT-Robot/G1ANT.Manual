@@ -63,7 +63,7 @@ There are two variables used in this procedure: `♥yesterday` and `♥emails`. 
 
 ### Injecting C# Code
 
-It’s easy to get the current date in G1ANT.Language — all you need is to use the `♥date` special variable. But things get tough when you want to make some operations on a date, for example to add or subtract days. Sometimes it’s better not to invent a wheel, rather to use existing functions from C# language instead. These C# “injections” — called snippets — into G1ANT.Language are done using `⊂⊃` special characters (`Insert/Macro` menu, **Ctrl+9** keyboard shortcut or the `⊂⊃` icon on the toolbar).
+It’s easy to get the current date in G1ANT.Language — all you need is to use the `♥date` special variable. But things get tough when you want to make some operations on a date, for example to add or subtract days. Sometimes it’s better not to invent a wheel, rather to use existing functions (methods, to be precise) from C# language instead. These C# “injections” — called snippets — into G1ANT.Language are done using `⊂⊃` special characters (`Insert/Macro` menu, **Ctrl+9** keyboard shortcut or the `⊂⊃` icon on the toolbar).
 
 In this exercise you want the `♥yesterday` variable to be calculated as a day before the current date. We will do it for you:
 
@@ -91,7 +91,7 @@ As we already mentioned, the mail structure is a kind of a list itself: it has s
 
 The problem with a list of emails like yours is that not only you have to pick one of its elements (an individual message), but also a particular element of this element (subject in case of this exercise). You will have to figure out how to read messages one by one from the list variable and check their subject fields. Fortunately, there is a loop designed especially for cycling through elements in a list.
 
-### Subject: Foreach and If Loops
+### Subject: foreach and if Loops
 
 The `foreach` loop command picks the first element from a list, executes specified actions, then moves to the next element and so forth, until the last element is processed. For the purposes of this exercise you would want to check the message subject for each message stored in the retrieved emails list variable. Let’s start translating it into G1ANT.Language:
 
@@ -176,13 +176,13 @@ As you can see, the updated mailing list is stored back in the same `♥mailingl
 
 You are almost done. When the `checksubject` procedure ends with all email messages processed and mailing list cleared from unsubscribed addresses, the only thing left is to save the new mailing list to a file. Since this list is still stored in the `♥mailinglist` variable, you will use the `text.write` command. It saves the given text or the value of a variable to a specified file. In this case you would want to overwrite the existing *mailing_list.csv* file — and you can employ the `♥listfile` variable again!
 
-```
+```G1ANT
 text.write ♥mailinglist filename ♥listfile writemode override
 ```
 
 That’s it! Here is the whole script — experiment with it. Just remember to provide real email account information for the `mail.imap` command.
 
-```G1
+```G1ANT
 ♥listfile = ♥environment⟦USERPROFILE⟧\Desktop\mailing_list.csv
 text.read ♥listfile result ♥mailinglist
 ♥yesterday = ⟦date⟧⊂System.DateTime.Now.AddDays(-1)⊃
