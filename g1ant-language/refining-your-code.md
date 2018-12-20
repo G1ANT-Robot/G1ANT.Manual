@@ -24,7 +24,7 @@ Before calling `GetValues` and `SetValues` procedures, you have to create an emp
 ```G1ANT
 ♥datafile1 = ‴♥environment⟦USERPROFILE⟧\Documents\Data\data.xlsx‴
 ♥datafile2 = ‴♥environment⟦USERPROFILE⟧\Documents\Data\data2.xlsx‴
-list.create ♥cells
+list.create result ♥cells
 ```
 
 The `for` loop, inside which the procedures are called, gives sequential row numbers to be used by the `row` argument and its  `♥rownumber` variable. In each row you want to process six cells in six columns. Therefore, for both procedures you have to set up another counter in the `for` loop, which will count from 1 to 6 and pass this value both to a column number in the `colindex` argument and a cell index in the `♥cells` list variable. Let’s name this counter `♥col` and insert the loop into each procedure:
