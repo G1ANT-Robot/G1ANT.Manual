@@ -1,21 +1,23 @@
 # Text
 
-## **Syntax**
+## Syntax
 
-```text
+```G1ANT
 ‴The text to use or save‴
 ```
 
-## **Description**
+## Description
 
 Text special characters `‴‴` are required to declare text value within all available commands. This text can be used for displaying messages, storing file paths containing spaces, as an input in documents or dialog boxes etc., and can also be assigned to variables.
 
-You can insert this character from `Insert/Text` menu or with **Ctrl+'** \(apostrophe\) keyboard shortcut.
+There is no need to use these characters if text doesn't contain spaces.
+
+You can insert these characters from `Insert/Text` menu or with **Ctrl+'** (apostrophe) keyboard shortcut.
 
 ### **Example**
 
-```text
-program name ‴notepad‴
+```G1ANT
+program notepad
 keyboard ‴here you can place any text‴
 ```
 
