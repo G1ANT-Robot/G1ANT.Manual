@@ -105,7 +105,9 @@ If a given color is not found, a message “*no expected color in this position*
 
 ## errorresult
 
-This argument allows assigning a variable, which will store the information about the exception that occurred when a command was executed. This information is contained in an [error structure](../indexes/structures/error.md) with `type` and `message` indexes.
+This argument allows assigning a variable, which will store the information about the exception that occurred when a command was executed. The variable name should be preceded by `♥`.
+
+The error information is contained in an [error structure](../indexes/structures/error.md) with `type` and `message` indexes.
 
 ### Example
 
