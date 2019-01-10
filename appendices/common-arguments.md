@@ -132,4 +132,4 @@ The `timeout` argument allows to choose the amount of time (in milliseconds) for
 chrome google.com timeout 10
 ```
 
-Obviously, the computer won’t perform this action within 100ms, so a timeout error occurs.
+Obviously, the computer won’t perform this action within 10ms, so a timeout error occurs.
