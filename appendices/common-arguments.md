@@ -49,7 +49,7 @@ With the `errorcall` argument you can specify the procedure name to call in case
 
 ```G1ANT
 window blah errorcall ErrorOccurred
-keyboard OK!
+dialog OK!
 
 procedure ErrorOccurred
     dialog ‴Could not find the specified window‴
