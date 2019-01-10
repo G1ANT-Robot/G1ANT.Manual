@@ -16,7 +16,7 @@ You can insert this character from `Insert/Key Code` menu or with **Ctrl+,** (co
 
 ```G1ANT
 ♥text = ‴text to be placed in Notepad‴
-program name ‴notepad‴
+program notepad
 keyboard ♥text
 keyboard ⋘enter 2⋙
 keyboard ♥text
