@@ -120,7 +120,7 @@ This extended version of the `errorcall` argument example shows a dialog message
 
 ## timeout
 
-The `timeout` argument lets choose the amount of time (in milliseconds) for the robot to wait for a command to be executed before throwing an error about time expiration.
+The `timeout` argument allows to choose the amount of time (in milliseconds) for the robot to wait for a command to be executed before throwing an error about time expiration.
 
 #### Example
 
