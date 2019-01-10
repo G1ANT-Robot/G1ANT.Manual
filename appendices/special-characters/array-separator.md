@@ -32,7 +32,7 @@ dialog ♥list⟦1⟧
 
 ![img](../../-assets/2018-01-04-array-separator-2_v1.jpg)
 
-Here, the `dialog` command displays the first element of the `♥list` variable — as specified by`⟦1⟧` index.
+Here, the `dialog` command displays the first element of the `♥list` variable — as specified by `⟦1⟧` index.
 
 ### Example 3
 
