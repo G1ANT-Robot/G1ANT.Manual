@@ -27,7 +27,7 @@ In the example above, number 3 is assigned to the `♥x` variable.  This part of
 program notepad if ♥x=="movie"
 ```
 
-In the example above, the word “theater” is assigned to the  `♥x` variable.  The second line of the script — `program notepad if ♥x=="movie"` — will only be executed, if the condition is true. In this case it is false (`theater` is not equal to `movie`), therefore G1ANT.Robot **will not** open Notepad.
+In the example above, the word “theater” is assigned to the `♥x` variable.  The second line of the script — `program notepad if ♥x=="movie"` — will only be executed, if the condition is true. In this case it is false (`theater` is not equal to `movie`), therefore G1ANT.Robot **will not** open Notepad.
 
 Please note that the word `movie` has to be in double quotes, because this is how strings have to be declared in C#.
 
