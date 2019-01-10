@@ -4,7 +4,7 @@ Here is the list and explanation of several arguments, which can be used with mo
 
 ## if
 
-The `if` argument followed by a condition, defines whether a command will be executed or skipped. The condition is a C# macro and if the expression contain some spaces, we advise you to paste it within `⊂⊃` for a clearer readability.
+The `if` argument followed by a condition, defines whether a command will be executed or skipped. The condition is a C# macro and if the expression contains some spaces, you have to embrace it with `⊂⊃` special characters.
 
 | Argument Name | Argument Value | Command Execution |
 | ------------- | -------------- | ----------------- |
