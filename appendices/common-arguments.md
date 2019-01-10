@@ -58,6 +58,8 @@ end procedure
 
 In the first line of this example the robot tries to focus on the window titled *blah*. If it can’t find this window, the `ErrorOccurred` procedure is called, which shows an appropriate message.
 
+Note that when a user clicks OK in the dialog, the procedure ends, but the script continues: the robot goes back to where the procedure was called and displays another dialog box. This return to the place of a call in the script is the main difference between `errorcall` and `errorjump` arguments.
+
 ## errorjump 
 
 The `errorjump` argument specifies name of a label to jump to when an error occurs during command’s execution. It allows G1ANT.Robot to skip some part of the script and jump to the other.
