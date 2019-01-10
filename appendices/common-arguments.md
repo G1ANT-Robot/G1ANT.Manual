@@ -62,7 +62,7 @@ Note that when a user clicks OK in the dialog, the procedure ends, but the scrip
 
 ## errorjump 
 
-The `errorjump` argument specifies name of a label to jump to when an error occurs during command’s execution. It allows G1ANT.Robot to skip some part of the script and jump to the other.
+The `errorjump` argument specifies name of a label to jump to when an error occurs during command’s execution or a timeout expires. It allows G1ANT.Robot to skip some part of the script and jump to the other.
 
 ### Example 1
 
