@@ -43,7 +43,7 @@ G1ANT.Robot **will open** Notepad.
 
 ## errorcall
 
-With the `errorcall` argument you can specify the procedure name to call in case an error occurs.
+With the `errorcall` argument you can specify the procedure name to call in case an error occurs or a timeout expires.
 
 ### Example
 
