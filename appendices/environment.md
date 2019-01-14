@@ -6,11 +6,11 @@ Available system environment variable can be found using Windows command line (*
 
 They can be accessed from G1ANT.Robot level, see examples below:
 
-```
+```G1ANT
 dialog ♥environment⟦PSModulePath⟧
 dialog ♥environment⟦COMPUTERNAME⟧
 ```
 
-Once you start typing ♥environment⟦⟧, you will be able to choose certain system variable from the dialog list. Just place the cursor between the double brackets ⟦ ⟧ and press the **Alt** key:
+Once you start typing `♥environment⟦⟧`, you will be able to choose certain system variable from the dialog list. Just place the cursor between the double brackets `⟦ ⟧` and press the **Alt** key:
 
 ![](../../-assets/environment.jpg)
