@@ -1,4 +1,4 @@
-## Refining Your Code
+# Refining Your Code
 
 The code is never good enough. Of course, the golden rule of life says that if it ain't broke, don’t fix it — and we couldn’t agree more. But when you are practicing with programming, refinements are the part of the learning process. You learn new things and you can look back at your previous works to see if it’s possible to use your latest knowledge to optimize the code, make it clearer and more efficient.
 
@@ -64,7 +64,7 @@ end procedure
 
 Great! You managed to reduce couple of code lines in each procedure.
 
-### Unsubscribing Improved
+## Unsubscribing Improved
 
 The exercise with automatic unsubscribing from the mailing list has one major flaw: it does delete a sender’s email address from the list, but this person’s other information persists. It would be great to erase the whole entry — not only the email address — from the file. In other words, to remove a line containing the email address to be unsubscribed.
 
@@ -76,7 +76,7 @@ text.replace ♥mailinglist search ♥address replace ‴‴ result ♥mailingli
 
 It simply replaces the matching address with an empty text. You can use the same `text.replace` command to delete a whole line. The only difference is that you will use the `regex` argument instead of `search`.
 
-Regex stands for “regular expressions” and is a method of writing conditions when searching for particular strings. For more information on regex, please refer to a [Wikipedia entry](https://en.wikipedia.org/wiki/Regular_expression) and the [Regex Appendix](../appendices/regex) to this manual.
+Regex stands for “regular expressions” and is a method of writing conditions when searching for particular strings. For more information on regex, please refer to a [Wikipedia entry](https://en.wikipedia.org/wiki/Regular_expression) and the [Regex Appendix](../../appendices/regex) to this manual.
 
 The regex you are looking for should search for any text between the start and the end of the line containing the email address. If you read through the available expressions, you will find these blocks to build your regex:
 
