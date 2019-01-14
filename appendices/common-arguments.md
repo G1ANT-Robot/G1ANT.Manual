@@ -36,7 +36,7 @@ Please note that the word `movie` has to be in double quotes, because this is ho
 ```G1ANT
 ♥x = 3
 ♥y = theater
-program notepad if ⊂♥x==3 && ♥y=="theatre"⊃
+program notepad if ⊂♥x==3 && ♥y=="theater"⊃
 ```
 
 G1ANT.Robot **will open** Notepad.
