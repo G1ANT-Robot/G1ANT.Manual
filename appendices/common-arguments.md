@@ -74,6 +74,7 @@ The condition `⊂♥text == "Chris likes bananas"⊃` is false, so, because the
 ♥text = ‴Chris likes apples‴
 test condition ⊂♥text == "Chris likes bananas"⊃ errorjump banana
 dialog ‴Yes! Chris likes bananas!‴
+stop silentmode true
 label banana
 dialog ‴Sorry, Chris doesn't like bananas!‴
 ```
