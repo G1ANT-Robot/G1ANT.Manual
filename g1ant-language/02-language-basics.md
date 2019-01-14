@@ -32,7 +32,7 @@ Panels are another helpful and handy element of G1ANT.Robot user interface. We d
 
 They help you to work faster — simple as that. Instead of moving around menus and clicking, use keystroke combinations to get what you want in a fraction of time. Keyboard shortcuts for menu items are shown next to them in the menus, and next to special characters in Symbols panel. For example, instead of navigating to `Edit/Find` menu for a Find tool, you can simply press **Ctrl+F** keys.
 
-You can also find all [common keyboard shortcuts](appendices/windows-keyboard-shortcuts.md) (typical for Windows and its applications) as well as Windows key shortcuts in our Appendices section.
+You can also find all [common keyboard shortcuts](../appendices/windows-keyboard-shortcuts.md) (typical for Windows and its applications) as well as Windows key shortcuts in our Appendices section.
 
 ## Language Syntax
 
