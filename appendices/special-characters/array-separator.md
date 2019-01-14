@@ -43,4 +43,4 @@ dialog ♥list⟦3⟧
 
 ![](../../-assets/array3.png)
 
-In the first line the `♥list` variable is declared as a list of date type elements. The third element called by the  `dialog` command will be displayed in a proper date format.
+In the first line the `♥list` variable is declared as a list of date type elements. The third element called by the `dialog` command will be displayed in a proper date format.
