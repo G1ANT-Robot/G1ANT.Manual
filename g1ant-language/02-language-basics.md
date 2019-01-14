@@ -26,13 +26,13 @@ Remember that whenever the list with suggestions disappears, you can reactivate 
 
 ### Panels
 
-Panels are another helpful and handy element of G1ANT.Robot user interface. We described them in detail in the [other part](g1ant.robot-window/panels.md) of this manual, so you can learn about them there. In a nutshell, these are lists of objects available in G1ANT.Language (there are panels containing other information, but we won’t discuss them now). You can have them displayed, so that you will see what commands (and their arguments), structures, variables and symbols you have at your disposal and fingers.
+Panels are another helpful and handy element of G1ANT.Robot user interface. We described them in detail in the [other part](../g1ant.robot-window/panels.md) of this manual, so you can learn about them there. In a nutshell, these are lists of objects available in G1ANT.Language (there are panels containing other information, but we won’t discuss them now). You can have them displayed, so that you will see what commands (and their arguments), structures, variables and symbols you have at your disposal and fingers.
 
 ### Keyboard shortcuts
 
 They help you to work faster — simple as that. Instead of moving around menus and clicking, use keystroke combinations to get what you want in a fraction of time. Keyboard shortcuts for menu items are shown next to them in the menus, and next to special characters in Symbols panel. For example, instead of navigating to `Edit/Find` menu for a Find tool, you can simply press **Ctrl+F** keys.
 
-You can also find all [common keyboard shortcuts](appendices/common-keyboard-shortcuts.md) (typical for Windows and its applications) as well as [Windows key shortcuts](appendices/windows-key-shortcuts.md) in our Appendices section.
+You can also find all [common keyboard shortcuts](appendices/windows-keyboard-shortcuts.md) (typical for Windows and its applications) as well as Windows key shortcuts in our Appendices section.
 
 ## Language Syntax
 
@@ -70,7 +70,7 @@ selenium.open type ‴firefox‴ url ‴google.com‴ result ♥google
 
 the elements `‴firefox‴` and `‴google.com‴` are values. Note that text values are embraced with triple prime characters available by pressing **Ctrl+'** (apostrophe) keyboard shortcut or by clicking the text symbol icon on the toolbar.
 
-Values always belong to one type of structures, [variables](), and they can be any text, numbers and a mixture of both (URL address, for instance). Values are strictly related to their arguments.
+Values always belong to one type of structures, variables, and they can be any text, numbers and a mixture of both (URL address, for instance). Values are strictly related to their arguments.
 
 ### Examples
 
@@ -106,7 +106,7 @@ The special character ♥ is the prefix for all variables in G1ANT.Language. You
 
 ### Example
 
-Copy and paste this code into the script editor, then run the robot by pressing **F9** key or clicking Run ![img](.gitbook/assets/run.jpg) icon on the toolbar:
+Copy and paste this code into the script editor, then run the robot by pressing **F9** key or clicking Run ![img](../-assets/run.jpg) icon on the toolbar:
 
 ```G1ANT
 ♥number = 2
@@ -161,10 +161,11 @@ Sending keyboard inputs to a program is easy and requires the `keyboard` command
 
 But what if you wanted to make the robot write the text from the example above in two lines instead of just one? Like this:
 
-**Hello!**
-**I’m a robot.**
+> **Hello!**
+> **I’m a robot.**
 
 The answer is simple: in the next line after your existing `program notepad` command, you would type
+
 
 ```G1ANT
 keyboard ‴Hello!⋘enter⋙I'm a robot.‴
@@ -277,11 +278,11 @@ First, you have to select the right window:
 window ✱notepad
 ```
 
-> This command will work correctly only when there’s just one Notepad window open. If you have more of them, you must precisely specify the window you want to use, e.g. `window ‴Untitled - Notepad‴`. The full list of open windows titles is available in [All Windows](g1ant.robot-window/auxiliary-windows/all-windows.md) tool (`Tools/Windows` menu or **Ctrl+W**).
+> This command will work correctly only when there’s just one Notepad window open. If you have more of them, you must precisely specify the window you want to use, e.g. `window ‴Untitled - Notepad‴`. The full list of open windows titles is available in [All Windows](../g1ant.robot-window/auxiliary-windows/all-windows.md) tool (`Tools/Windows` menu or **Ctrl+W**).
 
 With Notepad window selected, tell the robot to move the cursor close to the letter “a”, click and start selecting.
 
-Wait, how can you determine the mouse cursor position? Don’t worry, we have you covered: use the [Mouse Position](g1ant.robot-window/auxiliary-windows/mouse-position.md) tool (`Insert/Mouse Position` menu or **Ctrl+E**) after you type the `mouse.click` command. Answer “No” in the dialog box, since you want a relative coordinates, point your cursor to the right place and click. The tool will insert the resulting position as an argument for you:
+Wait, how can you determine the mouse cursor position? Don’t worry, we have you covered: use the [Mouse Position](../g1ant.robot-window/auxiliary-windows/mouse-position.md) tool (`Insert/Mouse Position` menu or **Ctrl+E**) after you type the `mouse.click` command. Answer “No” in the dialog box, since you want a relative coordinates, point your cursor to the right place and click. The tool will insert the resulting position as an argument for you:
 
 ```G1ANT
 mouse.click ⟦point⟧41⫽70 type down
@@ -318,4 +319,4 @@ keyboard ⋘CTRL+V⋙
 
 Run this process with **F9** key and be proud of yourself!
 
-*If you want to learn more about all commands used in this chapter, please refer to their individual descriptions in the Commands section of this manual.*
+*If you want to learn more about all commands used in this chapter, please refer to their individual descriptions in the [Commands](../indexes/commands/DESCRIPTION.md) section of this manual.*
