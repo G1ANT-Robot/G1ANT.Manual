@@ -1,6 +1,6 @@
 ## Excel, Procedures and Loops
 
-Let’s start with automating Excel spreadsheets. Imagine you want to get data from one file and enter them into another, newly created file. For the purposes of this tutorial, create a folder called Data in your Documents (Windows 10) or My Documents (earlier Windows versions) folder and put this excel data file [data.xlsx](https://github.com/G1ANT-Robot/G1ANT.Tutorials/blob/master/-assets/data.xlsx) into it.
+Let’s start with automating Excel spreadsheets. Imagine you want to get data from one file and enter them into another, newly created file. For the purposes of this tutorial, create a folder called Data in your Documents (Windows 10) or My Documents (earlier Windows versions) folder and put this excel data file [data.xlsx](../../-assets/data.xlsx) into it.
 
 Since using the whole path to a file every time you want to refer to it is a bit tedious, robotizing this repetitive task would be a good starting point. All you have to do is to declare a new variable — named  `♥datafile1`, for example — with its value equal to the filepath.
 
@@ -20,7 +20,7 @@ This is how your filename variable would be declared in the script:
 
 Can you spot a problem in the code above? Yes: it’s your user name! When you use such expression on your machine — your account, to be precise — everything is fine. Things get tough when you try to port this robot script somewhere else: you would have to change the filepath to include a correct Windows user name. Imagine doing this on many PCs…
 
-We predicted this scenario and provided a special variable `♥environment⟦⟧`, which reads specified environment variables of the host system (environment variables store system information of different type; read more on the `♥environment⟦⟧` variable [here](/g1ant-language/environment.md)). One of them, `USERPROFILE`, provides the full path to current user files. See what yours is:
+We predicted this scenario and provided a special variable `♥environment⟦⟧`, which reads specified environment variables of the host system (environment variables store system information of different type; read more on the `♥environment⟦⟧` variable [here](../appendices/environment.md)). One of them, `USERPROFILE`, provides the full path to current user files. See what yours is:
 
 ```G1ANT
 dialog ♥environment⟦USERPROFILE⟧
