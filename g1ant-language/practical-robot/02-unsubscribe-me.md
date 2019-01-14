@@ -1,4 +1,4 @@
-## Unsubscribe Me: Mails, Text Tools And File Operations
+# Unsubscribe Me: Mails, Text Tools And File Operations
 
 The previous exercise with G1ANT.Language was based on Excel and the Robot commands designed for this application (our language also provides specialized commands for Word and Outlook). You learned how to use procedures for clean code and repetitive tasks. Now you can try some more commands to automate work with desktop apps.
 
@@ -19,13 +19,13 @@ Start with designing an architecture for your script: the plan of actions.
 
 Seems pretty easy. And, in fact, it is with our G1ANT.Language commands.
 
-### Silent Execution
+## Silent Execution
 
 You could do all of the above actions with the user interface commands you learned in the [Basics](../02-language-basics.md) chapter: `program`, `window` and `keyboard`. They would open your email client (or webmail in a browser), search for “unsubscribe” message subject, copy the sender’s email, then open the mailing list file in Notepad and use its Find and Replace tool to delete the address from the list. But there are less obtrusive ways that do not involve dealing with the user interface and clicking around menus, dialogs and so on. They work directly with the target objects in the background, so users can still do tasks on their PCs.
 
 Take emails, for example. You don’t have to use any external tool such as email client or net browser to check your inbox: there is the `mail.imap` command for it. You simply provide your email account credentials as the arguments and the command gets messages for you, storing them in a variable. Then, you can search this variable for some text and even replace it with the `text.` family of commands.  And this is exactly what you are going to do in this exercise.
 
-### Reading Emails
+## Reading Emails
 
 The whole process described in your plan of actions can be divided into three main tasks: retrieving emails, searching for specific messages and deleting email addresses from the list. Let’s make procedures out of these tasks and name them `checkmail`, `checksubject` and `deleteaddress`.
 
@@ -61,7 +61,7 @@ Of course, you should provide your true server name, login and password in the c
 
 There are two variables used in this procedure: `♥yesterday` and `♥emails`. The latter is created automatically by the command (the default name is `♥result`), but the first needs to be declared beforehand. Let’s do it.
 
-### Injecting C# Code
+## Injecting C# Code
 
 It’s easy to get the current date in G1ANT.Language — all you need is to use the `♥date` special variable. But things get tough when you want to make some operations on a date, for example to add or subtract days. Sometimes it’s better not to invent a wheel, rather to use existing functions (methods, to be precise) from C# language instead. These C# “injections” — called snippets — into G1ANT.Language are done using `⊂⊃` special characters (`Insert/Macro` menu, **Ctrl+9** keyboard shortcut or the `⊂⊃` icon on the toolbar).
 
@@ -73,7 +73,7 @@ In this exercise you want the `♥yesterday` variable to be calculated as a day 
 
 The C# snippet embraced with `⊂⊃` characters simply subtracts one day from the current date. The result is then passed to the Robot as a variable of date structure thanks to `⟦date⟧`. Now you can use the  `♥yesterday` variable as a valid starting date value for the `mail.imap` command. Just place the line of code above somewhere in the first lines of your script.
 
-### List of Mails
+## List of Mails
 
 OK, you got your unread emails retrieved from the inbox. But where are they exactly? Yes, in a variable you specified. What you should know is that this variable is not ordinary, because it’s designed to store many items (messages) and each of them has typical email components such as from/to email addresses, message subject, message body or date received. We say that this is a [list](../../indexes/structures/list.md) variable (contains more than one element) and each of its elements is of [mail](../../indexes/structures/mail.md) structure.
 
@@ -91,7 +91,7 @@ As we already mentioned, the mail structure is a kind of a list itself: it has s
 
 The problem with a list of emails like yours is that not only you have to pick one of its elements (an individual message), but also a particular element of this element (subject in case of this exercise). You will have to figure out how to read messages one by one from the list variable and check their subject fields. Fortunately, there is a loop designed especially for cycling through elements in a list.
 
-### Subject: foreach and if Loops
+## Subject: foreach and if Loops
 
 The `foreach` loop command picks the first element from a list, executes specified actions, then moves to the next element and so forth, until the last element is processed. For the purposes of this exercise you would want to check the message subject for each message stored in the retrieved emails list variable. Let’s start translating it into G1ANT.Language:
 
@@ -132,7 +132,7 @@ procedure checksubject
 end procedure
 ```
 
-### Text Operations
+## Text Operations
 
 It’s time for the final part: the `deleteaddress` procedure, which will find the email address in the mailing list file and then delete it. The `text.` family of commands will help you do that.
 
