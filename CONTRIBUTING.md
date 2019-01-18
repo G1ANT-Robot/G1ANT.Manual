@@ -21,7 +21,7 @@ Please note the G1ANT.Robot has a code of conduct, so please follow it in all yo
 
 1. G1ANT.Manual repository is the place for all documentation content that is not a description of individual G1ANT.Language and G1ANT.Addons components such as commands, variables, structures etc. If you want to write something on the Robot's user interface, real case scenarios, tips and tricks and so on, use the G1ANT.Manual repository.
 2. Tutorials are stored in the [G1ANT.Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials) repository. Use it when you want to add courses and/or short lessons for users showing practical use of G1ANT.Language. These materials make up the [G1ANT.Learning](http://learning.g1ant.com) website, which is also available from within the G1ANT.Robot interface. Tutorials are also a part of [G1ANT.Manual](https://manual.g1ant.com) website.
-3. All content related to G1ANT.Addons, including G1ANT.Language commands descriptions, is in the G1ANT.Addons repository. This repository relies on developers, who create addons and accompanying documentation.
+3. All content related to G1ANT.Addons, including G1ANT.Language commands descriptions, is in the [G1ANT.Addon](https://github.com/G1ANT-Robot/G1ANT.Addon) repository. This repository relies on developers, who create addons and accompanying documentation.
 4. Our sync tool gathers together all Markdown files from Manual, Tutorials and Addons repositories and creates content to be displayed on G1ANT.Manual website.
 
 ## Code of Conduct
