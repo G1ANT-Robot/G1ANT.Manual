@@ -18,7 +18,7 @@ We use [headers](https://guides.github.com/features/mastering-markdown/#examples
 
 All media objects (pictures, videos and so on) should be placed in [-assets](../-assets/) folder, and links to them in .md files should be relative, for example `../-assets/picture.jpg`.
 
-Folders and files with the “-” prefix are skipped by our sync tool, which gathers together Markdown files from Manual, Tutorials and Addons repositories and creates content to be displayed on G1ANT.Manual website.
+Folders and files with the “-” prefix are skipped by our sync tool, which gathers together Markdown files from Manual, [Tutorials](https://github.com/G1ANT-Robot/G1ANT.Tutorials) and [Addon](https://github.com/G1ANT-Robot/G1ANT.Addon) repositories and creates content to be displayed on [G1ANT.Manual website](https://manual.g1ant.com).
 
 ## Contributing
 
