@@ -18,6 +18,6 @@ G1ANT.Robot's toolbar is pretty simple and self-explanatory:
 
 ![](../-assets/stop.jpg) Stop the running script
 
-![](C:\Users\Stanislaw Rzewuski\Documents\GitHub\G1ANT.Manual\.gitbook\assets\help.jpg) Display Help
+![](../assets/help.jpg) Display Help
 
 The remaining icons represent special characters used in G1ANT.Language for quick and easy inserting them into your robot script
