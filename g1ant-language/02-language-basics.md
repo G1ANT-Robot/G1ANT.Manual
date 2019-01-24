@@ -161,8 +161,10 @@ Sending keyboard inputs to a program is easy and requires the `keyboard` command
 
 But what if you wanted to make the robot write the text from the example above in two lines instead of just one? Like this:
 
-> **Hello!**
-> **I’m a robot.**
+```
+Hello!
+I’m a robot.
+```
 
 The answer is simple: in the next line after your existing `program notepad` command, you would type
 
