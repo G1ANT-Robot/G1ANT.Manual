@@ -65,10 +65,12 @@ A command needs to know, what exactly it is supposed to do. So, usually you must
 The content of a field or a variable is called a *value*. It can refer to alphabetic as well as numeric data. For example, in the expression
 
 ```G1ANT
-selenium.open type ‴firefox‴ url ‴google.com‴ result ♥google
+selenium.open type firefox url google.com result ♥google
 ```
 
-the elements `‴firefox‴` and `‴google.com‴` are values. Note that text values are embraced with triple prime characters available by pressing **Ctrl+'** (apostrophe) keyboard shortcut or by clicking the text symbol icon on the toolbar.
+the elements `firefox` and `google.com` are values.
+
+>**Note:** If the text values contain spaces, they must be embraced with triple prime characters available by pressing **Ctrl+'** (apostrophe) keyboard shortcut or by clicking the text symbol icon on the toolbar.
 
 Values always belong to one type of structures, variables, and they can be any text, numbers and a mixture of both (URL address, for instance). Values are strictly related to their arguments.
 
@@ -321,4 +323,4 @@ keyboard ⋘CTRL+V⋙
 
 Run this process with **F9** key and be proud of yourself!
 
-*If you want to learn more about all commands used in this chapter, please refer to their individual descriptions in the [Commands](../indexes/commands/DESCRIPTION.md) section of this manual.*
+*If you want to learn more about all commands used in this chapter, please refer to their individual descriptions in the [Commands](../indexes/commands.md) section of this manual.*
