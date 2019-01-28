@@ -49,6 +49,8 @@ Start with the `checkmail` procedure. It should simply login to your email accou
 mail.imap host imap.server.name port 993 login your@email.address password p@$$w0rd sincedate ⟦date⟧ todate ⟦date⟧ onlyunreadmessages true markallmessagesasread true result ♥result
 ```
 
+> **Note:** In order to use `mail.` commands, the Net addon needs to be enabled. Just click the check box next to `net` entry in the Addons panel (by default, on the left of the workspace).
+
 Let’s assume your script should check only unread messages received since the day before the robot is run. These messages will be marked as read (it’s the default value, so you don’t have to specify it) and will be passed to the `♥emails` variable. So here is your `checkmail` procedure:
 
 ```G1ANT
