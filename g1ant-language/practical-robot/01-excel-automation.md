@@ -52,6 +52,8 @@ Your robot should do the following steps in order to copy all cells with values 
 
 Let’s start with a bit simplified version of the algorithm above limited to the first row only (step 4 skipped).
 
+> **Note:** In order to use `excel.` commands, the MSOffice addon needs to be enabled. Just click the check box next to `msoffice` entry in the Addons panel (by default, on the left of the workspace).
+
 It’s time to tell your robot to open the *data.xlsx* file. Of course, there’s a command for that: `excel.open`. Just pass the filepath to it, using your `♥datafile1` variable:
 
 ```G1ANT
