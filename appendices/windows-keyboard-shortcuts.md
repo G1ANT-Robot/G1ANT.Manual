@@ -86,11 +86,11 @@ Here are the shortcuts involving Windows logo key, which can be used in Windows 
 | **Win+Pause** | Display the System Properties dialog box |
 | **Win+Ctrl+F** | Search for PCs (if you’re on a network) |
 | **Win+Shift+M** | Restore minimized windows on the desktop |
-| **Win+\(**number **1-9\)** | Open the desktop and start the app pinned to the taskbar in the position indicated by the number. If the app is already running, it switches to that app. |
-| **Win+Shift+\(**number **1-9\)** | Open the desktop and start a new instance of the app pinned to the taskbar in the position indicated by the number |
-| **Win+Ctrl+\(**number **1-9\)** | Open the desktop and switch to the last active window of the app pinned to the taskbar in the position indicated by the number |
-| **Win+Alt+\(**number **1-9\)** | Open the desktop and open the Jump List for the app pinned to the taskbar in the position indicated by the number |
-| **Win+Ctrl+Shift+\(**number **1-9\)** | Open the desktop and open a new instance of the app located at the given position on the taskbar as an administrator |
+| **Win+**(number **1-9**) | Open the desktop and start the app pinned to the taskbar in the position indicated by the number. If the app is already running, it switches to that app. |
+| **Win+Shift+**(number **1-9**) | Open the desktop and start a new instance of the app pinned to the taskbar in the position indicated by the number |
+| **Win+Ctrl+**(number **1-9**) | Open the desktop and switch to the last active window of the app pinned to the taskbar in the position indicated by the number |
+| **Win+Alt+**(number **1-9**) | Open the desktop and open the Jump List for the app pinned to the taskbar in the position indicated by the number |
+| **Win+Ctrl+Shift+**(number **1-9**) | Open the desktop and open a new instance of the app located at the given position on the taskbar as an administrator |
 | **Win+Tab** | Cycle through recently used apps (except desktop apps) |
 | **Win+Ctrl+Tab** | Cycle through recently used apps (except desktop apps) |
 | **Win+Shift+Tab** | Cycle through recently used apps (except desktop apps) in reverse order |
