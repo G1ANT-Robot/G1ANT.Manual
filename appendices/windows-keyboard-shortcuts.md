@@ -1,7 +1,7 @@
 # Windows Keyboard Shortcuts
 
-{% tabs %}
-{% tab title="General Shortcuts" %}
+## General shortcuts
+
 Below are the most commonly used keyboard shortcuts in Windows:
 
 | Keys | Function |
@@ -22,8 +22,8 @@ Below are the most commonly used keyboard shortcuts in Windows:
 | **Alt+Right Arrow** | Forward |
 | **Alt+Page Up** | Move up one screen |
 | **Alt+Page Down** | Move down one screen |
-| **Alt+Tab** | Switch between open apps \(except desktop apps\) |
-| **Ctrl+F4** | Close the active document \(in apps that allow you to have multiple documents open simultaneously\) |
+| **Alt+Tab** | Switch between open apps (except desktop apps) |
+| **Ctrl+F4** | Close the active document (in apps that allow you to have multiple documents open simultaneously) |
 | **Ctrl+A** | Select all items in a document or window |
 | **Ctrl+C** or **Ctrl+Insert** | Copy the selected item |
 | **Ctrl+D** or **Delete** | Delete the selected item and move it to the Recycle Bin |
@@ -32,7 +32,7 @@ Below are the most commonly used keyboard shortcuts in Windows:
 | **Ctrl+X** | Cut the selected item |
 | **Ctrl+Y** | Redo an action |
 | **Ctrl+Z** | Undo an action |
-| **Ctrl++** \(plus sign\) or **Ctrl+–** \(minus sign\) | Zoom in or out of a large NUMBER of items, like apps pinned to the Start screen |
+| **Ctrl++** (plus sign) or **Ctrl+–** (minus sign) | Zoom in or out of a large NUMBER of items, like apps pinned to the Start screen |
 | **Ctrl+mouse scroll wheel** | Change the size of desktop icons or zoom in or out of a large NUMBER of items, like apps pinned to the Start screen |
 | **Ctrl+Right Arrow** | Move the cursor to the beginning of the next word |
 | **Ctrl+Left Arrow** | Move the cursor to the beginning of the previous word |
@@ -44,16 +44,16 @@ Below are the most commonly used keyboard shortcuts in Windows:
 | **Ctrl+Esc** | Open the Start screen |
 | **Ctrl+Shift+Esc** | Open Task Manager |
 | **Ctrl+Shift** | Switch the keyboard layout when multiple keyboard layouts are available |
-| **Ctrl+Spacebar** | Turn the Chinese input method editor \(IME\) on or off |
+| **Ctrl+Spacebar** | Turn the Chinese input method editor (IME) on or off |
 | **Shift+F10** | Display the shortcut menu for the selected item |
 | **Shift+Arrow** | Select more than one item in a window or on the desktop, or select text within a document |
 | **Shift+Delete** | Delete the selected item without moving it to the Recycle Bin first |
 | **Right Arrow** | Open the next menu to the right, or open a submenu |
 | **Left Arrow** | Open the next menu to the left, or close a submenu |
 | **Esc** | Stop or leave the current task |
-{% endtab %}
 
-{% tab title="Windows Key Shortcuts" %}
+## Windows Key Shortcuts
+
 Here are the shortcuts involving Windows logo key, which can be used in Windows 8 and above:
 
 | Keys | Function |
@@ -72,7 +72,7 @@ Here are the shortcuts involving Windows logo key, which can be used in Windows 
 | **Win+M** | Minimize all windows |
 | **Win+O** | Lock device orientation |
 | **Win+P** | Choose a presentation display mode |
-| **Win+Q** | Open the Search charm to search everywhere or within the open app \(if the app supports app search\) |
+| **Win+Q** | Open the Search charm to search everywhere or within the open app (if the app supports app search) |
 | **Win+R** | Open the Run dialog box |
 | **Win+S** | Open the Search charm to search Windows and the web |
 | **Win+T** | Cycle through apps on the taskbar |
@@ -82,36 +82,33 @@ Here are the shortcuts involving Windows logo key, which can be used in Windows 
 | **Win+W** | Open the Search charm and search for settings |
 | **Win+X** | Open the Quick Link menu |
 | **Win+Z** | Show the commands available in the app |
-| **Win+,** \(comma\) | Temporarily peek at the desktop |
+| **Win+,** (comma) | Temporarily peek at the desktop |
 | **Win+Pause** | Display the System Properties dialog box |
-| **Win+Ctrl+F** | Search for PCs \(if you’re on a network\) |
+| **Win+Ctrl+F** | Search for PCs (if you’re on a network) |
 | **Win+Shift+M** | Restore minimized windows on the desktop |
-| **Win+\(**number **1-9\)** | Open the desktop and start the app pinned to the taskbar in the position indicated by the number. If the app is already running, it switches to that app. |
-| **Win+Shift+\(**number **1-9\)** | Open the desktop and start a new instance of the app pinned to the taskbar in the position indicated by the number |
-| **Win+Ctrl+\(**number **1-9\)** | Open the desktop and switch to the last active window of the app pinned to the taskbar in the position indicated by the number |
-| **Win+Alt+\(**number **1-9\)** | Open the desktop and open the Jump List for the app pinned to the taskbar in the position indicated by the number |
-| **Win+Ctrl+Shift+\(**number **1-9\)** | Open the desktop and open a new instance of the app located at the given position on the taskbar as an administrator |
-| **Win+Tab** | Cycle through recently used apps \(except desktop apps\) |
-| **Win+Ctrl+Tab** | Cycle through recently used apps \(except desktop apps\) |
-| **Win+Shift+Tab** | Cycle through recently used apps \(except desktop apps\) in reverse order |
+| **Win+(**number **1-9)** | Open the desktop and start the app pinned to the taskbar in the position indicated by the number. If the app is already running, it switches to that app. |
+| **Win+Shift+(**number **1-9)** | Open the desktop and start a new instance of the app pinned to the taskbar in the position indicated by the number |
+| **Win+Ctrl+(**number **1-9)** | Open the desktop and switch to the last active window of the app pinned to the taskbar in the position indicated by the number |
+| **Win+Alt+(**number **1-9)** | Open the desktop and open the Jump List for the app pinned to the taskbar in the position indicated by the number |
+| **Win+Ctrl+Shift+(**number **1-9)** | Open the desktop and open a new instance of the app located at the given position on the taskbar as an administrator |
+| **Win+Tab** | Cycle through recently used apps (except desktop apps) |
+| **Win+Ctrl+Tab** | Cycle through recently used apps (except desktop apps) |
+| **Win+Shift+Tab** | Cycle through recently used apps (except desktop apps) in reverse order |
 | **Win+Ctrl+B** | Switch to the app that displayed a message in the notification area |
 | **Win+Up Arrow** | Maximize the window |
 | **Win+Down Arrow** | Remove current app from screen or minimize the desktop window |
 | **Win+Left Arrow** | Maximize the app or desktop window to the Left side of the screen |
 | **Win+Right Arrow** | Maximize the app or desktop window to the Right side of the screen |
-| **Win+Home** | Minimize all but the active desktop window \(restores all windows on second stroke\) |
+| **Win+Home** | Minimize all but the active desktop window (restores all windows on second stroke) |
 | **Win+Shift+Up Arrow** | Stretch the desktop window to the top and bottom of the screen |
 | **Win+Shift+Down Arrow** | Restore/minimize active desktop windows vertically, maintaining width |
 | **Win+Shift+Left Arrow** or **Right Arrow** | Move an app or window in the desktop from one monitor to another |
 | **Win+Spacebar** | Switch input language and keyboard layout |
 | **Win+Ctrl+Spacebar** | Change to a previously selected input |
 | **Win+Enter** | Open Narrator |
-| **Win+Shift+.** \(period\) | Cycle through open apps |
-| **Win+.** \(period\) | Cycle through open apps |
+| **Win+Shift+.** (period) | Cycle through open apps |
+| **Win+.** (period) | Cycle through open apps |
 | **Win+/** | Initiate IME reconversion |
 | **Win+Alt+Enter** | Open Windows Media Ce,nter |
-| **Win+ +/-** \(plus or minus sign\) | Zoom in or out using Magnifier |
+| **Win+ +/-** (plus or minus sign) | Zoom in or out using Magnifier |
 | **Win+Esc** | Exit Magnifier |
-{% endtab %}
-{% endtabs %}
-
