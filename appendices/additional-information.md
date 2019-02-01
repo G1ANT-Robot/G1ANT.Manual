@@ -2,7 +2,7 @@
 
 #### **Robot’s location**
 
-The robot \(its script\) is stored in plain text or binary files, locally or on the Server. ****
+The robot (its script) is stored in plain text or binary files, locally or on the Server.
 
 #### **Deployment**
 
