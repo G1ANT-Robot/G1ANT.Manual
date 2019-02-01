@@ -77,7 +77,7 @@ The C# snippet embraced with `⊂⊃` characters simply subtracts one day from t
 
 ## List of Mails
 
-OK, you got your unread emails retrieved from the inbox. But where are they exactly? Yes, in a variable you specified. What you should know is that this variable is not ordinary, because it’s designed to store many items (messages) and each of them has typical email components such as from/to email addresses, message subject, message body or date received. We say that this is a [list](../../indexes/structures/list.md) variable (contains more than one element) and each of its elements is of [mail](../../indexes/structures/mail.md) structure.
+OK, you got your unread emails retrieved from the inbox. But where are they exactly? Yes, in a variable you specified. What you should know is that this variable is not ordinary, because it’s designed to store many items (messages) and each of them has typical email components such as from/to email addresses, message subject, message body or date received. We say that this is a [list](../../G1ANT.Language/structures/liststructure.md) variable (contains more than one element) and each of its elements is of [mail](../../G1ANT.Language/structures/mailstructure.md) structure.
 
 You probably wonder, how you can reach out to this data — especially that you will need to check subjects for “unsubscribe” word. First of all, you should know how lists work.
 
@@ -87,7 +87,7 @@ A list is simply a set of elements. Each element is a separate entity, which can
 ♥list = element1❚element2❚element3
 ```
 
-The elements are separated with an [array separator](../../g1ant-language/special-characters/array-separator.md) (use **Ctrl+|** or `❚` toolbar icon to insert it). When you want to retrieve the value of a given element, you use the list variable name followed by the index of a desired element, e.g. if you wanted to get the value of the third element in the `♥list` variable above, you would write `♥list⟦3⟧`. (Here you have another special character, called variable index; to insert it, use **Ctrl+[** or `⟦⟧` toolbar icon.)
+The elements are separated with an [array separator](../../appendices/special-characters/array-separator.md) (use **Ctrl+|** or `❚` toolbar icon to insert it). When you want to retrieve the value of a given element, you use the list variable name followed by the index of a desired element, e.g. if you wanted to get the value of the third element in the `♥list` variable above, you would write `♥list⟦3⟧`. (Here you have another special character, called variable index; to insert it, use **Ctrl+[** or `⟦⟧` toolbar icon.)
 
 As we already mentioned, the mail structure is a kind of a list itself: it has several fields that store the attributes of a message. To read these elements, you use the same indexing method as with lists, but you use field names as indexes. For example, to get the subject of a message, you would write `♥mail⟦subject⟧` — provided that `♥mail` is a variable that refers to a particular element (message) in the list of emails.
 
