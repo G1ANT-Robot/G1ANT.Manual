@@ -323,4 +323,4 @@ keyboard ⋘CTRL+V⋙
 
 Run this process with **F9** key and be proud of yourself!
 
-*If you want to learn more about all commands used in this chapter, please refer to their individual descriptions in the [Commands](../indexes/commands.md) section of this manual.*
+*If you want to learn more about all commands used in this chapter, please refer to their individual descriptions in the [Commands](../indexes/Commands.md) section of this manual.*
