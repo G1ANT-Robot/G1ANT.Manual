@@ -55,47 +55,47 @@ You will also need other `selenium.` commands: `selenium.open` and `selenium.clo
 Start your script with some ordering work and put all URLs, XPaths and other elements in variables: 
 
 ```G1ANT
-♥oandaurl = https://www.oanda.com/currency/live-exchange-rates/
-♥oandaxp1 = //*[@id="EUR_USD-b-int"]
-♥oandaxp2 = //*[@id="EUR_USD-b-pip"]
-♥yahoourl = https://finance.yahoo.com/quote/EURUSD=X?p=EURUSD=X/
-♥yahooxp = //*[@id="quote-header-info"]/div[3]/div/div/span[1]
-♥bloomurl = https://www.bloomberg.com/quote/EURUSD:CUR
-♥bloomxp = //*[@id="root"]/div/div/section[2]/div[1]/div/section[1]/section/section[2]/section/div[1]/span[1]
+♥oandaUrl = https://www.oanda.com/currency/live-exchange-rates/
+♥oandaXp1 = //*[@id="EUR_USD-b-int"]
+♥oandaXp2 = //*[@id="EUR_USD-b-pip"]
+♥yahooUrl = https://finance.yahoo.com/quote/EURUSD=X?p=EURUSD=X/
+♥yahooXp = //*[@id="quote-header-info"]/div[3]/div/div/span[1]
+♥bloomUrl = https://www.bloomberg.com/quote/EURUSD:CUR
+♥bloomXp = //*[@id="root"]/div/div/section[2]/div[1]/div/section[1]/section/section[2]/section/div[1]/span[1]
 ```
 
 As mentioned earlier, OANDA uses three elements for displaying currency quotes, hence two XPaths and their variables for this service (the third element can be neglected).
 
-Let’s write a procedure named `ScrapQuotes`, which will scrap currency quotes from the three services. It will open Chrome browser (you can choose your favorite one, of course), load OANDA’s URL stored in the `♥oandaurl` variable, then will get values of two elements specified by their XPaths in the `♥oandaxp1` and `♥oandaxp2` variables and store them in the `♥oanda1` and `♥oanda2` variables, respectively (which will then be combined into one value).
+Let’s write a procedure named `ScrapQuotes`, which will scrap currency quotes from the three services. It will open Chrome browser (you can choose your favorite one, of course), load OANDA’s URL stored in the `♥oandaUrl` variable, then will get values of two elements specified by their XPaths in the `♥oandaXp1` and `♥oandaXp2` variables and store them in the `♥oanda1` and `♥oanda2` variables, respectively (which will then be combined into one value).
 
 These actions will be repeated for the other two websites with their respective URLs and XPaths in variables, only that instead of launching the browser again, the same tab will be used and redirected to a new URL with the `selenium.seturl` command.
 
 When the scraping is done, the browser will close and the procedure will conclude.
 
 ```G1ANT
-procedure ScrapQuotes
-    selenium.open chrome url ♥oandaurl
+procedure scrapQuotes
+    selenium.open chrome url ♥oandaUrl
     delay 5
-    selenium.gettext search ♥oandaxp1 by xpath result ♥oanda1
-    selenium.gettext search ♥oandaxp2 by xpath result ♥oanda2
+    selenium.gettext search ♥oandaXp1 by xpath result ♥oanda1
+    selenium.gettext search ♥oandaXp2 by xpath result ♥oanda2
     ♥oanda = ♥oanda1 + ♥oanda2
 
-    selenium.seturl ♥yahoourl
-    selenium.gettext search ♥yahooxp by xpath result ♥yahoo
+    selenium.seturl ♥yahooUrl
+    selenium.gettext search ♥yahooXp by xpath result ♥yahoo
 
-    selenium.seturl ♥bloomurl
-    selenium.gettext search ♥bloomxp by xpath result ♥bloomberg
+    selenium.seturl ♥bloomUrl
+    selenium.gettext search ♥bloomXp by xpath result ♥bloomberg
 
     selenium.close
 end
 ```
 
-Notice the `delay` command in line 3: this 5-second delay is a failsafe measure in case the browser launches too long, which could disturb the robot process.
+Notice the `delay` command in line 3: this 5-second delay is a fallback in case the browser launches too long, which could disturb the robot process.
 
 Now you can test this concept by running the whole script with two additional lines between variables declarations and the procedure — one for calling the procedure and second for testing what was actually scraped:
 
 ```G1ANT
-call ScrapQuotes
+call scrapQuotes
 dialog ‴OANDA: ♥oanda, Yahoo: ♥yahoo, Bloomberg: ♥bloomberg‴ 
 ```
 
@@ -104,14 +104,14 @@ Bloody hell, something went wrong! Did your browser get stuck on Yahoo! website?
 First, you have to pinpoint the obstacle on Yahoo! just like you did with currency quotes: right-click the OK button, select `Inspect` and in the source code copy the XPath to this element. Assign the copied path to a variable named `♥yahoook` and add it to the list of declared variables:
 
 ```G1ANT
-♥yahoook = /html/body/div/div/div/form/div/button[2]
+♥yahooOk = /html/body/div/div/div/form/div/button[2]
 ```
 
 The OK button should be clicked right after Yahoo! website is opened, so insert the `selenium.click` command here:
 
 ```G1ANT
-    selenium.seturl ♥yahoourl
-    selenium.click search ♥yahoook by xpath
+    selenium.seturl ♥yahooUrl
+    selenium.click search ♥yahooOk by xpath
 ```
 
 Run the script again and see if it executes smoothly. At its end you should see a dialog box with quotes for the EUR/USD currency pair scraped from the three sources.
@@ -140,11 +140,11 @@ Let’s assign the document ID to a variable and add it to the list of declared 
 ♥googleid = 1iCL_st5tCA54jCiLJ7pYScw-3P79A96pxgzeVZmv_aM
 ```
 
-Now you can write a procedure named, say, `GoogleSheet`, which opens your Google Sheet document and sets values for three consecutive cells in column B using quotes stored in variables:
+Now you can write a procedure named, say, `googleSheet`, which opens your Google Sheet document and sets values for three consecutive cells in column B using quotes stored in variables:
 
 ```G1ANT
-procedure GoogleSheet
-    googlesheet.open ♥googleid
+procedure googleSheet
+    googlesheet.open ♥googleId
     googlesheet.setvalue B2 value ♥oanda
     googlesheet.setvalue B3 value ♥yahoo
     googlesheet.setvalue B4 value ♥bloomberg
@@ -154,38 +154,38 @@ end
 Before you test what you just wrote, add a procedure call replacing the previous `dialog` command. Your script should look like this:
 
 ```G1ANT
-♥oandaurl = https://www.oanda.com/currency/live-exchange-rates/
-♥oandaxp1 = //*[@id="EUR_USD-b-int"]
-♥oandaxp2 = //*[@id="EUR_USD-b-pip"]
-♥yahoourl = https://finance.yahoo.com/quote/EURUSD=X?p=EURUSD=X/
-♥yahoook = /html/body/div/div/div/form/div/button[2]
-♥yahooxp = //*[@id="quote-header-info"]/div[3]/div/div/span[1]
-♥bloomurl = https://www.bloomberg.com/quote/EURUSD:CUR
-♥bloomxp = //*[@id="root"]/div/div/section[2]/div[1]/div/section[1]/section/section[2]/section/div[1]/span[1]
-♥googleid = 1iCL_st5tCA54jCiLJ7pYScw-3P79A96pxgzeVZmv_aM
+♥oandaUrl = https://www.oanda.com/currency/live-exchange-rates/
+♥oandaXp1 = //*[@id="EUR_USD-b-int"]
+♥oandaXp2 = //*[@id="EUR_USD-b-pip"]
+♥yahooUrl = https://finance.yahoo.com/quote/EURUSD=X?p=EURUSD=X/
+♥yahooOk = /html/body/div/div/div/form/div/button[2]
+♥yahooXp = //*[@id="quote-header-info"]/div[3]/div/div/span[1]
+♥bloomUrl = https://www.bloomberg.com/quote/EURUSD:CUR
+♥bloomXp = //*[@id="root"]/div/div/section[2]/div[1]/div/section[1]/section/section[2]/section/div[1]/span[1]
+♥googleId = 1iCL_st5tCA54jCiLJ7pYScw-3P79A96pxgzeVZmv_aM
 
-call ScrapQuotes
-call GoogleSheet
+call scrapQuotes
+call googleSheet
 
-procedure ScrapQuotes
-    selenium.open chrome url ♥oandaurl
+procedure scrapQuotes
+    selenium.open chrome url ♥oandaUrl
     delay 5
-    selenium.gettext search ♥oandaxp1 by xpath result ♥oanda1
-    selenium.gettext search ♥oandaxp2 by xpath result ♥oanda2
+    selenium.gettext search ♥oandaXp1 by xpath result ♥oanda1
+    selenium.gettext search ♥oandaXp2 by xpath result ♥oanda2
     ♥oanda = ♥oanda1 + ♥oanda2
 
-    selenium.seturl ♥yahoourl
-    selenium.click search ♥yahoook by xpath
-    selenium.gettext search ♥yahooxp by xpath result ♥yahoo
+    selenium.seturl ♥yahooUrl
+    selenium.click search ♥yahooOk by xpath
+    selenium.gettext search ♥yahooXp by xpath result ♥yahoo
 
-    selenium.seturl ♥bloomurl
-    selenium.gettext search ♥bloomxp by xpath result ♥bloomberg
+    selenium.seturl ♥bloomUrl
+    selenium.gettext search ♥bloomXp by xpath result ♥bloomberg
 
     selenium.close
 end
 
-procedure GoogleSheet
-    googlesheet.open ♥googleid
+procedure googleSheet
+    googlesheet.open ♥googleId
     googlesheet.setvalue B2 value ♥oanda
     googlesheet.setvalue B3 value ♥yahoo
     googlesheet.setvalue B4 value ♥bloomberg
@@ -224,7 +224,7 @@ In case of this exercise, you need your variables to be of `float` structure, be
 > ♥locale = en-US
 > ```
 
-Insert these lines at the end of the `ScrapQuotes` procedure and run the script again. This time it should execute flawlessly. Remember that the `googlesheet.` commands work silently in the background, directly communicating with the Google Sheets documents without launching your default browser. Open your Google Sheets document to see the results.
+Insert these lines at the end of the `scrapQuotes` procedure and run the script again. This time it should execute flawlessly. Remember that the `googlesheet.` commands work silently in the background, directly communicating with the Google Sheets documents without launching your default browser. Open your Google Sheets document to see the results.
 
 If everything is OK, save your script (use a common **Ctrl+S** keyboard shortcut or click the ![](../../-assets/save.jpg) icon) under whatever name you want and wherever you want. Be sure to remember where it was saved, though. You will need this file soon.
 
@@ -276,7 +276,7 @@ This file will be placed in the robot’s default working directory — the dire
 Create a procedure for checking the column that was used previously and setting a new column. It will use the `text.read` command to read the contents of a log file and then will use a C# snippet to “increase” the column letter by one:
 
 ```G1ANT
-procedure CheckColumn
+procedure checkColumn
     text.read ♥logFileName result ♥prevCol
     ♥currentCol = ⟦text⟧⊂(char)(♥prevCol[0] + 1)⊃
 end
@@ -290,31 +290,31 @@ The `file.exists` command shares [common arguments](../../appendices/common-argu
 
 If your `file.exists` command couldn’t find the log file and you’d use the `errorjump` argument, the robot would jump to the label, where it would create a new log file. But after creating this file, the robot wouldn’t get back, but would rather continue executing lines of code placed after the labeled block. It means that you would have to put the labeled block right after the line the `CheckColumn` procedure was called. And what about the column letter processing, which is still inside the procedure?
 
-It’s better to use the `errorcall` argument instead, so when the log file is not found, a special procedure is called — say, `CreateLogFile` — where a log file is created and then the robot returns to the `CheckColumn` procedure to continue column letter processing as if a log file was there from the start.
+It’s better to use the `errorcall` argument instead, so when the log file is not found, a special procedure is called — say, `createLogFile` — where a log file is created and then the robot returns to the `checkColumn` procedure to continue column letter processing as if a log file was there from the start.
 
-First, add this line at the beginning of the `CheckColumn` procedure:
+First, add this line at the beginning of the `checkColumn` procedure:
 
 ```G1ANT
-file.exists ♥logFileName errorcall CreateLogFile
+file.exists ♥logFileName errorcall createLogFile
 ```
 
-Now create the `CreateLogFile` procedure, which sets the start column letter to A and saves the file under the name of your log file:
+Now create the `createLogFile` procedure, which sets the start column letter to A and saves the file under the name of your log file:
 
 ```G1ANT
-procedure CreateLogFile
+procedure createLogFile
     ♥startCol = A
     text.write ♥startCol filename ♥logFileName
 end
 ```
 
-We mentioned that the first column in your spreadsheet is reserved for website names, so why “A” and not “B” as the first column letter? Because when the procedure ends, the robot returns to the `CheckColumn` procedure and the next executed line — the one with a C# snippet — sets the next column as the starting point.
+We mentioned that the first column in your spreadsheet is reserved for website names, so why “A” and not “B” as the first column letter? Because when the procedure ends, the robot returns to the `checkColumn` procedure and the next executed line — the one with a C# snippet — sets the next column as the starting point.
 
 When all currency quotes are scraped and written to your spreadsheet, the column index should be updated in the log file by overwriting its content. You can do this with another `text.write` command with the `writemode override` argument.
 
-Create a separate procedure named `UpdateLog`, for example:
+Create a separate procedure named `updateLog`, for example:
 
 ```G1ANT
-procedure UpdateLog
+procedure updateLog
      text.write ♥currentCol filename ♥logFileName writemode override
 end
 ```
@@ -322,8 +322,8 @@ end
 You are almost done. Now use the current column letter stored in the `♥currentCol` variable to set values in proper cells of your Google Sheets document. Replace the fixed cell addresses in the `GoogleSheet` procedure with variable ones:
 
 ```G1ANT
-procedure GoogleSheet
-    googlesheet.open ♥googleid
+procedure googleSheet
+    googlesheet.open ♥googleId
     googlesheet.setvalue ♥currentCol+2 value ♥oanda
     googlesheet.setvalue ♥currentCol+3 value ♥yahoo
     googlesheet.setvalue ♥currentCol+4 value ♥bloomberg
@@ -348,50 +348,50 @@ And this one to your GoogleSheet procedure in the line right after the `googlesh
 
 Notice the `numeric false` argument: as we mentioned before, it allows to enter a non-numeric value into a spreadsheet cell.
 
-When you add missing `CheckColumn`, `CreateLogFile` and `UpdateLog` procedure calls, you will get this final code:
+When you add missing `checkColumn`, `createLogFile` and `updateLog` procedure calls, you will get this final code:
 
 ```G1ANT
-♥oandaurl = https://www.oanda.com/currency/live-exchange-rates/
-♥oandaxp1 = //*[@id="EUR_USD-b-int"]
-♥oandaxp2 = //*[@id="EUR_USD-b-pip"]
-♥yahoourl = https://finance.yahoo.com/quote/EURUSD=X?p=EURUSD=X/
-♥yahoook = /html/body/div/div/div/form/div/button[2]
-♥yahooxp = //*[@id="quote-header-info"]/div[3]/div/div/span[1]
-♥bloomurl = https://www.bloomberg.com/quote/EURUSD:CUR
-♥bloomxp = //*[@id="root"]/div/div/section[2]/div[1]/div/section[1]/section/section[2]/section/div[1]/span[1]
-♥googleid = 1iCL_st5tCA54jCiLJ7pYScw-3P79A96pxgzeVZmv_aM
+♥oandaUrl = https://www.oanda.com/currency/live-exchange-rates/
+♥oandaXp1 = //*[@id="EUR_USD-b-int"]
+♥oandaXp2 = //*[@id="EUR_USD-b-pip"]
+♥yahooUrl = https://finance.yahoo.com/quote/EURUSD=X?p=EURUSD=X/
+♥yahooOk = /html/body/div/div/div/form/div/button[2]
+♥yahooXp = //*[@id="quote-header-info"]/div[3]/div/div/span[1]
+♥bloomUrl = https://www.bloomberg.com/quote/EURUSD:CUR
+♥bloomXp = //*[@id="root"]/div/div/section[2]/div[1]/div/section[1]/section/section[2]/section/div[1]/span[1]
+♥googleId = 1iCL_st5tCA54jCiLJ7pYScw-3P79A96pxgzeVZmv_aM
 ♥dateformat = HH:mm
 ♥logFileName = log.txt
 
-call CheckColumn
-call ScrapQuotes
-call GoogleSheet
-call UpdateLog
+call checkColumn
+call scrapQuotes
+call googleSheet
+call updateLog
 
-procedure CheckColumn
-    file.exists ♥logFileName errorcall CreateLogFile
+procedure checkColumn
+    file.exists ♥logFileName errorcall createLogFile
     text.read ♥logFileName result ♥prevCol
     ♥currentCol = ⊂(char)(♥prevCol[0] + 1)⊃
 end
 
-procedure CreateLogFile
+procedure createLogFile
     ♥startCol = A
     text.write ♥startCol filename ♥logFileName
 end
     
-procedure ScrapQuotes
-    selenium.open chrome url ♥oandaurl
+procedure scrapQuotes
+    selenium.open chrome url ♥oandaUrl
     delay 5
-    selenium.gettext search ♥oandaxp1 by xpath result ♥oanda1
-    selenium.gettext search ♥oandaxp2 by xpath result ♥oanda2
+    selenium.gettext search ♥oandaXp1 by xpath result ♥oanda1
+    selenium.gettext search ♥oandaXp2 by xpath result ♥oanda2
     ♥oanda = ♥oanda1 + ♥oanda2
 
-    selenium.seturl ♥yahoourl
-    selenium.click search ♥yahoook by xpath
-    selenium.gettext search ♥yahooxp by xpath result ♥yahoo
+    selenium.seturl ♥yahooUrl
+    selenium.click search ♥yahooOk by xpath
+    selenium.gettext search ♥yahooXp by xpath result ♥yahoo
 
-    selenium.seturl ♥bloomurl
-    selenium.gettext search ♥bloomxp by xpath result ♥bloomberg
+    selenium.seturl ♥bloomUrl
+    selenium.gettext search ♥bloomXp by xpath result ♥bloomberg
 
     ♥oanda = ⟦float⟧♥oanda
     ♥yahoo = ⟦float⟧♥yahoo
@@ -400,15 +400,15 @@ procedure ScrapQuotes
     selenium.close
 end
 
-procedure GoogleSheet
-    googlesheet.open ♥googleid
+procedure googleSheet
+    googlesheet.open ♥googleId
     googlesheet.setvalue ♥currentCol+1 value ♥date numeric false
     googlesheet.setvalue ♥currentCol+2 value ♥oanda
     googlesheet.setvalue ♥currentCol+3 value ♥yahoo
     googlesheet.setvalue ♥currentCol+4 value ♥bloomberg
 end
 
-procedure UpdateLog
+procedure updateLog
      text.write ♥currentCol filename ♥logFileName writemode override
 end
 ```
