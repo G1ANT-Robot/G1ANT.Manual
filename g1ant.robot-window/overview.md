@@ -12,7 +12,7 @@ The main G1ANT.Robot program window is composed of four elements:
 
 3. **Status bar** displays the following information, starting from the left:
 
-   - Program status: *“Ready”* means that the robot is able to execute process, *“Unable to execute process”* means that an error has occurred or the process is already running.
+   - Program status: *“Ready”* means that the robot is able to execute process, *“Process has finished”* or *“Process error at line...”* are self-explanatory.
    - Current cursor position in a script in a *column:row* format
    - Progress bar, which visualizes the progress of the current process
    - Process/Program status displaying information about the current process’ status.
