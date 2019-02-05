@@ -101,7 +101,7 @@ dialog ‴OANDA: ♥oanda, Yahoo: ♥yahoo, Bloomberg: ♥bloomberg‴
 
 Bloody hell, something went wrong! Did your browser get stuck on Yahoo! website? It’s because of their privacy policy, which needs your input: accepting it by clicking OK in the message box. Fortunately, you are supported here with another `selenium.` command — `selenium.click` — used to “click” the element you provide. As in the `selenium.gettext` command, you give the phrase to search for as a value for the `search` argument and the element selector as a value for the `by` argument.
 
-First, you have to pinpoint the obstacle on Yahoo! just like you did with currency quotes: right-click the OK button, select `Inspect` and in the source code copy the XPath to this element. Assign the copied path to a variable named `♥yahoook` and add it to the list of declared variables:
+First, you have to pinpoint the obstacle on Yahoo! just like you did with currency quotes: right-click the OK button, select `Inspect` and in the source code copy the XPath to this element. Assign the copied path to a variable named `♥yahooOk` and add it to the list of declared variables:
 
 ```G1ANT
 ♥yahooOk = /html/body/div/div/div/form/div/button[2]
@@ -137,7 +137,7 @@ If you want to use a Google Sheets document, you need to create it first and get
 Let’s assign the document ID to a variable and add it to the list of declared variables at the beginning of the script:
 
 ```G1ANT
-♥googleid = 1iCL_st5tCA54jCiLJ7pYScw-3P79A96pxgzeVZmv_aM
+♥googleId = 1iCL_st5tCA54jCiLJ7pYScw-3P79A96pxgzeVZmv_aM
 ```
 
 Now you can write a procedure named, say, `googleSheet`, which opens your Google Sheet document and sets values for three consecutive cells in column B using quotes stored in variables:
@@ -286,7 +286,7 @@ The log file content is read and assigned to the `♥prevCol` variable. In the n
 
 Splendid, but what about the log file when the robot script is run for the first time? There is none, so either you have to create it manually before you run the script, or you can robotize this job as well using the `file.exists` command. It will check whether a log file exists, and if it’s not there, the command would normally show an error, but you can be smart and leverage that.
 
-The `file.exists` command shares [common arguments](../../appendices/common-arguments.md) with four error handlers: `errorcall`, `errorjump`, `errormessage` and `errorresult`. They step in when an error occurs, and the first two are the perfect choice for executing special code in case something goes wrong.
+The `file.exists` command shares [common arguments](G1ANT.Manual/appendices/common-arguments.md) with four error handlers: `errorcall`, `errorjump`, `errormessage` and `errorresult`. They step in when an error occurs, and the first two are the perfect choice for executing special code in case something goes wrong.
 
 If your `file.exists` command couldn’t find the log file and you’d use the `errorjump` argument, the robot would jump to the label, where it would create a new log file. But after creating this file, the robot wouldn’t get back, but would rather continue executing lines of code placed after the labeled block. It means that you would have to put the labeled block right after the line the `CheckColumn` procedure was called. And what about the column letter processing, which is still inside the procedure?
 
@@ -332,7 +332,7 @@ end
 
 The cell addresses are now created by composing the current column index and a number: B2, B3, B4, then C2, C3, C4 and so on.
 
-It would be great to know when these quotes were scraped — for example, you could have a time stamp given in hours and minutes as the title of a column, so you could easily track changes in your spreadsheet. No problem! You can use the `♥date` [special variable](../../appendices/special-variables.md), which provides current date and time, but for your purposes limited to hours and minutes — and this is done with another special variable, `♥dateformat`, which defines a date display format for the `♥date` variable.
+It would be great to know when these quotes were scraped — for example, you could have a time stamp given in hours and minutes as the title of a column, so you could easily track changes in your spreadsheet. No problem! You can use the `♥date` [special variable](G1ANT.Manual/appendices/special-variables.md), which provides current date and time, but for your purposes limited to hours and minutes — and this is done with another special variable, `♥dateformat`, which defines a date display format for the `♥date` variable.
 
 Just add this line to the list of declared variables:
 
