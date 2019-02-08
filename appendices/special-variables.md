@@ -1,6 +1,6 @@
 # Special variables
 
-All special variables can be found in the menu `View/Special Variables`.
+All special variables can be found in `View/Special Variables` menu.
 
 | Special Variable | Description |
 | ---------------- | ----------- |
