@@ -8,6 +8,7 @@ There are several special characters used in G1ANT.Robot programming:
 | [`-`](comment.md)         | Comment        |
 | [`⋘⋙`](key-code.md)       | Key code       |
 | [`⊂⊃`](macro.md)          | Macro code     |
+| [`⫽`](point-separator.md)          | Point separator     |
 | [`✱`](search-place.md)    | Search place   |
 | [`‴‴`](text.md)           | Text           |
 | [`♥`](variable.md)        | Variable       |
