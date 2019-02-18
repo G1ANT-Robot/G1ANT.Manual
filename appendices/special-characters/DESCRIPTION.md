@@ -1,6 +1,6 @@
 # Special Characters
 
-There are several special characters used in G1ANT.Robot programming:
+There are several special characters used in G1ANT.Robot programming. Click the character to read its full description:
 
 | Character                 | Description    |
 | ------------------------- | -------------- |
