@@ -46,7 +46,7 @@ It is possible to change some values recorded in the UI script:
 
    ![](../-assets/ui-script-panel.png)
 
-3. Select the desired the desired UI script from the *Embedded UI session* drop-down list.
+3. Select the desired UI script from the *Embedded UI session* drop-down list.
 
 4. For the *Value* events you can set variables declared in the robot script: just right-click a *Value* item and select *Set variable…* from the context menu or click `V` button on the panel’s toolbar.
 
