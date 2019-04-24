@@ -117,7 +117,7 @@ window blah errorresult ♥someError errorcall ErrorOccurred
 keyboard OK!
 
 procedure ErrorOccurred
-    dialog ‴♥someError⟦type⟧ error occured: ♥someError⟦message⟧‴
+    dialog ‴♥someError⟦type⟧ error occurred: ♥someError⟦message⟧‴
 end procedure
 ```
 
