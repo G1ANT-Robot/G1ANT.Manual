@@ -12,6 +12,6 @@ There are several special characters used in G1ANT.Robot programming. Click the 
 | [`✱`](search-place.md)    | Search place   |
 | [`‴‴`](text.md)           | Text           |
 | [`♥`](variable.md)        | Variable       |
-| [⟦⟧](variable-index.md)   | Variable index |
+| [`⟦⟧`](variable-index.md)   | Variable index |
 
 Click a character for more information on its use.
