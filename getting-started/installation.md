@@ -1,6 +1,6 @@
 # Installation
 
-To get a free Developer license of the program, register on our [website](http://platform.g1ant.com). You will then receive an email with a link to the file download webpage, where you can choose from the standalone EXE or Windows MSI Installer file, either in a full or lite version \(with or without add-ons\).
+To get a free Developer license of the program, register on our [website](https://myaccount.g1ant.com/MyAccount/Register). You will then receive an email with a link to the file download webpage, where you can choose from the standalone EXE or Windows MSI Installer file, either in a full or lite version \(with or without add-ons\).
 
 To run the program on a system start-up, paste the shortcut to the executable file in the Windows Startup folder.
 
