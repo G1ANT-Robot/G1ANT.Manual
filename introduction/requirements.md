@@ -23,5 +23,5 @@ Supported client OS:
   * 32-bit 4.5GB
   * 64-bit 4.5GB
 
-Various extensions may require later versions of .NET Framework and more RAM and disc space — for more information please check the Commands section of our manual.
+Various extensions may require later versions of .NET Framework and more RAM and disc space.
 
