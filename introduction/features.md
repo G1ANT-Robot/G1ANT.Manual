@@ -36,5 +36,5 @@ G1ANT.Robot software is not limited to the “out of the box” functions. Knowl
 
 #### Recycling of G1ANT
 
-Using task.include command, you can reuse almost anything that has already been built for other processes.
+Using the `task.include` and `process.enqueue` commands, you can reuse almost anything that has already been built for other processes.
 
