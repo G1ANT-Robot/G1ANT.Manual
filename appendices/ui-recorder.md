@@ -2,6 +2,8 @@
 
 The UI Recorder addon is a special tool designed to create embedded scripts based on recorded user actions. You could compare it to macro recording functions in such applications as MS Office or Adobe Photoshop.
 
+>**Note:** This addon is in the beta phase and therefore is not included in G1ANT.Studio. Feel free to test it by downloading the file from [here](https://drive.google.com/file/d/1X_8Xb0NFzx3YgGGdJvgL09axgqh4nXas/view?usp=sharing) (right-click the link and choose *Save link/target as…* from the context menu) and save it either in the same directory as the G1ANT.Studio’s EXE file or in (My) Documents > G1ANT.Robot > Addons directory.
+
 ## How to Use
 
 1. In order to use this addon, you need to activate it first, just like you do with any other addons: in the Addons panel to the left of the G1ANT.Robot window click to select the box next to the `recorder` item, thus enabling the addon.
