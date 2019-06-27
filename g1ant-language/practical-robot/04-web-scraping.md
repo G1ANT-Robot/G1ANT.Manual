@@ -263,7 +263,7 @@ When there is no way to use variables for storing values, as in the case of trig
 
 In case of this exercise, you would want to have a file for storing information on the spreadsheet column that was used last time the script was triggered. This column letter would be retrieved when the script is run, so that the next column would be used for the current process.
 
-You already know the `text.` family of commands from the [second exercise](02-unsubscribe-me.md) of Practical Robot chapter. You will use the `text.read` and `text.write` commands to read the previous column letter from a file and write the current one, overwriting the file’s existing content.
+You already know the `text.` family of commands from the [second exercise](https://manual.g1ant.com/link/G1ANT.Manual/g1ant-language/practical-robot/02-unsubscribe-me.md) of Practical Robot chapter. You will use the `text.read` and `text.write` commands to read the previous column letter from a file and write the current one, overwriting the file’s existing content.
 
 Start with defining the name for your log file and assigning it to a variable:
 

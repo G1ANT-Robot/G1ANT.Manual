@@ -21,7 +21,7 @@ Seems pretty easy. And, in fact, it is with our G1ANT.Language commands.
 
 ## Silent Execution
 
-You could do all of the above actions with the user interface commands you learned in the [Basics](../02-language-basics.md) chapter: `program`, `window` and `keyboard`. They would open your email client (or webmail in a browser), search for “unsubscribe” message subject, copy the sender’s email, then open the mailing list file in Notepad and use its Find and Replace tool to delete the address from the list. But there are less obtrusive ways that do not involve dealing with the user interface and clicking around menus, dialogs and so on. They work directly with the target objects in the background, so users can still do tasks on their PCs.
+You could do all of the above actions with the user interface commands you learned in the [Basics](https://manual.g1ant.com/link/G1ANT.Manual/g1ant-language/02-language-basics.md) chapter: `program`, `window` and `keyboard`. They would open your email client (or webmail in a browser), search for “unsubscribe” message subject, copy the sender’s email, then open the mailing list file in Notepad and use its Find and Replace tool to delete the address from the list. But there are less obtrusive ways that do not involve dealing with the user interface and clicking around menus, dialogs and so on. They work directly with the target objects in the background, so users can still do tasks on their PCs.
 
 Take emails, for example. You don’t have to use any external tool such as email client or net browser to check your inbox: there is the `mail.imap` command for it. You simply provide your email account credentials as the arguments and the command gets messages for you, storing them in a variable. Then, you can search this variable for some text and even replace it with the `text.` family of commands.  And this is exactly what you are going to do in this exercise.
 
@@ -77,7 +77,7 @@ The C# snippet embraced with `⊂⊃` characters simply subtracts one day from t
 
 ## List of Mails
 
-OK, you got your unread emails retrieved from the inbox. But where are they exactly? Yes, in a variable you specified. What you should know is that this variable is not ordinary, because it’s designed to store many items (messages) and each of them has typical email components such as from/to email addresses, message subject, message body or date received. We say that this is a [list](../../G1ANT.Language/Structures/ListStructure.md) variable (contains more than one element) and each of its elements is of [mail](../../G1ANT.Language/Structures/MailStructure.md) structure.
+OK, you got your unread emails retrieved from the inbox. But where are they exactly? Yes, in a variable you specified. What you should know is that this variable is not ordinary, because it’s designed to store many items (messages) and each of them has typical email components such as from/to email addresses, message subject, message body or date received. We say that this is a [list](https://manual.g1ant.com/link/G1ANT.Manual/G1ANT.Language/Structures/ListStructure.md) variable (contains more than one element) and each of its elements is of [mail](https://manual.g1ant.com/link/G1ANT.Manual/G1ANT.Language/Structures/MailStructure.md) structure.
 
 You probably wonder, how you can reach out to this data — especially that you will need to check subjects for “unsubscribe” word. First of all, you should know how lists work.
 
@@ -87,7 +87,7 @@ A list is simply a set of elements. Each element is a separate entity, which can
 ♥list = element1❚element2❚element3
 ```
 
-The elements are separated with an [array separator](../../appendices/special-characters/array-separator.md) (use **Ctrl+|** or `❚` toolbar icon to insert it). When you want to retrieve the value of a given element, you use the list variable name followed by the index of a desired element, e.g. if you wanted to get the value of the third element in the `♥list` variable above, you would write `♥list⟦3⟧`. (Here you have another special character, called variable index; to insert it, use **Ctrl+[** or `⟦⟧` toolbar icon.)
+The elements are separated with an [array separator](https://manual.g1ant.com/link/G1ANT.Manual/appendices/special-characters/array-separator.md) (use **Ctrl+|** or `❚` toolbar icon to insert it). When you want to retrieve the value of a given element, you use the list variable name followed by the index of a desired element, e.g. if you wanted to get the value of the third element in the `♥list` variable above, you would write `♥list⟦3⟧`. (Here you have another special character, called variable index; to insert it, use **Ctrl+[** or `⟦⟧` toolbar icon.)
 
 As we already mentioned, the mail structure is a kind of a list itself: it has several fields that store the attributes of a message. To read these elements, you use the same indexing method as with lists, but you use field names as indexes. For example, to get the subject of a message, you would write `♥mail⟦subject⟧` — provided that `♥mail` is a variable that refers to a particular element (message) in the list of emails.
 
@@ -147,7 +147,7 @@ procedure deleteaddress
 	text.find ♥message⟦from⟧ search <✱> result ♥address
 ```
 
-Remember the asterisk called Search Place? You learned it in the [Basics](../02-language-basics.md): it serves as a wildcard for all characters. You can enter this character from `Insert/Search Place` menu, with **Ctrl+8** keyboard shortcut or by clicking the `✱` icon on the toolbar.
+Remember the asterisk called Search Place? You learned it in the [Basics](https://manual.g1ant.com/link/G1ANT.Manual/g1ant-language/02-language-basics.md): it serves as a wildcard for all characters. You can enter this character from `Insert/Search Place` menu, with **Ctrl+8** keyboard shortcut or by clicking the `✱` icon on the toolbar.
 
 Now use the new `♥address` variable containing email address to search your mailing list file and delete this address. There is the `text.replace` command, which will do the job perfectly, but needs some additional action. Why? Because all `text.` commands operate on text — either provided directly to a command (e.g. `text.find ‴source text to be searched‴`) or indirectly with a variable (`text.find ♥searchedtext`) — not on a file containing text. If you want to search your mailing list file, you have to read its content first and store it in a variable. And here comes another `text.` command, which does exactly that: `text.read`.
 
