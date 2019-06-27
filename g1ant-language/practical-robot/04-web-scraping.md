@@ -286,7 +286,7 @@ The log file content is read and assigned to the `♥prevCol` variable. In the n
 
 Splendid, but what about the log file when the robot script is run for the first time? There is none, so either you have to create it manually before you run the script, or you can robotize this job as well using the `file.exists` command. It will check whether a log file exists, and if it’s not there, the command would normally show an error, but you can be smart and leverage that.
 
-The `file.exists` command shares [common arguments](G1ANT.Manual/appendices/common-arguments.md) with four error handlers: `errorcall`, `errorjump`, `errormessage` and `errorresult`. They step in when an error occurs, and the first two are the perfect choice for executing special code in case something goes wrong.
+The `file.exists` command shares [common arguments](https://manual.g1ant.com/link/G1ANT.Manual/appendices/common-arguments.md) with four error handlers: `errorcall`, `errorjump`, `errormessage` and `errorresult`. They step in when an error occurs, and the first two are the perfect choice for executing special code in case something goes wrong.
 
 If your `file.exists` command couldn’t find the log file and you’d use the `errorjump` argument, the robot would jump to the label, where it would create a new log file. But after creating this file, the robot wouldn’t get back, but would rather continue executing lines of code placed after the labeled block. It means that you would have to put the labeled block right after the line the `CheckColumn` procedure was called. And what about the column letter processing, which is still inside the procedure?
 
@@ -332,7 +332,7 @@ end
 
 The cell addresses are now created by composing the current column index and a number: B2, B3, B4, then C2, C3, C4 and so on.
 
-It would be great to know when these quotes were scraped — for example, you could have a time stamp given in hours and minutes as the title of a column, so you could easily track changes in your spreadsheet. No problem! You can use the `♥date` [special variable](G1ANT.Manual/appendices/special-variables.md), which provides current date and time, but for your purposes limited to hours and minutes — and this is done with another special variable, `♥dateformat`, which defines a date display format for the `♥date` variable.
+It would be great to know when these quotes were scraped — for example, you could have a time stamp given in hours and minutes as the title of a column, so you could easily track changes in your spreadsheet. No problem! You can use the `♥date` [special variable](https://manual.g1ant.com/link/G1ANT.Manual/appendices/special-variables.md), which provides current date and time, but for your purposes limited to hours and minutes — and this is done with another special variable, `♥dateformat`, which defines a date display format for the `♥date` variable.
 
 Just add this line to the list of declared variables:
 
