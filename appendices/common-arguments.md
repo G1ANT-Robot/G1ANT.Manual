@@ -108,7 +108,7 @@ If a given color is not found, a message “*no expected color in this position*
 
 This argument allows assigning a variable, which will store the information about the exception that occurred when a command was executed. The variable name should be preceded by `♥`.
 
-The error information is contained in an [error structure](G1ANT.Language/G1ANT.Language/Structures/ErrorStructure.md) with `type` and `message` indexes.
+The error information is contained in an [error structure](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/ErrorStructure.md) with `type` and `message` indexes.
 
 ### Example
 

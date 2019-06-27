@@ -6,5 +6,5 @@ This tool allows to use regular expressions \(regex\) on a sample text. You can 
 
 Paste your text into `Search` box and start typing regular expression in `Regex` box. The results will be shown at the bottom of the window.
 
-For more information on regex, please refer to a [Wikipedia entry](https://en.wikipedia.org/wiki/Regular_expression) and the [Regex Appendix](../../appendices/regex.md) to this manual.
+For more information on regex, please refer to a [Wikipedia entry](https://en.wikipedia.org/wiki/Regular_expression) and the [Regex Appendix](https://manual.g1ant.com/link/G1ANT.Manual/appendices/regex.md) to this manual.
 

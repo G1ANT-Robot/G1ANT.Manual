@@ -76,7 +76,7 @@ text.replace ♥mailinglist search ♥address replace ‴‴ result ♥mailingli
 
 It simply replaces the matching address with an empty text. You can use the same `text.replace` command to delete a whole line. The only difference is that you will use the `regex` argument instead of `search`.
 
-Regex stands for “regular expressions” and is a method of writing conditions when searching for particular strings. For more information on regex, please refer to a [Wikipedia entry](https://en.wikipedia.org/wiki/Regular_expression) and the [Regex Appendix](../../appendices/regex.md) to this manual.
+Regex stands for “regular expressions” and is a method of writing conditions when searching for particular strings. For more information on regex, please refer to a [Wikipedia entry](https://en.wikipedia.org/wiki/Regular_expression) and the [Regex Appendix](https://manual.g1ant.com/link/G1ANT.Manual/appendices/regex.md) to this manual.
 
 The regex you are looking for should search for any text between the start and the end of the line containing the email address. If you read through the available expressions, you will find these blocks to build your regex:
 

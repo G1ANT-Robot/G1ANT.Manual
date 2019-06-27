@@ -21,4 +21,4 @@ mouse.click ♥xyStart relative false type down
 mouse.click ♥xyEnd relative false type up
 ```
 
-In the example above the mouse pointer is set to the starting coordinates stored in the `♥xyStart` variable, then the default left mouse button is clicked and hold pressed with the [mouse.click](G1ANT.Language/G1ANT.Addon.Core/Commands/MouseClickCommand.md) command and its `type down` argument. Mouse moves to the coordinates specified by the `♥xyEnd` variable and its left button is depressed there (`type up` argument), thus selecting all objects within this region.
+In the example above the mouse pointer is set to the starting coordinates stored in the `♥xyStart` variable, then the default left mouse button is clicked and hold pressed with the [mouse.click](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Addon.Core/Commands/MouseClickCommand.md) command and its `type down` argument. Mouse moves to the coordinates specified by the `♥xyEnd` variable and its left button is depressed there (`type up` argument), thus selecting all objects within this region.
