@@ -77,7 +77,7 @@ The C# snippet embraced with `⊂⊃` characters simply subtracts one day from t
 
 ## List of Mails
 
-OK, you got your unread emails retrieved from the inbox. But where are they exactly? Yes, in a variable you specified. What you should know is that this variable is not ordinary, because it’s designed to store many items (messages) and each of them has typical email components such as from/to email addresses, message subject, message body or date received. We say that this is a [list](https://manual.g1ant.com/link/G1ANT.Manual/G1ANT.Language/Structures/ListStructure.md) variable (contains more than one element) and each of its elements is of [mail](https://manual.g1ant.com/link/G1ANT.Manual/G1ANT.Language/Structures/MailStructure.md) structure.
+OK, you got your unread emails retrieved from the inbox. But where are they exactly? Yes, in a variable you specified. What you should know is that this variable is not ordinary, because it’s designed to store many items (messages) and each of them has typical email components such as from/to email addresses, message subject, message body or date received. We say that this is a [list](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/ListStructure.md) variable (contains more than one element) and each of its elements is of [mail](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/MailStructure.md) structure.
 
 You probably wonder, how you can reach out to this data — especially that you will need to check subjects for “unsubscribe” word. First of all, you should know how lists work.
 
