@@ -18,7 +18,7 @@ Ever wanted to automate tasks on mobile apps? Now it’s possible with our G1ANT
 
 7. In *System variables* section of *Environment Variables* window click *New…* button. The *New System Variable* dialog box will appear. Enter `ANDROID_HOME` as a variable name and paste the path copied from the SDK Manager into the *Variable value* field. Click OK to close the dialog box. Now *Environment Variables* window should contain this entry:
 
-   ![](C:\Users\Darek\Desktop\git\G1ANT.Manual\-assets\environment-variables.png)
+   ![Android Environment Variable](../-assets/environment-variables.png)
 
 8. Restart your computer.
 
