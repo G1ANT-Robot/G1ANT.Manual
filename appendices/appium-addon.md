@@ -66,4 +66,14 @@ In order to create any automations on mobile apps, it’s essential to know what
 
 5. With your device connected or virtual machine started, click *Start Session*. Appium will automatically connect to the physical or virtual device and launch the desired app.
 
-6. In the 
+6. The resulting connected app window consists of three panes: device screen preview, app source tree and selected element properties. You can select app elements by clicking them in the preview pane or, if an element is hard to click or find, select it in the app source tree pane (remember to expand the branches first).
+
+   Here’s the Appium inspection window for a clean Google Drive app (no Google account connected), with an email/phone field selected and its properties displayed in the right pane:
+
+   ![Appium App Inspection](../-assets/appium-app.png)
+
+   You can see the `id` (*identifierId*) and `xpath` (a long line starting with */hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/…*) selectors for this element.
+
+7. It is possible to tap an element or send keystrokes to it, using appropriate buttons above the element’s properties.
+
+In case of any doubts regarding Appium Desktop application, please refer to [its documentation](https://github.com/appium/appium-desktop).
