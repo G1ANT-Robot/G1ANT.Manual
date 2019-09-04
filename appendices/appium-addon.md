@@ -12,7 +12,7 @@ Ever wanted to automate tasks on mobile apps? Now it’s possible with our G1ANT
 
 5. Copy the path provided in the *Android SDK Location:* field of SDK Manager window:
 
-   ![SDK Path](https://raw.githubusercontent.com/G1ANT-Robot/G1ANT.Manual/develop/appendices/C:/Users/Darek/Desktop/git/G1ANT.Manual/-assets/sdk-path.png)
+   ![SDK Path](https://raw.githubusercontent.com/G1ANT-Robot/G1ANT.Manual/develop/-assets/sdk-path.png)
 
 6. Open Windows System Properties: press **Win+Pause** keyboard shortcut, click *Advanced system settings* in the left part of the displayed *System* window and on the resulting *Advanced* tab of *System Properties* window click *Environment Variables…* button.
 
